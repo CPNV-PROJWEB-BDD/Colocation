@@ -12,6 +12,8 @@ if (isset($_GET['action'])) {
       case 'displayLocation' :
           displayLocation();
           break;
+      case 'register' :
+          registerProcess($_POST);
       default :
           home();
       }

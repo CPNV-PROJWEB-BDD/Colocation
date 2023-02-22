@@ -5,14 +5,11 @@
 * @author Created by Ahmed.MUJANOVIC
 * @file  22.02.2023
 */
+
+ob_start();
+$title = "Colocation - Register"
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Title of the document</title>
-    <link rel="stylesheet" href="/view/bootstrap/css/bootstrap.css">
-</head>
+
 
 <body>
 <form method="post" name="formRegister" action="../index.php?action=register">
@@ -57,4 +54,7 @@
     <button type="submit" class="btn btn-primary" onclick="function home()">Submit</button>
 </form>
 </body>
-</html>
+<?php
+$content = ob_get_clean();
+require 'gabarit.php'?>
+
