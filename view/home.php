@@ -8,7 +8,7 @@
 
 // tampon de flux stocké en mémoire
 ob_start();
-$title="RentASnow - Accueil";
+$title = "RentASnow - Accueil";
 ?>
 
     <!-- slider section -->
@@ -34,9 +34,10 @@ $title="RentASnow - Accueil";
                 </div>
             </div>
         </div>
+
     </section>
     <!-- end slider section -->
-    </div>
+
 
     <!-- find section -->
     <section class="find_section ">
@@ -84,7 +85,8 @@ $title="RentASnow - Accueil";
                             </h2>
                         </div>
                         <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration
                             in
                             some form, by injected humour, or randomised words
                         </p>
@@ -358,9 +360,11 @@ $title="RentASnow - Accueil";
                             </h2>
                         </div>
                         <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration
                             in
-                            some form, by injected humour, or randomised words which don't look even slightly believable.
+                            some form, by injected humour, or randomised words which don't look even slightly
+                            believable.
                         </p>
                         <a href="">
                             Get A Quote
@@ -488,9 +492,11 @@ $title="RentASnow - Accueil";
                                         <hr>
                                     </h5>
                                     <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                        There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered
                                         alteration
-                                        in some form, by injected humour, or randomised words which don't look even slightly believable.
+                                        in some form, by injected humour, or randomised words which don't look even
+                                        slightly believable.
                                     </p>
                                 </div>
                             </div>
@@ -506,9 +512,11 @@ $title="RentASnow - Accueil";
                                         <hr>
                                     </h5>
                                     <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                        There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered
                                         alteration
-                                        in some form, by injected humour, or randomised words which don't look even slightly believable.
+                                        in some form, by injected humour, or randomised words which don't look even
+                                        slightly believable.
                                     </p>
                                 </div>
                             </div>
@@ -524,9 +532,11 @@ $title="RentASnow - Accueil";
                                         <hr>
                                     </h5>
                                     <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                        There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered
                                         alteration
-                                        in some form, by injected humour, or randomised words which don't look even slightly believable.
+                                        in some form, by injected humour, or randomised words which don't look even
+                                        slightly believable.
                                     </p>
                                 </div>
                             </div>
@@ -561,7 +571,9 @@ $title="RentASnow - Accueil";
                 <div class="col-md-6 px-0">
                     <div class="map_container">
                         <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
+                                    width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
+                                    allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -569,16 +581,16 @@ $title="RentASnow - Accueil";
                     <div class="form_container">
                         <form action="">
                             <div>
-                                <input type="text" placeholder="Name" />
+                                <input type="text" placeholder="Name"/>
                             </div>
                             <div>
-                                <input type="email" placeholder="Email" />
+                                <input type="email" placeholder="Email"/>
                             </div>
                             <div>
-                                <input type="text" placeholder="Phone Number" />
+                                <input type="text" placeholder="Phone Number"/>
                             </div>
                             <div>
-                                <input type="text" class="message-box" placeholder="Message" />
+                                <input type="text" class="message-box" placeholder="Message"/>
                             </div>
                             <div class="d-flex ">
                                 <button>
@@ -594,7 +606,6 @@ $title="RentASnow - Accueil";
     </section>
 
     <!-- end contact section -->
-
 
 
     <!-- info section -->
@@ -716,5 +727,5 @@ $title="RentASnow - Accueil";
     <!-- end info_section -->
 
 <?php
-  $content = ob_get_clean();
-  require "gabarit.php";
+$content = ob_get_clean();
+require "gabarit.php";

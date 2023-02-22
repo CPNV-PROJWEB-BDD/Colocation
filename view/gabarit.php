@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 
 <head>
     <!-- Basic -->
@@ -32,8 +32,9 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
                 <a class="navbar-brand" href="../view/content/index.html">
-                    <img src="content/images/logo.png" alt="" />
+                    <img src="../view/content/images/logo.png" alt="" />
                 </a>
+
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
                         <div class="User_option">
@@ -41,12 +42,14 @@
                                 <a class="mr-4" href="">
                                     Login
                                 </a>
-                                <a class="" href="">
+                                <a class="" href="../view/formRegister.php">
                                     Sign up
                                 </a>
                             </li>
                         </div>
                     </ul>
+
+
 
                     <div class="custom_menu-btn">
                         <button onclick="openNav()">
@@ -73,7 +76,10 @@
                 </div>
             </nav>
         </div>
+
+
     </header>
+</div>
 
                     <!--__________CONTENU__________-->
 
@@ -98,5 +104,6 @@
     <script type="text/javascript" src="../view/content/js/bootstrap.js"></script>
     <script type="text/javascript" src="../view/content/js/custom.js"></script>
 </div>
+
 </body>
 </html>
