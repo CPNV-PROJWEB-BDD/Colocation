@@ -42,10 +42,10 @@ $title = "RentASnow - Accueil";
     <!-- find section -->
     <section class="find_section ">
         <div class="container">
-            <form action="">
+            <form action="../index.php?action=displayLocation" method="post">
                 <div class=" form-row">
                     <div class="col-md-5">
-                        <input type="text" class="form-control" placeholder="Serach Your Categories ">
+                        <input type="text" class="form-control" placeholder="Search Your Categories ">
                     </div>
                     <div class="col-md-5">
                         <input type="text" class="form-control" placeholder="Location ">
