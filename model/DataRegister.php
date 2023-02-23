@@ -7,8 +7,6 @@
  * @file  22.02.2023
  */
 
-
-
 require "fileConnector.php";
 
 //region Global variables
@@ -24,12 +22,12 @@ function saveRegister($arrayInputUserForm)
 function extractRegister($arrayInputUserForm)
 {
 
-    $FirstnName = $arrayInputUserForm['inputFirstName'];;
+    $FirstName = $arrayInputUserForm['inputFirstName'];
     $Lastname = $arrayInputUserForm['inputLastName'];
     $emailAddress = $arrayInputUserForm['inputEmailAddress'];
     $phoneNumber = $arrayInputUserForm['inputPhoneNumber'];
 
 
-    $newRegisterTemp = array($FirstnName, $Lastname, $emailAddress, $phoneNumber);
+    $newRegisterTemp = array($FirstName, $Lastname, $emailAddress, $phoneNumber);
     return $newRegisterTemp;
 }

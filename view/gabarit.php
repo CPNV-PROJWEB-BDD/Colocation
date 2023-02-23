@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <!-- Basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <!-- Site Metas -->
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
 
     <title>Teaser</title>
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="../view/content/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../view/content/css/bootstrap.css"/>
 
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="../view/content/css/style.css" rel="stylesheet" />
+    <link href="../view/content/css/style.css" rel="stylesheet"/>
     <!-- responsive style -->
-    <link href="../view/content/css/responsive.css" rel="stylesheet" />
+    <link href="../view/content/css/responsive.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -32,9 +32,8 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
                 <a class="navbar-brand" href="../view/content/index.html">
-                    <img src="../view/content/images/logo.png" alt="" />
+                    <img src="../view/content/images/logo.png" alt="">
                 </a>
-
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
                         <div class="User_option">
@@ -48,7 +47,6 @@
                             </li>
                         </div>
                     </ul>
-
 
 
                     <div class="custom_menu-btn">
@@ -76,33 +74,55 @@
                 </div>
             </nav>
         </div>
-
-
     </header>
-</div>
-
-                    <!--__________CONTENU__________-->
-
-                    <div class="span12" id="divMain">
-                        <?=$content; ?>
+    <section class="slider_section ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 offset-md-1">
+                    <div class="detail-box">
+                        <h1>
+                            <span> Modern</span> <br>
+                            Apartment <br>
+                            House
+                        </h1>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of
+                        </p>
+                        <div class="btn-box">
+                            <a href="" class="">
+                                Read More
+                            </a>
+                        </div>
                     </div>
-
-                    <!--________FIN CONTENU________-->
-
-    <!-- footer section -->
-    <section class="container-fluid footer_section ">
-        <div class="container">
-            <p>
-                &copy; <span id="displayYear"></span> All Rights Reserved By
-                <a href="https://html.design/">Free Html Templates</a>
-            </p>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- end  footer section -->
+</div>
 
-    <script type="text/javascript" src="../view/content/js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="../view/content/js/bootstrap.js"></script>
-    <script type="text/javascript" src="../view/content/js/custom.js"></script>
+
+<!--__________CONTENU__________-->
+
+<div class="span12" id="divMain">
+    <?= $content; ?>
+</div>
+
+<!--________FIN CONTENU________-->
+
+<!-- footer section -->
+<section class="container-fluid footer_section ">
+    <div class="container">
+        <p>
+            &copy; <span id="displayYear"></span> All Rights Reserved By
+            <a href="https://html.design/">Free Html Templates</a>
+        </p>
+    </div>
+</section>
+<!-- end  footer section -->
+
+<script type="text/javascript" src="../view/content/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../view/content/js/bootstrap.js"></script>
+<script type="text/javascript" src="../view/content/js/custom.js"></script>
 </div>
 
 </body>

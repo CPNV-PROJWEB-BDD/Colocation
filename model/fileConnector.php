@@ -10,7 +10,7 @@
 
 function writeRegisterInJSON($registerToWrite)
 {
-    $pathToJSONFile = setFullPath("/data/register.json");
+    $pathToJSONFile = setFullPath("data/register.json");
     $encodedRegister = json_encode($registerToWrite);
     writeMsgInFile($pathToJSONFile, $encodedRegister, false);
 }

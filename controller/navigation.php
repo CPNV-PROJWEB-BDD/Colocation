@@ -11,5 +11,5 @@ function displayLocation(){
 }
 function registerProcess($array){
     saveRegister($array);
-    home();
+
 }
