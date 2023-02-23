@@ -21,11 +21,7 @@ $title = "RentASnow - Accueil";
 <body>
 <form method="post" name="formRegister" action="../index.php?action=register">
 
-    <section class="bg-title-page p-t-50 p-b-40 flex-col-c-m "
-             style="background-image: url(../view/content/images/d-2.jpg); height: 200px; width: 100%">
-        <h2 class="l-text2 t-center">
-            Créer un compte
-        </h2>
+
 
     </section>
 
