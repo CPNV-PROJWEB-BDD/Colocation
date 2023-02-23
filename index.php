@@ -9,6 +9,12 @@ if (isset($_GET['action'])) {
       case 'home' :
           home();
           break;
+      case 'displayLocation' :
+          displayLocation();
+          break;
+      case 'register' :
+          registerProcess($_POST);
+          break;
       default :
           home();
       }
