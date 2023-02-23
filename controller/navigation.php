@@ -7,6 +7,7 @@ function home(){
 }
 
 function displayLocation(){
+
     require "view/location.php";
 }
 function registerProcess($array){

@@ -9,6 +9,27 @@ ob_start();
 $title = "Colocation - Location"
 ?>
 
+<section class="find_section ">
+    <div class="container">
+        <form action="../index.php?action=displayLocation" method="post">
+            <div class=" form-row">
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Search Your Categories ">
+                </div>
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Location ">
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="">
+                        search
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</section>
+
 <section class="sale_section layout_padding">
     <div class="container-fluid">
         <div class="heading_container">
@@ -22,7 +43,7 @@ $title = "Colocation - Location"
         <div class="sale_container">
             <div class="box">
                 <div class="img-box">
-                    <img src="images/s-1.jpg" alt="">
+                    <img src="../view/content/images/s-1.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
@@ -35,7 +56,7 @@ $title = "Colocation - Location"
             </div>
             <div class="box">
                 <div class="img-box">
-                    <img src="images/s-2.jpg" alt="">
+                    <img src="../view/content/images/s-2.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
@@ -48,7 +69,7 @@ $title = "Colocation - Location"
             </div>
             <div class="box">
                 <div class="img-box">
-                    <img src="images/s-3.jpg" alt="">
+                    <img src="../view/content/images/s-3.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
@@ -61,7 +82,7 @@ $title = "Colocation - Location"
             </div>
             <div class="box">
                 <div class="img-box">
-                    <img src="images/s-4.jpg" alt="">
+                    <img src="../view/content/images/s-4.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
@@ -74,7 +95,7 @@ $title = "Colocation - Location"
             </div>
             <div class="box">
                 <div class="img-box">
-                    <img src="images/s-5.jpg" alt="">
+                    <img src="../view/content/images/s-5.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
@@ -87,7 +108,7 @@ $title = "Colocation - Location"
             </div>
             <div class="box">
                 <div class="img-box">
-                    <img src="images/s-6.jpg" alt="">
+                    <img src="../view/content/images/s-6.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
@@ -98,15 +119,9 @@ $title = "Colocation - Location"
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="btn-box">
-            <a href="">
-                Find More
-            </a>
         </div>
     </div>
 </section>
-
 <?php
 $content = ob_get_clean();
 require "gabarit.php";
