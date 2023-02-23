@@ -93,9 +93,7 @@
                             It is a long established fact that a reader will be distracted by the readable content of
                         </p>
                         <div class="btn-box">
-                            <a href="" class="">
-                                Read More
-                            </a>
+
                         </div>
                     </div>
                 </div>
