@@ -25,9 +25,8 @@ function extractRegister($arrayInputUserForm)
     $FirstName = $arrayInputUserForm['inputFirstName'];
     $Lastname = $arrayInputUserForm['inputLastName'];
     $emailAddress = $arrayInputUserForm['inputEmailAddress'];
-    $phoneNumber = $arrayInputUserForm['inputPhoneNumber'];
 
 
-    $newRegisterTemp = array($FirstName, $Lastname, $emailAddress, $phoneNumber);
+    $newRegisterTemp = array($FirstName, $Lastname, $emailAddress);
     return $newRegisterTemp;
 }

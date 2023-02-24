@@ -31,22 +31,12 @@
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-                <a class="navbar-brand" href="index.php">
+                <a class="navbar-brand" href="index.php?action=home">
                     <img src="../view/content/images/logo.png" alt="" />
                 </a>
 
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
-                        <div class="User_option">
-                            <li class="">
-                                <a class="mr-4" href="">
-                                    Login
-                                </a>
-                                <a class="" href="../view/formRegister.php">
-                                    Sign up
-                                </a>
-                            </li>
-                        </div>
                     </ul>
 
 
@@ -66,11 +56,8 @@
                     </div>
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
-                            <a href="../view/content/index.html">HOME</a>
-                            <a href="../view/content/about.html">ABOUT</a>
-                            <a href="../view/content/house.html">HOUSE</a>
-                            <a href="../view/content/price.html">PRICING</a>
-                            <a href="../view/content/contact.html">CONTACT US</a>
+                            <a href="../index.php?action=home">HOME</a>
+                            <a href="../index.php?action=register">SIGN UP</a>
                         </div>
                     </div>
                 </div>
