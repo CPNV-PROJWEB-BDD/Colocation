@@ -15,6 +15,9 @@ if (isset($_GET['action'])) {
       case 'register' :
           registerProcess($_POST);
           break;
+      case 'account' :
+          account();
+          break;
       default :
           home();
       }
