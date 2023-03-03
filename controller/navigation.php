@@ -6,8 +6,13 @@ function home(){
     require "view/home.php";
 }
 
-function displayLocation(){
+function displayLocation($value){
 
+    if(isset($value)){
+        require "model/dataBrowseAd.php";
+        $filter = extractFilter($value);
+        search($filter,);
+    }
     require "view/location.php";
 }
 function registerProcess($array){

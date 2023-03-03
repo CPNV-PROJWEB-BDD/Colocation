@@ -11,13 +11,24 @@ $title = "Colocation - Location"
 
 <section class="find_section ">
     <div class="container">
-        <form action="../index.php?action=displayLocation" method="post">
+        <form action="../index.php?action=displayLocation>" method="post">
             <div class=" form-row">
                 <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="Search Your Categories ">
+                    <select name="habitation" id="habitation-select" class="form-control">
+                        <option value="">Tout type d'habitation</option>
+                        <option value="maison">Maison</option>
+                        <option value="appartement">Appartement</option>
+                    </select>
                 </div>
                 <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="Location ">
+                    <select name="localisation" id="localisation-select" class="form-control">
+                        <option value="">Tout localisation</option>
+                        <option value="Yverdon">Yverdon</option>
+                        <option value="Ste-Croix">Ste-Croix</option>
+                        <option value="Grandson">Grandson</option>
+                        <option value="Fribourg">Fribourg</option>
+                        <option value="Renens">Renens</option>
+                    </select>
                 </div>
                 <div class="col-md-2">
                     <button type="submit" class="">
@@ -25,7 +36,6 @@ $title = "Colocation - Location"
                     </button>
                 </div>
             </div>
-
         </form>
     </div>
 </section>
@@ -47,10 +57,13 @@ $title = "Colocation - Location"
                 </div>
                 <div class="detail-box">
                     <h6>
-                        apertments house
+                        Appartement
                     </h6>
                     <p>
-                        There are many variations of passages of Lorem Ipsum available, but
+                        Yverdon
+                    </p>
+                    <p>
+                        3.5 pièces
                     </p>
                 </div>
             </div>
@@ -60,10 +73,13 @@ $title = "Colocation - Location"
                 </div>
                 <div class="detail-box">
                     <h6>
-                        apertments house
+                        Appartement
                     </h6>
                     <p>
-                        There are many variations of passages of Lorem Ipsum available, but
+                        Ste-Croix
+                    </p>
+                    <p>
+                        2 pièces
                     </p>
                 </div>
             </div>
@@ -73,10 +89,13 @@ $title = "Colocation - Location"
                 </div>
                 <div class="detail-box">
                     <h6>
-                        apertments house
+                        Maison
                     </h6>
                     <p>
-                        There are many variations of passages of Lorem Ipsum available, but
+                        Yverdon
+                    </p>
+                    <p>
+                        4 pièces
                     </p>
                 </div>
             </div>
@@ -86,10 +105,13 @@ $title = "Colocation - Location"
                 </div>
                 <div class="detail-box">
                     <h6>
-                        apertments house
+                        Appartement
                     </h6>
                     <p>
-                        There are many variations of passages of Lorem Ipsum available, but
+                        Grandson
+                    </p>
+                    <p>
+                        3 pièces
                     </p>
                 </div>
             </div>
@@ -99,10 +121,13 @@ $title = "Colocation - Location"
                 </div>
                 <div class="detail-box">
                     <h6>
-                        apertments house
+                        Maison
                     </h6>
                     <p>
-                        There are many variations of passages of Lorem Ipsum available, but
+                        Fribourg
+                    </p>
+                    <p>
+                        3 pièces
                     </p>
                 </div>
             </div>
@@ -112,10 +137,13 @@ $title = "Colocation - Location"
                 </div>
                 <div class="detail-box">
                     <h6>
-                        apertments house
+                        Appartement
                     </h6>
                     <p>
-                        There are many variations of passages of Lorem Ipsum available, but
+                        Renens
+                    </p>
+                    <p>
+                        2.5 pièces
                     </p>
                 </div>
             </div>
