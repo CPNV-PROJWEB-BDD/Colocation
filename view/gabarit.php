@@ -57,7 +57,7 @@
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
                             <a href="../index.php?action=home">HOME</a>
-                            <a href="../index.php?action=register">SIGN UP</a>
+                            <a href="../index.php?action=signUp">SIGN UP</a>
                         </div>
                     </div>
                 </div>

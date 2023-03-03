@@ -10,8 +10,8 @@ if (isset($_GET['action'])) {
       case 'home' :
           home();
           break;
-      case 'register' :
-          registerProcess($_POST);
+      case 'signUp' :
+          signUp($_POST);
           break;
       default :
           home();

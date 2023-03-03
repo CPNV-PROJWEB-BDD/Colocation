@@ -1,8 +1,6 @@
 
 
 <?php
-//test de login fichier qui remplace le fichier fileConnecotr et DateRegister
-
 //Récupération des données du formulaire
 $prenom = $_POST["inputFirstName"];
 $nom = $_POST["inputLastName"];
@@ -16,7 +14,7 @@ $data = array(
 );
 
 // Chargement du contenu du fichier JSON existant
-$file = "data/register.json";
+$file = "data/signUp.json";
 $current_data = file_get_contents($file);
 
 // Décodage du JSON en un tableau PHP
