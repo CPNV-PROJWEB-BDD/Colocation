@@ -11,13 +11,13 @@ $title = "Colocation - Location"
 
 <section class="find_section ">
     <div class="container">
-        <form action="../index.php?action=displayLocation>" method="post">
+        <form action="../index.php?action=displayLocation" method="post">
             <div class=" form-row">
                 <div class="col-md-5">
                     <select name="habitation" id="habitation-select" class="form-control">
                         <option value="">Tout type d'habitation</option>
-                        <option value="maison">Maison</option>
-                        <option value="appartement">Appartement</option>
+                        <option value="Maison">Maison</option>
+                        <option value="Appartement">Appartement</option>
                     </select>
                 </div>
                 <div class="col-md-5">
@@ -51,22 +51,27 @@ $title = "Colocation - Location"
             </p>
         </div>
         <div class="sale_container">
+            <?foreach ($colocation as $item) :?>
+            <?foreach ($item as $value) :?>
+            <?if($value['habitation'] == $resultFilter[0] || $value['localisation'] == $resultFilter[1])?>
             <div class="box">
                 <div class="img-box">
                     <img src="../view/content/images/s-1.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
-                        Appartement
+                        <?=$value['Habitation']?>
                     </h6>
                     <p>
-                        Yverdon
+                        <?=$value['Localisation']?>
                     </p>
                     <p>
-                        3.5 pièces
+                        <?=$value['Pièces']?>
                     </p>
                 </div>
             </div>
+            <?endforeach;?>
+            <?endforeach;?>
             <div class="box">
                 <div class="img-box">
                     <img src="../view/content/images/s-2.jpg" alt="">

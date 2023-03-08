@@ -9,11 +9,13 @@ function home(){
 function displayLocation($value){
 
     if(isset($value)){
-        require "model/dataBrowseAd.php";
-        $filter = extractFilter($value);
-        search($filter,);
+        require_once "model/dataBrowseAd.php";
+        $filter = filter($value);
+    }else{
+        require "view/home.php";
     }
     require "view/location.php";
+    return $filter;
 }
 function registerProcess($array){
     saveRegister($array);

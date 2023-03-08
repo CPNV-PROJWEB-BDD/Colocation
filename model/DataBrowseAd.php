@@ -6,44 +6,58 @@
  * @version 23.02.2023
  */
 
-$Colocation = array(
+$colocation = array(
     array(
         'Habitation' => 'Appartement',
-        'Localisation' => 'Yverdon'
+        'Localisation' => 'Yverdon',
+        'Pièces' => 3.5
     ),
     array(
         'Habitation' => 'Appartement',
-        'Localisation' => 'Ste-Croix'
+        'Localisation' => 'Ste-Croix',
+        'Pièces' => 3.5
     ),
     array(
         'Habitation' => 'Maison',
-        'Localisation' => 'Yverdon'
+        'Localisation' => 'Yverdon',
+        'Pièces' => 3.5
     ),
     array(
         'Habitation' => 'Appartement',
-        'Localisation' => 'Grandson'
+        'Localisation' => 'Grandson',
+        'Pièces' => 3.5
     ),
     array(
         'Habitation' => 'Maison',
-        'Localisation' => 'Fribourg'
+        'Localisation' => 'Fribourg',
+        'Pièces' => 3.5
     ),
     array(
         'Habitation' => 'Appartement',
-        'Localisation' => 'Renens'
+        'Localisation' => 'Renens',
+        'Pièces' => 3.5
     )
 );
 
+
+
 function extractFilter($filter){
-    $habitation = $filter['habitation-select'];
-    $localisation = $filter['localisation-select'];
+    $habitation = $filter['habitation'];
+    $localisation = $filter['localisation'];
 
-    $infoFilter = array($habitation, $localisation);
-    return $infoFilter;
+    $resultFilter = [];
+
+    array_push($resultFilter, $localisation, $habitation);
+
+    return $resultFilter;
+}
+function filter($filter){
+    $detailFilter = extractFilter($filter);
+
+    return $detailFilter;
 }
 
-function search($habitation, $Colocation){
-    return (array_search($habitation, $Colocation));
-}
+
 
 
 
