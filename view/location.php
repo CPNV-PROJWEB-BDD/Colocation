@@ -16,8 +16,8 @@ $title = "Colocation - Location"
                 <div class="col-md-5">
                     <select name="habitation" id="habitation-select" class="form-control">
                         <option value="">Tout type d'habitation</option>
-                        <option value="Maison">Maison</option>
-                        <option value="Appartement">Appartement</option>
+                        <option value="maison">Maison</option>
+                        <option value="appartement">Appartement</option>
                     </select>
                 </div>
                 <div class="col-md-5">
@@ -51,19 +51,18 @@ $title = "Colocation - Location"
             </p>
         </div>
         <div class="sale_container">
-            <?foreach ($colocation as $item) :?>
+            <?foreach ($fullDetail as $item) :?>
             <?foreach ($item as $value) :?>
-            <?if($value['habitation'] == $resultFilter[0] || $value['localisation'] == $resultFilter[1])?>
             <div class="box">
                 <div class="img-box">
                     <img src="../view/content/images/s-1.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
-                        <?=$value['Habitation']?>
+                        <?=$value['habitation']?>
                     </h6>
                     <p>
-                        <?=$value['Localisation']?>
+                        <?=$value['localisation']?>
                     </p>
                     <p>
                         <?=$value['Pièces']?>
@@ -72,86 +71,6 @@ $title = "Colocation - Location"
             </div>
             <?endforeach;?>
             <?endforeach;?>
-            <div class="box">
-                <div class="img-box">
-                    <img src="../view/content/images/s-2.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                    <h6>
-                        Appartement
-                    </h6>
-                    <p>
-                        Ste-Croix
-                    </p>
-                    <p>
-                        2 pièces
-                    </p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="../view/content/images/s-3.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                    <h6>
-                        Maison
-                    </h6>
-                    <p>
-                        Yverdon
-                    </p>
-                    <p>
-                        4 pièces
-                    </p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="../view/content/images/s-4.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                    <h6>
-                        Appartement
-                    </h6>
-                    <p>
-                        Grandson
-                    </p>
-                    <p>
-                        3 pièces
-                    </p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="../view/content/images/s-5.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                    <h6>
-                        Maison
-                    </h6>
-                    <p>
-                        Fribourg
-                    </p>
-                    <p>
-                        3 pièces
-                    </p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img-box">
-                    <img src="../view/content/images/s-6.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                    <h6>
-                        Appartement
-                    </h6>
-                    <p>
-                        Renens
-                    </p>
-                    <p>
-                        2.5 pièces
-                    </p>
-                </div>
-            </div>
         </div>
     </div>
 </section>

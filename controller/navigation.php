@@ -15,7 +15,6 @@ function displayLocation($value){
         require "view/home.php";
     }
     require "view/location.php";
-    return $filter;
 }
 function registerProcess($array){
     saveRegister($array);
