@@ -6,15 +6,14 @@ function home(){
     require "view/home.php";
 }
 
-function displayLocation($value){
+function displayLocation($values){
 
-    if(isset($value)){
+    if(isset($values)){
         require_once "model/dataBrowseAd.php";
-        $filter = filter($value);
-    }else{
-        require "view/home.php";
+        $filter = filter($values);
     }
     require "view/location.php";
+
 }
 function registerProcess($array){
     saveRegister($array);

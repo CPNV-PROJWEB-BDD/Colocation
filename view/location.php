@@ -51,26 +51,26 @@ $title = "Colocation - Location"
             </p>
         </div>
         <div class="sale_container">
-            <?foreach ($fullDetail as $item) :?>
-            <?foreach ($item as $value) :?>
+            <?php foreach ($filter as $item) :?>
+            <?php foreach ($item as $value) :?>
             <div class="box">
                 <div class="img-box">
                     <img src="../view/content/images/s-1.jpg" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
-                        <?=$value['habitation']?>
+                        <?=$filter[$item][$value]?>
                     </h6>
                     <p>
-                        <?=$value['localisation']?>
+                        <?=$filter[$item][$value]?>
                     </p>
                     <p>
-                        <?=$value['Pièces']?>
+                        <?=$filter[$item][$value]?>
                     </p>
                 </div>
             </div>
-            <?endforeach;?>
-            <?endforeach;?>
+            <?php endforeach;?>
+            <?php endforeach;?>
         </div>
     </div>
 </section>
