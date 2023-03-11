@@ -21,31 +21,37 @@ function filter($filter){
 
     $colocation = array(
         array(
+            'Image' => '../view/content/images/s-1.jpg',
             'Habitation' => 'appartement',
             'Localisation' => 'Yverdon',
             'Pièces' => 3.5
         ),
         array(
+            'Image' => '../view/content/images/s-2.jpg',
             'Habitation' => 'appartement',
             'Localisation' => 'Ste-Croix',
             'Pièces' => 4
         ),
         array(
+            'Image' => '../view/content/images/s-3.jpg',
             'Habitation' => 'maison',
             'Localisation' => 'Yverdon',
             'Pièces' => 3.5
         ),
         array(
+            'Image' => '../view/content/images/s-4.jpg',
             'Habitation' => 'appartement',
             'Localisation' => 'Grandson',
             'Pièces' => 2
         ),
         array(
+            'Image' => '../view/content/images/s-5.jpg',
             'Habitation' => 'maison',
             'Localisation' => 'Fribourg',
             'Pièces' => 3.5
         ),
         array(
+            'Image' => '../view/content/images/s-6.jpg',
             'Habitation' => 'appartement',
             'Localisation' => 'Yverdon',
             'Pièces' => 2.5

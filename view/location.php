@@ -16,8 +16,8 @@ $title = "Colocation - Location"
                 <div class="col-md-5">
                     <select name="habitation" id="habitation-select" class="form-control">
                         <option value="">Tout type d'habitation</option>
-                        <option value="maison">Maison</option>
-                        <option value="appartement">Appartement</option>
+                        <option value="Maison">Maison</option>
+                        <option value="Appartement">Appartement</option>
                     </select>
                 </div>
                 <div class="col-md-5">
@@ -44,32 +44,30 @@ $title = "Colocation - Location"
     <div class="container-fluid">
         <div class="heading_container">
             <h2>
-                House For Sale
+                Colocation disponible
             </h2>
             <p>
-                There are many variations of passages of Lorem Ipsum available, but the
+                Voici les différents colocations mis à disposition
             </p>
         </div>
         <div class="sale_container">
-            <?php foreach ($filter as $item) :?>
-            <?php foreach ($item as $value) :?>
+            <?php foreach($filter as $item) :?>
             <div class="box">
                 <div class="img-box">
-                    <img src="../view/content/images/s-1.jpg" alt="">
+                    <img src="<?=$item['Image']?>" alt="">
                 </div>
                 <div class="detail-box">
                     <h6>
-                        <?=$filter[$item][$value]?>
+                        <?=$item['Habitation']?>
                     </h6>
                     <p>
-                        <?=$filter[$item][$value]?>
+                        <?=$item['Localisation']?>
                     </p>
                     <p>
-                        <?=$filter[$item][$value]?>
+                        <?=$item['Pièces']?> pièces
                     </p>
                 </div>
             </div>
-            <?php endforeach;?>
             <?php endforeach;?>
         </div>
     </div>

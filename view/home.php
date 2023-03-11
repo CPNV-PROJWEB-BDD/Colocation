@@ -19,8 +19,8 @@ $title = "RentASnow - Accueil";
                     <div class="col-md-5">
                         <select name="habitation" id="habitation-select" class="form-control">
                             <option value="">Tout type d'habitation</option>
-                            <option value="maison">Maison</option>
-                            <option value="appartement">Appartement</option>
+                            <option value="Maison">Maison</option>
+                            <option value="Appartement">Appartement</option>
                         </select>
                     </div>
                     <div class="col-md-5">
