@@ -52,7 +52,7 @@ body{
     box-shadow: none!important;
 }
 
-.coupon {
+.adBox {
     border: 5px dotted #bbb; /* Dotted border */
     width: 80%;
     border-radius: 15px; /* Rounded border */
@@ -65,58 +65,6 @@ body{
     background-color: #f1f1f1;
 }
 
-.promo {
-    background: #ccc;
-    padding: 3px;
-}
-
-.expire {
-    color: red;
-}
-
 h6{
     font-size: 16px;
-}
-
-@mixin object-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.colocation-pic {
-    color: transparent;
-    transition: all .3s ease;
-    @include object-center;
-    position: relative;
-    transition: all .3s ease;
-}
-
-input {
-    display: none;
-}
-
-img {
-    position: absolute;
-    object-fit: cover;
-    z-index: 0;
-}
-
-.-label {
-    cursor: pointer;
-}
-
-:hover {
-    .-label {
-        @include object-center;
-        background-color: rgba(0,0,0,.8);
-        z-index: 10000;
-        transition: background-color .2s ease-in-out;
-        margin-bottom: 0;
-    }
-}
-
-span {
-    display: inline-flex;
-    padding: .2em;
-    height: 2em;
 }
