@@ -17,7 +17,7 @@ if (isset($_GET['action'])) {
           registerProcess($_POST);
           break;
       case 'displayDetail' :
-          displayDetail($_GET['code']);
+          displayDetail($_GET['Id']);
           break;
       default :
           home();

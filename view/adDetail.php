@@ -14,16 +14,17 @@ $title = "Colocation - Detail"
     </div>
     <div class="container">
         <div class="row">
+            <?php foreach ($detail as $item) :?>
             <div class="col-md-6">
                 <div class="img-box">
-                    <img src="content/images/about-img.jpg" alt="">
+                    <img src="<?=$item['Image']?>" alt="">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="detail-box">
                     <div class="heading_container">
                         <h2>
-                            About Our Apartment
+                            <?=$item['Habitation']?> <?=$item['Localisation']?>
                         </h2>
                     </div>
                     <p>
@@ -37,6 +38,7 @@ $title = "Colocation - Detail"
                     </a>
                 </div>
             </div>
+            <?php endforeach;?>
         </div>
     </div>
 </section>
