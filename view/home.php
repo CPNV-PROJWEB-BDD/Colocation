@@ -17,10 +17,21 @@ $title = "RentASnow - Accueil";
             <form action="../index.php?action=displayLocation" method="post">
                 <div class=" form-row">
                     <div class="col-md-5">
-                        <input type="text" class="form-control" placeholder="Search Your Categories ">
+                        <select name="habitation" id="habitation-select" class="form-control">
+                            <option value="">Tout type d'habitation</option>
+                            <option value="Maison">Maison</option>
+                            <option value="Appartement">Appartement</option>
+                        </select>
                     </div>
                     <div class="col-md-5">
-                        <input type="text" class="form-control" placeholder="Location ">
+                        <select name="localisation" id="localisation-select"  class="form-control">
+                            <option value="">Tout localisation</option>
+                            <option value="Yverdon">Yverdon</option>
+                            <option value="Ste-Croix">Ste-Croix</option>
+                            <option value="Grandson">Grandson</option>
+                            <option value="Fribourg">Fribourg</option>
+                            <option value="Renens">Renens</option>
+                        </select>
                     </div>
                     <div class="col-md-2">
                         <button type="submit" class="">
@@ -28,7 +39,6 @@ $title = "RentASnow - Accueil";
                         </button>
                     </div>
                 </div>
-
             </form>
         </div>
     </section>

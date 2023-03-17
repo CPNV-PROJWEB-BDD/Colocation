@@ -10,7 +10,7 @@ if (isset($_GET['action'])) {
           home();
           break;
       case 'displayLocation' :
-          displayLocation();
+          displayLocation($_POST);
           break;
       case 'register' :
           registerProcess($_POST);
