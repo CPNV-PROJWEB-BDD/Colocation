@@ -6,7 +6,7 @@ ob_start();
 <head>
     <title><?=$accountPage;?></title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="userPage.css">
+    <link rel="stylesheet" type="text/css" href="content/css/userPage.css">
 </head>
 <body>
     <div class="container">

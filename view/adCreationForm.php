@@ -8,7 +8,7 @@ ob_start();
             <meta charset="UTF-8">
             <title>Title of the document</title>
 
-            <link rel="stylesheet" href="AdCreationForm.css">
+            <link rel="stylesheet" href="content/css/AdCreationForm.css">
         </head>
 
         <body>
