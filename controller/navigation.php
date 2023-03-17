@@ -14,3 +14,7 @@ function displayLocation($values)
     }
     require "view/location.php";
 }
+
+function insertAdJSON(){
+    require "model/adFileRegister.php";
+}

@@ -9,13 +9,14 @@ $contact = ["inputContact"];
 // Création d'un tableau avec les données
 $data = array(
     "title" => $adTitle,
+    "photo" => $locationPhoto,
     "lieu" => $lieu,
     "detail" => $detail,
     "contact" => $contact,
 );
 
 // Chargement du contenu du fichier JSON existant
-$file = "data/signUp.json";
+$file = "data/adDetail.json";       //TODO remplacer le nom de fichier avec le json de jonny
 $current_data = file_get_contents($file);
 
 // Décodage du JSON en un tableau PHP

@@ -7,9 +7,10 @@ ob_start();
     <title><?=$accountPage;?></title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="content/css/userPage.css">
+    <link rel="stylesheet" type="text/css" href="content/css/bootstrap.css" />
 </head>
 <body>
-    <div class="container">
+    <div class="container-box">
         <div class="main-body">
             <div class="row gutters-sm">
                 <div class="col-md-4 mb-3">
@@ -59,17 +60,16 @@ ob_start();
                                 <div class="card-body">
                                     <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Current ad offer</h6>
                                 </div>
-                                <!--TODO make the box redirect to the ad offer-->
+                                <!-- example for the card-->
+                                <!-- TODO fetch data from JSON file-->
                                 <div class="card">
-                                    <div class="container">
+                                    <div class="container-box">
                                         <h3>Title Ad</h3>
-                                    </div>
-                                    <img src="../view/content/images/s-5.jpg" alt="IMG Appartement" class="img-box">
-                                    <div class="container" style="background-color:white">
-                                        <h2>Location</h2>
-                                        <p>Lausanne</p>
-                                        <h3>Details...</h3>
-                                        <p>blablabalb</p>
+                                        <img src="content/images/s-5.jpg" alt="IMG Appartement" class="img-box">
+                                            <h2>Location</h2>
+                                            <p>Lausanne</p>
+                                            <h3>Details</h3>
+                                            <p>blablabalb</p>
                                     </div>
                                 </div>
                             </div>
