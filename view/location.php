@@ -40,6 +40,9 @@ $title = "Colocation - Location"
     </div>
 </section>
 
+<?php if (isset($Error)) :?>
+<h5><span style="color:red"><?= $Error; ?></span></h5>
+<?php else:?>
 <section class="sale_section layout_padding">
     <div class="container-fluid">
         <div class="heading_container">
@@ -74,6 +77,7 @@ $title = "Colocation - Location"
         </div>
     </div>
 </section>
+<?php endif;?>
 <?php
 $content = ob_get_clean();
 require "gabarit.php";

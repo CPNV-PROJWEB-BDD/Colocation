@@ -13,11 +13,8 @@ if (isset($_GET['action'])) {
       case 'displayLocation' :
           displayLocation($_POST);
           break;
-      case 'register' :
-          registerProcess($_POST);
-          break;
       case 'displayDetail' :
-          displayDetail($_GET['Id']);
+          displayDetail($_GET['Id'],$_GET['Habitation'], $_GET['Localisation']);
           break;
       default :
           home();

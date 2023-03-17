@@ -64,7 +64,3 @@ function filterArrayByKeyValueLocalisation($colocation, $index, $detailFilter){
     }
     return $colocationFilter;
 }
-
-
-
-
