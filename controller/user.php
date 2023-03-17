@@ -15,7 +15,9 @@ function signUp($signUpDataUser)
     } else {
         require 'model/signUp.php';
         signUp($signUpDataUser);
+        require 'view/home.php';
     }
+
 }
 
 

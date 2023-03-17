@@ -34,6 +34,7 @@ file_put_contents($file, $json_data);
 
 
 
+require "view/home.php";
 exit();
 
 ?>
