@@ -1,20 +1,16 @@
 <?php
 
-require 'model/DataRegister.php';
 
 function home(){
     require "view/home.php";
 }
 
-function displayLocation(){
-    require "view/location.php";
-}
-function registerProcess($array){
-    saveRegister($array);
-    require 'view/home.php';
-}
+function displayLocation($values)
+{
 
-// fonction pour accéder à la page d'utilisateur
-function account(){
-    require 'view/accountPage.php';
+    if (isset($values)) {
+        require_once "model/dataBrowseAd.php";
+        $filter = filter($values);
+    }
+    require "view/location.php";
 }

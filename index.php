@@ -2,6 +2,7 @@
 
 session_start();
 require "controller/navigation.php";
+require "controller/user.php";
 
 if (isset($_GET['action'])) {
   $action = $_GET['action'];
@@ -10,13 +11,10 @@ if (isset($_GET['action'])) {
           home();
           break;
       case 'displayLocation' :
-          displayLocation();
+          displayLocation($_POST);
           break;
-      case 'register' :
-          registerProcess($_POST);
-          break;
-      case 'account' :
-          account();
+      case 'signUp' :
+          signUp($_POST);
           break;
       default :
           home();
