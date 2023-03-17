@@ -12,7 +12,7 @@ ob_start();
         </head>
 
         <body>
-            <form method="post" name="formRegister" action="../index.php?action=register">
+            <form method="post" name="formRegister" action="../index.php?action=insertAdJSON">
 
                 <div class="form-group">
                     <label for="adTitle">Ad Title </label>
@@ -20,9 +20,9 @@ ob_start();
                            placeholder="Entrer le titre de votre annonce" required>
                     <small id="adTitleHelp" class="form-text text-muted">Entrez le titre de votre annonce</small>
                 </div>
-        <!--        TODO make image insert work-->
+                <br>
                 <div class="image">
-                    <input type="file" id="fileInput" accept="image/jpeg, image/png, image/jpg" onchange="previewImage(event)">
+                    <input type="file" id="inputPhoto" accept="image/jpeg, image/png, image/jpg" onchange="previewImage(event)">
                     <img id="preview" src="#" alt="Preview Image" width="500px" height="500px" >
 
                     <script>
@@ -36,24 +36,26 @@ ob_start();
                         }
                     </script>
                 </div>
-                <!--        TODO make image insert work-->
-
+                <br>
                 <div class="form-group">
                     <label for="inputLieu">Lieu </label>
                     <input type="text" class="form-control" id="inputLieu" name="inputLieu"
                            placeholder="Rue de X 1003 lausanne" required>
                     <small id="inputLieu" class="form-text text-muted">Entrez le lieu de la location</small>
                 </div>
+                <br>
                 <div class="form-group">
                     <label for="inputDetail">Detail</label>
                     <input type="text" class="form-control" id="inputDetail" name="inputDetail" placeholder="Detail"
                            required>
                 </div>
+                <br>
                 <div class="form-group">
                     <label for="inputContact">Contact</label>
                     <input type="text" class="form-control" id="inputContact" name="inputContact"
                            placeHolder="Num° téléphone, Email, etc...">
                 </div>
+                <br>
                 <button type="submit" class="btn btn-primary" >Submit</button>
             </form>
         </body>

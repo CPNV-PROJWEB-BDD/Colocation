@@ -68,3 +68,9 @@ body{
 h6{
     font-size: 16px;
 }
+
+.img-box{
+    padding: 2px 16px;
+    width:100%;
+    align-content: center;
+}

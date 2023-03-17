@@ -1,4 +1,5 @@
 <?php
+ob_start();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -10,7 +11,6 @@
 <body>
     <div class="container">
         <div class="main-body">
-            <!-- /Breadcrumb -->
             <div class="row gutters-sm">
                 <div class="col-md-4 mb-3">
                     <div class="card">
@@ -19,9 +19,12 @@
                                 <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
                                 <div class="mt-3">
                                     <h4>User</h4>
-                                    <button class="btn btn-primary">Crée annonce</button>
-                                    <button class="btn btn-outline-primary">Modifié annonce</button>
-                                    <button class="btn btn-outline-primary">Supprimer annonce</button>
+                                    <button onclick="window.location.href='adCreationForm.php';">
+                                        crée annonce
+                                    <button onclick="window.location.href='#';">
+                                        modifier annonce
+                                    <button onclick="window.location.href='#';">
+                                        supprimer annonce
                                 </div>
                             </div>
                         </div>
@@ -35,7 +38,7 @@
                                     <h6 class="mb-0">Nom complet</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    Kenneth Valdez
+                                    Nom Prénom
                                 </div>
                             </div>
                             <hr>
@@ -44,17 +47,10 @@
                                     <h6 class="mb-0">Email</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    fip@jukmuh.al
+                                    email@email.com
                                 </div>
                             </div>
                             <hr>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <!--TODO JS script to let user modify they're info data-->
-                                    <a class="btn btn-info " target="__blank" href="">Edit</a>
-                                    <!--TODO JS script to let user modify they're info data-->
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="row gutters-sm">
@@ -63,15 +59,17 @@
                                 <div class="card-body">
                                     <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Current ad offer</h6>
                                 </div>
-<!--                                TODO make the box redirect to the ad offer-->
-                                <div class="adBox">
+                                <!--TODO make the box redirect to the ad offer-->
+                                <div class="card">
                                     <div class="container">
-                                        <h3>Titre annonce</h3>
+                                        <h3>Title Ad</h3>
                                     </div>
-                                    <img src="../view/content/images/s-5.jpg" alt="IMG Appartement" style="width:100%;">
+                                    <img src="../view/content/images/s-5.jpg" alt="IMG Appartement" class="img-box">
                                     <div class="container" style="background-color:white">
-                                        <h2><b>Lieu</b></h2>
-                                        <p>Details...</p>
+                                        <h2>Location</h2>
+                                        <p>Lausanne</p>
+                                        <h3>Details...</h3>
+                                        <p>blablabalb</p>
                                     </div>
                                 </div>
                             </div>
@@ -83,3 +81,6 @@
     </div>
 </body>
 </html>
+<?php
+$content = ob_get_clean();
+require "gabarit.php";
