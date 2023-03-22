@@ -2,21 +2,27 @@
 //Récupération des données du formulaire
 $adTitle = $_POST["adTitle"];
 $locationPhoto = $_POST["inputPhoto"];
-$lieu = $_POST["inputLieu"];
-$detail = $_POST["inputDetail"];
-$contact = ["inputContact"];
+$localisation = $_POST["inputLocalisation"];
+$description = $_POST["inputDescription"];
+$habitationType = $_POST["inputHabitation"];
+$nbPieces = $_POST["inputNbPieces"];
+
+//generate ID
+$id = uniqid();
 
 // Création d'un tableau avec les données
 $data = array(
+    "ID" => $id,
     "title" => $adTitle,
-    "photo" => $locationPhoto,
-    "lieu" => $lieu,
-    "detail" => $detail,
-    "contact" => $contact,
+    "image" => $locationPhoto,
+    "habitation" => $habitationType,
+    "localisation" => $localisation,
+    "pièces" => $nbPieces,
+    "description" => $description,
 );
 
 // Chargement du contenu du fichier JSON existant
-$file = "data/adDetail.json";       //TODO remplacer le nom de fichier avec le json de jonny
+$file = "data/location.json";
 $current_data = file_get_contents($file);
 
 // Décodage du JSON en un tableau PHP

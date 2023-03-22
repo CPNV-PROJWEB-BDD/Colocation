@@ -37,15 +37,31 @@ $title = "adCreationForm";
             </script>
 
             <br><br>
-            <label for="location"><b>Location</b></label>
-            <input type="text" placeholder="Entrez le lieu de la colocation" id="location" name="inputLocation" required>
+            <label for="localisation"><b>Location</b></label>
+            <input type="text" placeholder="Entrez le lieu de la colocation" id="Localisation" name="inputLocalisation" required>
 
-            <label for="detail"><b>Detail</b></label>
-            <input type="text" placeholder="Entrez les informations pertinentes pour cette colocaltion" id="detail" name="inputDetail" required>
+            <fieldset>
+                <legend>Type d'habitation</legend>
 
-            <label for="contact"><b>Contact</b></label>
-            <input type="text" placeholder="Entrez votre contact" id="contact" name="inputContact"
-                   required>
+                <div>
+                    <input type="radio" id="Habitation" name="inputHabitation" value="maison">
+                    <label for="Habitation">Maison</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="Habitation" name="inputHabitation" value="appartement">
+                    <label for="Habitation">Appartement</label>
+                </div>
+            </fieldset>
+            <br>
+
+            <label for="nbPieces"><b>Nombre de pièces</b></label>
+            <input type="number" placeholder="Nombres de pieces" id="nbPieces" name="inputNbPieces" required>
+            <br><br>
+
+            <label for="description"><b>Detail</b></label>
+            <input type="text" placeholder="Loyer, condition, etc..." id="detail" name="inputDescription" required>
+
 
         </div>
         <button type="submit" class="signupbtn">Envoyer</button>
@@ -57,4 +73,4 @@ $title = "adCreationForm";
 $content = ob_get_clean();
 require "gabarit.php";
 
-//TODO test if the form will register in the JSON file(waiting for Johnny's JSON file)
+//TODO test if the form will register in the JSON file
