@@ -17,20 +17,27 @@ function modifyAd(){
 }
 
 //TODO insert the ad on the browsing ad page
-function deleteAd(){
-    //canvas to delete ads
-    //https://www.sourcecodester.com/tutorials/php/13608/php-delete-json-file-data.html
-    //TODO modifie var to match JSON file of this project
-    $id = $_GET['id'];
+//function to delete ad
+function deleteArrayWithValue($filename, $value) {
+    $json_obj = json_decode($json_string);
+    $unset_queue = array();
 
-    $data = file_get_contents('members.json');
-    $json = json_decode($data);
+    foreach ( $json_obj->Results as $i => $item )
+    {
+        if ($item->username == $idPrompt)
+        {
+            $unset_queue[] = $i;
+        }
+    }
 
-    unset($json[$id]);
+    foreach ( $unset_queue as $index )
+    {
+        unset($json_obj->Results[$index]);
+    }
 
-    $json = json_encode($json, JSON_PRETTY_PRINT);
-    file_put_contents('members.json', $json);
+// rebase the array
+    $json_obj->Results = array_values($json_obj->Results);
 
-    header('location: index.php');
+    $new_json_string = json_encode($json_obj);
 
 }
