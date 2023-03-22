@@ -40,24 +40,25 @@ $title = "Colocation - Location"
     </div>
 </section>
 
-<?php if (isset($Error)) :?>
-<h5><span style="color:red"><?= $Error; ?></span></h5>
-<?php else:?>
 <section class="sale_section layout_padding">
     <div class="container-fluid">
         <div class="heading_container">
+            <?php if (isset($errorMessage)) :?>
+                <h5><span style="color:red"><?=$errorMessage; ?></span></h5>
+            <?php else:?>
             <h2>
                 Colocation disponible
             </h2>
             <p>
                 Voici les différents colocations mis à disposition
             </p>
+            <?php endif;?>
         </div>
         <div class="sale_container">
             <?php foreach($filter as $item) :?>
             <div class="box">
                 <div class="img-box">
-                    <a href="../index.php?action=displayDetail&Id=<?=$item['Id']?>">
+                    <a href="../index.php?action=displayDetail&Id=<?=$item['Id']?>&Localisation=<?=$item['Habitation']?>&Habitation=<?=$item['Localisation']?>">
                     <img src="<?=$item['Image']?>" alt="">
                     </a>
                 </div>
@@ -77,7 +78,6 @@ $title = "Colocation - Location"
         </div>
     </div>
 </section>
-<?php endif;?>
 <?php
 $content = ob_get_clean();
 require "gabarit.php";

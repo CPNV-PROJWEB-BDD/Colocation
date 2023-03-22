@@ -41,7 +41,16 @@ function filter($filter){
     return $fullDetail;
 }
 
+function addFullLocation(){
+    $path = 'data/location.json';
+    $json = file_get_contents($path);
+    $colocation = json_decode($json, true);
+
+    return $colocation;
+}
+
 function filterArrayByKeyValueHabitation($colocation, $index, $detailFilter){
+    $colocationFilter = [];
     if(is_array($colocation)){
         foreach (array_keys($colocation) as $key){
             $temp[$key] = $colocation[$key][$index];
@@ -54,6 +63,8 @@ function filterArrayByKeyValueHabitation($colocation, $index, $detailFilter){
 }
 
 function filterArrayByKeyValueLocalisation($colocation, $index, $detailFilter){
+
+    $colocationFilter = [];
     if(is_array($colocation)){
         foreach (array_keys($colocation) as $key){
             $temp[$key] = $colocation[$key][$index];

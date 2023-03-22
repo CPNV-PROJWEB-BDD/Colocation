@@ -9,9 +9,6 @@ ob_start();
 $title = "Colocation - Detail"
 ?>
 <section class="about_section layout_padding-bottom">
-    <div class="square-box">
-        <img src="content/images/square.png" alt="">
-    </div>
     <div class="container">
         <div class="row">
             <?php foreach ($detail as $item) :?>
@@ -38,6 +35,37 @@ $title = "Colocation - Detail"
                     </a>
                 </div>
             </div>
+            <?php endforeach;?>
+        </div>
+    </div>
+</section>
+<section class="sale_section layout_padding">
+    <div class="container-fluid">
+        <div class="heading_container">
+                <h2>
+                    Voici les similaires colocations mis à disposition
+                </h2>
+        </div>
+        <div class="sale_container">
+            <?php foreach($adSimilar as $item) :?>
+                <div class="box">
+                    <div class="img-box">
+                        <a href="../index.php?action=displayDetail&Id=<?=$item['Id']?>">
+                            <img src="<?=$item['Image']?>" alt="">
+                        </a>
+                    </div>
+                    <div class="detail-box">
+                        <h6>
+                            <?=$item['Habitation']?>
+                        </h6>
+                        <p>
+                            <?=$item['Localisation']?>
+                        </p>
+                        <p>
+                            <?=$item['Pièces']?> pièces
+                        </p>
+                    </div>
+                </div>
             <?php endforeach;?>
         </div>
     </div>
