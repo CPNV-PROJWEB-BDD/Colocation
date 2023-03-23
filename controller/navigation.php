@@ -15,6 +15,18 @@ function displayLocation($values)
     require "view/location.php";
 }
 
-function insertAdJSON(){
-    require "model/adFileRegister.php";
+function Account(){
+    require'view/accountPage.php';
 }
+
+function insertAdJSON($dataAdCreation){
+    
+    if (count($dataAdCreation) == 0) {
+        require 'view/adCreationForm.php';
+    } else {
+        require "model/adFileRegister.php";
+        signUp($dataAdCreation);
+        require 'view/home.php';
+    }
+}
+

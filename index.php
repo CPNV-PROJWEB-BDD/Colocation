@@ -16,8 +16,12 @@ if (isset($_GET['action'])) {
       case 'signUp' :
           signUp($_POST);
           break;
-      case 'insertAdJson':
+      case 'insertAdJSON':
           insertAdJSON($_POST);
+          break;
+       case 'Account':
+            Account(); 
+            break;  
       default :
           home();
       }

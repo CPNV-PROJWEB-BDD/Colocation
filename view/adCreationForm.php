@@ -22,7 +22,7 @@ $title = "adCreationForm";
             <input type="text" placeholder="Entrez le titre de votre annonce" id="adTitle" name="inputAdTitle" required>
 
             <label for="previewPhoto"><b>Image de colocation </b></label>
-            <input type="file" id="inputPhoto" accept="image/jpeg, image/png, image/jpg" onchange="previewImage(event)">
+            <input type="file" id="inputPhoto" name="inputPhoto" accept="image/jpeg, image/png, image/jpg" onchange="previewImage(event)">
             <img id="preview" src="#" alt="Preview Image" width="500px" height="500px" >
 
             <script>
@@ -39,6 +39,9 @@ $title = "adCreationForm";
             <br><br>
             <label for="localisation"><b>Location</b></label>
             <input type="text" placeholder="Entrez le lieu de la colocation" id="Localisation" name="inputLocalisation" required>
+            
+            <label for="adresse"><b>Adresse</b></label>
+            <input type="text" placeholder="chemin de Gransson" id="adresse" name="inputAdresse" required>
 
             <fieldset>
                 <legend>Type d'habitation</legend>

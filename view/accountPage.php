@@ -12,6 +12,7 @@ ob_start();
 
 </head>
 <body>
+    <a href="../index.php?action=Account"></a>
     <div class="container-box">
         <div class="main-body">
             <div class="row gutters-sm">
@@ -22,12 +23,10 @@ ob_start();
                                 <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
                                 <div class="mt-3">
                                     <h4>User</h4>
-                                    <button onclick="window.location.href='adCreationForm.php';">
-                                        crée annonce
-                                    <button onclick="">
-                                        modifier annonce
-                                    <button onclick="askId()">
-                                        supprimer annonce
+                                    
+                                    <button onclick="window.location.href='../index.php?action=insertAdJSON'">crée annonce</button>  
+                                    <button onclick="">modifier annonce</button>  
+                                    <button onclick="askId()">supprimer annonce</button>               
                                 </div>
                             </div>
                         </div>
@@ -62,8 +61,6 @@ ob_start();
                                 <div class="card-body">
                                     <h6 class="d-flex align-items-center mb-6"><i class="material-icons text-info mr-2">Current ad offer</h6>
                                 </div>
-                                <!-- example for the card-->
-                                <!-- TODO fetch data from JSON file-->
                                 <div class="sale_container">
                                     <table id="data-table">
                                     </table>
