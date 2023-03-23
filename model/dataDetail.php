@@ -31,7 +31,7 @@ function getAdSimilar($habitation, $localisation)
 
     $detaiAd = [];
 
-    array_push($detaiAd, $habitation, $localisation);
+    array_push($detaiAd, $localisation, $habitation);
 
     $adSimilar = filterArrayByKeyValue($colocation, $detaiAd);
 
@@ -55,4 +55,18 @@ function filterArrayByKeyValue($colocation, $detailFilter)
         }
         return $colocationFilter;
     }
+}
+
+function extractAd($detail, $adSimilar){
+    $adperfect = [];
+    foreach (array_keys($detail) as $key){
+        foreach (array_keys($adSimilar) as $item){
+            $temp[$key] = $adSimilar[$item];
+            if ($temp[$key] != $detail[$key]){
+                $adperfect[$item] = $adSimilar[$item];
+            }
+        }
+
+    }
+    return $adperfect;
 }

@@ -58,7 +58,7 @@ $title = "Colocation - Location"
             <?php foreach($filter as $item) :?>
             <div class="box">
                 <div class="img-box">
-                    <a href="../index.php?action=displayDetail&Id=<?=$item['Id']?>&Localisation=<?=$item['Habitation']?>&Habitation=<?=$item['Localisation']?>">
+                    <a href="../index.php?action=displayDetail&Id=<?=$item['Id']?>&Habitation=<?=$item['Habitation']?>&Localisation=<?=$item['Localisation']?>">
                     <img src="<?=$item['Image']?>" alt="">
                     </a>
                 </div>

@@ -3,7 +3,7 @@
     "Id" : 1,
     "Image": "../view/content/images/s-1.jpg",
     "Habitation": "Appartement",
-    "Localisation": "Yverdon",
+    "Localisation": "Fribourg",
     "Pièces": 3.5
   },
   {
@@ -11,6 +11,7 @@
     "Image": "../view/content/images/s-2.jpg",
     "Habitation": "Appartement",
     "Localisation": "Ste-croix",
+    "Adresse": "Avenue des alpes",
     "Pièces": 4
   },
   {
@@ -25,6 +26,7 @@
     "Image": "../view/content/images/s-4.jpg",
     "Habitation": "Appartement",
     "Localisation": "Grandson",
+    "Adresse" : "Chemin de Bellevue",
     "Pièces": 2
   },
   {
@@ -38,7 +40,8 @@
     "Id" : 6,
     "Image": "../view/content/images/s-6.jpg",
     "Habitation": "Appartement",
-    "Localisation": "Renens",
+    "Localisation": "Yverdon",
+    "Adresse" : "Chemin des roses",
     "Pièces": 2.5
   }
 ]

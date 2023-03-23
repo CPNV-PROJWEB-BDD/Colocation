@@ -10,6 +10,9 @@ function displayDetail($id, $habitation, $localisation){
         require_once "model/dataDetail.php";
         $detail = getDetail($id);
         $adSimilar = getAdSimilar($habitation, $localisation);
+
+        $adSimilar = extractAd($detail, $adSimilar);
+
     }
     require "view/adDetail.php";
 }
