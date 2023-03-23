@@ -6,4 +6,3 @@ function askId() {
     localStorage.setItem('inputId', inputId)
     alert(inputId)
 }
-console.log(inputId)

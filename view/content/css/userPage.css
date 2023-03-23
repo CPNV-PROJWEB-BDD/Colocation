@@ -119,3 +119,15 @@ table select:focus{
 table img{
     width:  60%;
 }
+
+form {
+    width: 50%;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
