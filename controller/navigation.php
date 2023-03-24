@@ -17,5 +17,4 @@ function displayLocation($values){
     } finally {
         require "view/location.php";
     }
-    require "view/location.php";
 }
