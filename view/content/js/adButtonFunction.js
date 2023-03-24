@@ -3,7 +3,7 @@ let inputId = localStorage.getItem('userInputID')
 
 
 function askId() {
-    inputId = prompt("insérer l'ID de l'annonce que vous souhaitez supprimer")
+    inputId = prompt("insérer l'ID de l'annonce que vous souhaitez supprimer ou modifier")
     document.getElementById("userInput").value
     localStorage.setItem('userInput', userInputID)
      if (document.getElementById('delete-ad').onclick == true){
@@ -17,21 +17,21 @@ function askId() {
 // https://www.tutorialspoint.com/search-by-id-and-remove-object-from-json-array-in-javascript
 //not tested yet
 function deleteAdObject(){
-    fetch('data/location.json')     //cannot find the file in another directory
+    fetch('./data/location.json')     //cannot find the file in another directory
     .then(response => response.json())
     .then(data => {
         const removeById = (data, Id) => {
             const requiredIndex = data.findIndex(el => {
-               return el.Id === String(Id);
-            });
+               return el.Id === String(Id)
+            })
             if(requiredIndex === -1){
                return false;
-            };
-            return !!data.splice(requiredIndex, 1);
-         };
+            }
+            return !!data.splice(requiredIndex, 1)
+         }
     })
-    removeById(data, inputId);
-    console.log(data);
+    removeById(data, inputId)
+    console.log(data)
 }
 
 function modifyAdElements(){
