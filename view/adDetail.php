@@ -41,11 +41,11 @@ $title = "Colocation - Detail"
 <section class="client_section layout_padding">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 px-0">
+            <div class="col-md-8 px-0">
                 <div class="map_container">
                     <div class="map-responsive">
                         <center>
-                            <iframe src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q='<?php str_replace(",", "", str_replace(" ", "+", $item['Adresse']))  ?>'&z=14&output=embed"
+                            <iframe src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=<?=$item['Adresse']?> <?=$item['Localisation']?>&z=14&output=embed"
                                     width="600" height="1200" frameborder="0" style="border:0; width: 100%; height:100%"
                                     allowfullscreen></iframe>
                         </center>

@@ -4,6 +4,7 @@
     "Image": "../view/content/images/s-1.jpg",
     "Habitation": "Appartement",
     "Localisation": "Fribourg",
+    "Adresse": "Rue de Morat",
     "Pièces": 3.5
   },
   {
@@ -11,7 +12,7 @@
     "Image": "../view/content/images/s-2.jpg",
     "Habitation": "Appartement",
     "Localisation": "Ste-croix",
-    "Adresse": "Avenue des alpes",
+    "Adresse": "Rue des Rasses",
     "Pièces": 4
   },
   {
@@ -19,6 +20,7 @@
     "Image": "../view/content/images/s-3.jpg",
     "Habitation": "Maison",
     "Localisation": "Yverdon",
+    "Adresse": "Rue d'Orbe",
     "Pièces": 3.5
   },
   {
@@ -34,6 +36,7 @@
     "Image": "../view/content/images/s-5.jpg",
     "Habitation": "Maison",
     "Localisation": "Yverdon",
+    "Adresse" : "Avenue Général Guisans 12",
     "Pièces": 3.5
   },
   {
