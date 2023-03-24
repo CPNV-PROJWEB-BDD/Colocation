@@ -1,0 +1,50 @@
+[
+  {
+    "Id" : 1,
+    "Image": "../view/content/images/s-1.jpg",
+    "Habitation": "Appartement",
+    "Localisation": "Fribourg",
+    "Adresse": "Rue de Morat",
+    "Pièces": 3.5
+  },
+  {
+    "Id" : 2,
+    "Image": "../view/content/images/s-2.jpg",
+    "Habitation": "Appartement",
+    "Localisation": "Ste-croix",
+    "Adresse": "Rue des Rasses",
+    "Pièces": 4
+  },
+  {
+    "Id" : 3,
+    "Image": "../view/content/images/s-3.jpg",
+    "Habitation": "Maison",
+    "Localisation": "Yverdon",
+    "Adresse": "Rue d'Orbe",
+    "Pièces": 3.5
+  },
+  {
+    "Id" : 4,
+    "Image": "../view/content/images/s-4.jpg",
+    "Habitation": "Appartement",
+    "Localisation": "Grandson",
+    "Adresse" : "Chemin de Bellevue",
+    "Pièces": 2
+  },
+  {
+    "Id" : 5,
+    "Image": "../view/content/images/s-5.jpg",
+    "Habitation": "Maison",
+    "Localisation": "Yverdon",
+    "Adresse" : "Avenue Général Guisans 12",
+    "Pièces": 3.5
+  },
+  {
+    "Id" : 6,
+    "Image": "../view/content/images/s-6.jpg",
+    "Habitation": "Appartement",
+    "Localisation": "Yverdon",
+    "Adresse" : "Chemin des roses",
+    "Pièces": 2.5
+  }
+]
