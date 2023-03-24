@@ -29,8 +29,8 @@ function deleteAdObject(){
             }
             return !!data.splice(requiredIndex, 1)
          }
+         removeById(data, inputId)
     })
-    removeById(data, inputId)
     console.log(data)
 }
 
