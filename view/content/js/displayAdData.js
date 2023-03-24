@@ -1,4 +1,6 @@
-fetch("data/location.json")//cannot find the file in another directory
+//import data from './data/location.json' assert { type: 'JSON' };
+
+fetch('./data/location.json')     //cannot find the file in another directory
     .then(response => response.json())
     .then(data => {
         // get the table element by id
