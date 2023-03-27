@@ -1,50 +1,62 @@
 [
   {
     "Id" : 1,
+    "Titre" : "Appartement original",
     "Image": "../view/content/images/s-1.jpg",
     "Habitation": "Appartement",
     "Localisation": "Fribourg",
     "Adresse": "Rue de Morat",
+    "Description" : "C'est un très beau appartement avec une vue extraordinaire.",
     "Pièces": 3.5
   },
   {
     "Id" : 2,
+    "Titre" : "Appartement moderne",
     "Image": "../view/content/images/s-2.jpg",
     "Habitation": "Appartement",
     "Localisation": "Ste-croix",
     "Adresse": "Rue des Rasses",
+    "Description" : "C'est un très beau appartement avec une vue extraordinaire.",
     "Pièces": 4
   },
   {
     "Id" : 3,
+    "Titre" : "Maison ancienne",
     "Image": "../view/content/images/s-3.jpg",
     "Habitation": "Maison",
     "Localisation": "Yverdon",
     "Adresse": "Rue d'Orbe",
+    "Description" : "C'est une très belle maison avec une vue extraordinaire.",
     "Pièces": 3.5
   },
   {
     "Id" : 4,
+    "Titre" : "Appartement luxe",
     "Image": "../view/content/images/s-4.jpg",
     "Habitation": "Appartement",
     "Localisation": "Grandson",
     "Adresse" : "Chemin de Bellevue",
+    "Description" : "C'est un très beau appartement avec une vue extraordinaire.",
     "Pièces": 2
   },
   {
     "Id" : 5,
+    "Titre" : "Maison tranquille",
     "Image": "../view/content/images/s-5.jpg",
     "Habitation": "Maison",
     "Localisation": "Yverdon",
     "Adresse" : "Avenue Général Guisans 12",
+    "Description" : "C'est une très belle maison avec une vue extraordinaire.",
     "Pièces": 3.5
   },
   {
     "Id" : 6,
+    "Titre" : "Appartement avec balcon",
     "Image": "../view/content/images/s-6.jpg",
     "Habitation": "Appartement",
     "Localisation": "Yverdon",
     "Adresse" : "Chemin des roses",
+    "Description" : "C'est un très beau appartement avec une vue extraordinaire.",
     "Pièces": 2.5
   }
 ]

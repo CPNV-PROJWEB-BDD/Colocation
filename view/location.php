@@ -64,7 +64,7 @@ $title = "Colocation - Location"
                 </div>
                 <div class="detail-box">
                     <h6>
-                        <?=$item['Habitation']?>
+                        <?=$item['Titre']?>
                     </h6>
                     <p>
                         <?=$item['Localisation']?>
