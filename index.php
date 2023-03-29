@@ -13,12 +13,6 @@ if (isset($_GET['action'])) {
       case 'signUp' :
           signUp($_POST);
           break;
-      case 'displaySendFormRequest' :
-          displaySendFormRequest();
-          break;
-      case 'sendFormRequest':
-          sendFormRequest();
-          break;
       case 'displayLogin' :
           displayLogin();
           break;
