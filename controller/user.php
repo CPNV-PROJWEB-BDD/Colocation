@@ -20,6 +20,17 @@ function signUp($signUpDataUser)
 
 }
 
+function login($loginDataUser)
+{
+    if (count($loginDataUser) == 0) {
+        require 'view/loginForm.php';
+    } else {
+        require 'model/login.php';
+        require 'view/home.php';
+    }
+
+}
+
 
 
 
