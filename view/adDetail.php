@@ -48,12 +48,12 @@ $title = "Colocation - Detail"
                     Lieu google maps
                 </h2>
             </div>
-            <div class="align-content-center px-0">
+            <div class="align-content-center">
                 <div class="map_container">
-                    <div class="map-responsive m-5 ">
+                    <div class="map-responsive ">
                         <center>
                             <iframe src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=<?= $item['Adresse'] ?> <?= $item['Localisation'] ?>&z=14&output=embed"
-                                    width="600" height="1200" frameborder="0" style="border:1px; width: 100%; height:100%"
+                                    width="600" height="1800" frameborder="0" style="border:1px; width: 100%; height:100%"
                                     allowfullscreen></iframe>
                         </center>
                     </div>
