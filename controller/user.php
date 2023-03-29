@@ -30,6 +30,14 @@ function login($loginDataUser)
 
 }
 
+function logout()
+{
+    $_SESSION = array();
+    session_destroy();
+    require "view/home.php";
+}
+
+
 
 
 

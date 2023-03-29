@@ -98,6 +98,31 @@ body {
           align-items: center;
 }
 
+.topbar-email,
+.topbar-child1 {
+  font-family: Montserrat-Regular;
+  font-size: 20px;
+  color: white;
+  line-height: 1.7;
+  padding-right: 55px;
+}
+
+.topbar-child2 {
+  color: white;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 45px;
+}
+
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   padding: 10px 15px;
   color: #060606;

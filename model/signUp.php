@@ -2,15 +2,11 @@
 
 <?php
 //Récupération des données du formulaire
-$prenom = $_POST["inputFirstName"];
-$nom = $_POST["inputLastName"];
 $email = $_POST["inputEmailAddress"];
 $motDePasse =$_POST["inputPassword"];
 
 // Création d'un tableau avec les données
 $data = array(
-    "prenom" => $prenom,
-    "nom" => $nom,
     "email" => $email,
     "motDePasse" => $motDePasse
 );
