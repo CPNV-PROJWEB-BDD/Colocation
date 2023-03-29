@@ -26,7 +26,6 @@ function login($loginDataUser)
         require 'view/loginForm.php';
     } else {
         require 'model/login.php';
-        require 'view/home.php';
     }
 
 }
