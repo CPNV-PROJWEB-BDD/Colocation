@@ -23,6 +23,15 @@ if (isset($_GET['action'])) {
       case 'displayDetail' :
           displayDetail($_GET['Id'],$_GET['Habitation'], $_GET['Localisation']);
           break;
+      case 'displayLogin' :
+          displayLogin();
+          break;
+      case 'login' :
+          login($_POST);
+          break;
+      case 'logout' :
+          logout();
+          break;
       default :
           home();
       }

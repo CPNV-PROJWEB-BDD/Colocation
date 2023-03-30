@@ -5,6 +5,7 @@ function home(){
     require "view/home.php";
 }
 
+
 function displayLocation($values){
 
     try{
@@ -18,3 +19,10 @@ function displayLocation($values){
         require "view/location.php";
     }
 }
+
+
+
+function displayLogin(){
+    require "view/loginForm.php";
+}
+

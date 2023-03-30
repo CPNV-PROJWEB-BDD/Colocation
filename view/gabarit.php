@@ -35,6 +35,7 @@
                     <img src="../view/content/images/logo.png" alt="" />
                 </a>
 
+
                 <div class="navbar-collapse" id="">
                     <ul class="navbar-nav justify-content-between ">
                     </ul>
@@ -54,10 +55,22 @@
                 </span>
                         </button>
                     </div>
+
+                    <div class="topbar-child2">
+					<span class="topbar-email">
+                        <?php if (isset($_SESSION['username'])) : ?>
+                            <?=$_SESSION['username']; ?>
+                        <?php endif;?>
+					</span>
+                    </div>
+
+
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
                             <a href="../index.php?action=home">HOME</a>
                             <a href="../index.php?action=signUp">SIGN UP</a>
+                            <a href="../index.php?action=displayLogin">LOGIN</a>
+                            <a href="../index.php?action=logout">se déconnecter</a>
                         </div>
                     </div>
                 </div>

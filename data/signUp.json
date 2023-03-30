@@ -1,8 +1,7 @@
 [
     {
-        "prenom": "Jean-Philippe",
-        "nom": "Chavey",
-        "email": "jcy@cpnv.ch"
+        "email": "ahmed@cpnv.ch",
+        "motDePasse": "aaaa"
     },
     {
         "prenom": "Jean-Philippe",
@@ -13,10 +12,5 @@
         "prenom": "Jean-Philippe",
         "nom": "thjth",
         "email": "jcy@cpnv.ch"
-    },
-    {
-        "prenom": "Jonny",
-        "nom": "Mujanovic",
-        "email": "ahmed@jkebcjkebc"
     }
 ]
