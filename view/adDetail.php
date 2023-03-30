@@ -11,7 +11,9 @@ $title = "Colocation - Detail"
 <section class="about_section layout_padding-bottom">
     <div class="container">
         <div class="row">
-            <?php foreach ($detail as $item) : ?>
+            <?php foreach ($detail
+
+            as $item) : ?>
             <div class="col-md-6">
                 <div class="img-box">
                     <img src="<?= $item['Image'] ?>" alt="">
@@ -21,20 +23,20 @@ $title = "Colocation - Detail"
                 <div class="detail-box">
                     <div class="heading_container">
                         <h2>
-                            <?=$item['Titre']?>
+                            <?= $item['Titre'] ?>
                         </h2>
                     </div>
                     <p>
-                        <strong>Habitation :</strong> <?=$item['Habitation']?>
+                        <strong>Habitation :</strong> <?= $item['Habitation'] ?>
                     </p>
                     <p>
-                        <strong>Description :</strong> <?=$item['Description']?>
+                        <strong>Description :</strong> <?= $item['Description'] ?>
                     </p>
                     <p>
-                        <strong>Pièces :</strong>  <?=$item['Pièces']?>
+                        <strong>Pièces :</strong> <?= $item['Pièces'] ?>
                     </p>
                     <p>
-                        <strong>Adresse :</strong> <?=$item['Adresse']?> <?=$item['Localisation']?>
+                        <strong>Adresse :</strong> <?= $item['Adresse'] ?> <?= $item['Localisation'] ?>
                     </p>
                 </div>
             </div>
@@ -53,11 +55,10 @@ $title = "Colocation - Detail"
                     <div class="map-responsive ">
                         <center>
                             <iframe src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=<?= $item['Adresse'] ?> <?= $item['Localisation'] ?>&z=14&output=embed"
-                                    width="600" height="1800" frameborder="0" style="border:1px; width: 100%; height:100%"
+                                    width="600" height="1800" frameborder="0" style="border:1px; width: 100%; height:400px"
                                     allowfullscreen></iframe>
                         </center>
                     </div>
-                </div>
             </div>
         </div>
     </section>
@@ -79,7 +80,7 @@ $title = "Colocation - Detail"
                     </div>
                     <div class="detail-box">
                         <h6>
-                            <?= $item['Habitation'] ?>
+                            <?= $item['Titre'] ?>
                         </h6>
                         <p>
                             <?= $item['Localisation'] ?>
