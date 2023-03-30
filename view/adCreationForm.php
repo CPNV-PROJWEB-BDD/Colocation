@@ -75,5 +75,3 @@ $title = "adCreationForm";
 <?php
 $content = ob_get_clean();
 require "gabarit.php";
-
-//TODO test if the form will register in the JSON file

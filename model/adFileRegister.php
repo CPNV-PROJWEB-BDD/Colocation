@@ -13,13 +13,13 @@ $id = uniqid();
 // Création d'un tableau avec les données
 $data = array(
     "Id" => $id,
-    "title" => $adTitle,
-    "image" => $locationPhoto,
-    "habitation" => $habitationType,
-    "localisation" => $localisation,
-    "pieces" => $nbPieces,
-    "description" => $description,
-    "adresse" => $adresse,
+    "Title" => $adTitle,
+    "Image" => $locationPhoto,
+    "Habitation" => $habitationType,
+    "Localisation" => $localisation,
+    "Pièces" => $nbPieces,
+    "Description" => $description,
+    "Adresse" => $adresse,
 );
 
 // Chargement du contenu du fichier JSON existant

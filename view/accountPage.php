@@ -1,18 +1,10 @@
 <?php
 ob_start();
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <title><?=$accountPage;?></title>
-    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="content/css/userPage.css">
-    <link rel="stylesheet" type="text/css" href="content/css/bootstrap.css" />
-    <script src="adButtonFunction.js"></script>
-
-</head>
-<body>
+    <script src="view/content/js/adButtonFunction.js"></script>
     <a href="../index.php?action=Account"></a>
+    
     <div class="container-box">
         <div class="main-body">
             <div class="row gutters-sm">
@@ -25,8 +17,8 @@ ob_start();
                                     <h4>User</h4>
                                     
                                     <button onclick="window.location.href='../index.php?action=insertAdJSON'">crée annonce</button>  
-                                    <button onclick="">modifier annonce</button>  
-                                    <button onclick="askId()">supprimer annonce</button>               
+                                    <button onclick="askId()" id="modify-ad">modifier annonce</button>  
+                                    <button onclick="askId()" id="delete-ad">supprimer annonce</button>               
                                 </div>
                             </div>
                         </div>
@@ -64,7 +56,7 @@ ob_start();
                                 <div class="sale_container">
                                     <table id="data-table">
                                     </table>
-                                    <script src="content/js/displayAdData.js"></script>
+                                    <script src="view/content/js/displayAdData.js"></script>
                                 </div>
                             </div>
                         </div>
@@ -73,8 +65,6 @@ ob_start();
             </div>
         </div>
     </div>
-</body>
-</html>
 <?php
 $content = ob_get_clean();
 require "gabarit.php";
