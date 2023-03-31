@@ -20,19 +20,15 @@ function askId() {
     document.getElementById("userInput").value
     localStorage.setItem('userInput', userInputID)
      if (document.getElementById('delete-ad').onclick == true){
-        deleteAdArray()
+        deleteAdArray(inputId);
     }
     else{
-        inputElement = prompt("insérer quel élément que vous souhaitez modifier")
-        document.getElementById("userInputElement")
-        inputModifyData = prompt
-        modifyAdElements()
+        findObjectById(inputId);
     }
 }
 
-// https://www.tutorialspoint.com/search-by-id-and-remove-object-from-json-array-in-javascript
-//not tested yet
-function deleteAdObject(inputId){
+//function de delete the ad object by user inputing the id
+function deleteAdArray(inputId){
     fetch('data/location.json')
     .then(response =>{
         if (!response.ok) {
@@ -55,14 +51,21 @@ function deleteAdObject(inputId){
     console.log(data)
 }
 
+//for the ad modification the functions will open the ad creation form
+//insert the array data of the inputed id
+//let the user modify the ad then delete the ad and create the modified ad as a new ad
+
 // function to append object properties to an HTML form
-function appendObjectToForm(obj) {
+function appendObjectToForm(data) {
+    findObjectById(inputId);
+    window.open("view/adCreationForm.php");
     const form = document.querySelector('adCreationForm');
-    form.querySelector('Title').value = obj.Title;
-    form.querySelector('Image').value = obj.Image;
-    form.querySelector('Habitation').value = obj.Habitation;
-    form.querySelector('Localisation').value = obj.Localisation;
-    form.querySelector('Pieces').value = obj.Pieces;
-    form.querySelector('Description').value = obj.Description;
-    form.querySelector('Adresse').value = obj.Adresse;
+    form.querySelector('Title').value = data.Title;
+    form.querySelector('Image').value = data.Image;
+    form.querySelector('Habitation').value = data.Habitation;
+    form.querySelector('Localisation').value = data.Localisation;
+    form.querySelector('Pieces').value = data.Pieces;
+    form.querySelector('Description').value = data.Description;
+    form.querySelector('Adresse').value = data.Adresse;
+    deleteAdObject(inputId);
 }
