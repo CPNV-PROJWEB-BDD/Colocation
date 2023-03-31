@@ -17,7 +17,7 @@ $data = array(
     "Image" => $locationPhoto,
     "Habitation" => $habitationType,
     "Localisation" => $localisation,
-    "Pièces" => $nbPieces,
+    "Pieces" => $nbPieces,
     "Description" => $description,
     "Adresse" => $adresse,
 );

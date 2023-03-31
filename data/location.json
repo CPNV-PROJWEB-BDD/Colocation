@@ -5,7 +5,7 @@
         "Image": "..\/view\/content\/images\/s-1.jpg",
         "Habitation": "Appartement",
         "Localisation": "Yverdon",
-        "Pi\u00e8ces": 3.5,
+        "Pieces": 3.5,
         "Description": "Loyer 500 CHF net 32m2"
     },
     {
@@ -14,7 +14,7 @@
         "Image": "..\/view\/content\/images\/s-2.jpg",
         "Habitation": "Appartement",
         "Localisation": "Ste-croix",
-        "Pi\u00e8ces": 4,
+        "Pieces": 4,
         "Description": "Loyer 500 CHF net 32m2"
     },
     {
@@ -23,7 +23,7 @@
         "Image": "..\/view\/content\/images\/s-3.jpg",
         "Habitation": "Maison",
         "Localisation": "Yverdon",
-        "Pi\u00e8ces": 3.5,
+        "Pieces": 3.5,
         "Description": "50'000'000 CHF, 50m2"
     },
     {
@@ -32,7 +32,7 @@
         "Image": "..\/view\/content\/images\/s-4.jpg",
         "Habitation": "Appartement",
         "Localisation": "Grandson",
-        "Pi\u00e8ces": 2,
+        "Pieces": 2,
         "Description": "Loyer 500 CHF net 32m2"
     },
     {
@@ -41,7 +41,7 @@
         "Image": "..\/view\/content\/images\/s-5.jpg",
         "Habitation": "Maison",
         "Localisation": "Yverdon",
-        "Pi\u00e8ces": 3.5,
+        "Pieces": 3.5,
         "Description": "50'000'000 CHF, 50m2"
     },
     {
@@ -50,7 +50,7 @@
         "Image": "..\/view\/content\/images\/s-6.jpg",
         "Habitation": "Appartement",
         "Localisation": "Yverdon",
-        "Pi\u00e8ces": 2.5,
+        "Pieces": 2.5,
         "Description": "Loyer 500 CHF net 32m2"
     },
     {
@@ -59,7 +59,7 @@
         "Image": "Capture sce\u0301nario1.PNG",
         "Habitation": "appartement",
         "Localisation": "fsfasf",
-        "Pi\u00e8ces": "2",
+        "Pieces": "2",
         "Description": "sdadsa",
         "Adresse": "fsafsa"
     },
@@ -69,7 +69,7 @@
         "Image": "Capture sce\u0301nario1.PNG",
         "Habitation": "appartement",
         "Localisation": "dsada",
-        "Pi\u00e8ces": "2",
+        "Pieces": "2",
         "Description": "sdasd",
         "Adresse": "dasdsa"
     },
@@ -79,7 +79,7 @@
         "Image": "Capture sce\u0301nario1.PNG",
         "Habitation": "appartement",
         "Localisation": "dsada",
-        "Pi\u00e8ces": "2",
+        "Pieces": "2",
         "Description": "sdasd",
         "Adresse": "dasdsa"
     },
@@ -89,7 +89,7 @@
         "Image": "Capture sce\u0301nario1.PNG",
         "Habitation": "appartement",
         "Localisation": "dsada",
-        "Pi\u00e8ces": "2",
+        "Pieces": "2",
         "Description": "sdasd",
         "Adresse": "dasdsa"
     },
@@ -99,7 +99,7 @@
         "Image": "Capture sce\u0301nario1.PNG",
         "Habitation": "maison",
         "Localisation": "lo",
-        "Pi\u00e8ces": "4",
+        "Pieces": "4",
         "Description": "cher",
         "Adresse": "mo"
     },
@@ -109,7 +109,7 @@
         "Image": "Capture sce\u0301nario1.PNG",
         "Habitation": "maison",
         "Localisation": "lo",
-        "Pi\u00e8ces": "4",
+        "Pieces": "4",
         "Description": "cher",
         "Adresse": "mo"
     },
@@ -119,7 +119,7 @@
         "Image": "Capture sce\u0301nario1.PNG",
         "Habitation": "maison",
         "Localisation": "asd",
-        "Pi\u00e8ces": "7",
+        "Pieces": "7",
         "Description": "wqe",
         "Adresse": "qwe"
     },
@@ -129,8 +129,68 @@
         "Image": "Capture sce\u0301nario1.PNG",
         "Habitation": "maison",
         "Localisation": "asd",
-        "Pi\u00e8ces": "7",
+        "Pieces": "7",
         "Description": "wqe",
         "Adresse": "qwe"
+    },
+    {
+        "Id": "642688929d3da",
+        "Title": "yxy",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "maison",
+        "Localisation": "yyy",
+        "Pieces": "6",
+        "Description": "yyy",
+        "Adresse": "yyy"
+    },
+    {
+        "Id": "6426889dc0b91",
+        "Title": "yxy",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "maison",
+        "Localisation": "yyy",
+        "Pieces": "6",
+        "Description": "yyy",
+        "Adresse": "yyy"
+    },
+    {
+        "Id": "642688baa3971",
+        "Title": "yxy",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "maison",
+        "Localisation": "yyy",
+        "Pieces": "6",
+        "Description": "yyy",
+        "Adresse": "yyy"
+    },
+    {
+        "Id": "6426895c15e3a",
+        "Title": "yxy",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "maison",
+        "Localisation": "yyy",
+        "Pieces": "6",
+        "Description": "yyy",
+        "Adresse": "yyy"
+    },
+    {
+        "Id": "64268a078a78e",
+        "Title": "aa",
+        "Image": "",
+        "Habitation": "appartement",
+        "Localisation": "aa",
+        "Pieces": "1",
+        "Description": "aa",
+        "Adresse": "aa"
+    },
+    {
+        "Id": "64268aadd699d",
+        "Title": "aa",
+        "Image": "",
+        "Habitation": "appartement",
+        "Localisation": "aa",
+        "Pieces": "1",
+        "Description": "aa",
+        "Adresse": "aa"
     }
 ]
