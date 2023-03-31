@@ -24,5 +24,13 @@
     {
         "email": "logan@cpnv.ch",
         "motDePasse": "aaaa"
+    },
+    {
+        "email": "aaa@cpv.ch",
+        "motDePasse": "aaaa"
+    },
+    {
+        "email": "selma@cpnv.ch",
+        "motDePasse": "aaaa"
     }
 ]

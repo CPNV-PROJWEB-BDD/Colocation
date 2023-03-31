@@ -31,6 +31,7 @@ if ($motDePasse == $verificationMDP) {
     // Stockage du JSON dans le fichierf
         file_put_contents($file, $json_data);
 
+        $_SESSION['username'] = $email;
 
         require "view/home.php";
         exit();
