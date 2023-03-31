@@ -12,5 +12,17 @@
         "prenom": "Jean-Philippe",
         "nom": "thjth",
         "email": "jcy@cpnv.ch"
+    },
+    {
+        "email": "adem@cpnv.ch",
+        "motDePasse": "aaaa"
+    },
+    {
+        "email": "Wyssa@cpnv.ch",
+        "motDePasse": "aaaa"
+    },
+    {
+        "email": "logan@cpnv.ch",
+        "motDePasse": "aaaa"
     }
 ]
