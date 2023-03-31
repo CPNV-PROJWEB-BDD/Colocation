@@ -1,6 +1,7 @@
 let inputId = localStorage.getItem('userInputID')
 let inputElement = localStorage.getItem('userInputElement')
 
+//this function will search in the location.json file the specified array by its id
 function findObjectById(inputId) {
     fetch('data/location.json')
     .then(response =>{
@@ -10,7 +11,7 @@ function findObjectById(inputId) {
         return response.json()
     })
     .then(data =>{
-        return data.find(obj => obj.id === inputId);
+        return data.find(data => data.id === inputId);
     })
     
 }
