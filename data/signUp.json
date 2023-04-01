@@ -32,5 +32,9 @@
     {
         "email": "selma@cpnv.ch",
         "motDePasse": "aaaa"
+    },
+    {
+        "email": "jonathan@cpnv.ch",
+        "motDePasse": "kebab"
     }
 ]

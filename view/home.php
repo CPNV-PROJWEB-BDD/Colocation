@@ -8,7 +8,7 @@
 
 // tampon de flux stocké en mémoire
 ob_start();
-$title = "RentASnow - Accueil";
+$title = "Colocation - Home";
 ?>
 
     <!-- find section -->
@@ -89,91 +89,28 @@ $title = "RentASnow - Accueil";
         <div class="container-fluid">
             <div class="heading_container">
                 <h2>
-                    House For Sale
+                    Nos tops location
                 </h2>
                 <p>
-                    There are many variations of passages of Lorem Ipsum available, but the
+                    Voici le top 3 des meilleurs biens
                 </p>
             </div>
             <div class="sale_container">
+                <?php for($i=0;$i <3; $i++) :?>
                 <div class="box">
                     <div class="img-box">
-                        <img src="../view/content/images/s-1.jpg" alt="">
+                        <img src="<?=$biens[$i]['Image']?>" alt="">
                     </div>
                     <div class="detail-box">
                         <h6>
-                            apertments house
+                            <?=$biens[$i]['Titre']?>
                         </h6>
                         <p>
-                            There are many variations of passages of Lorem Ipsum available, but
+                            <?=$biens[$i]['Localisation']?>
                         </p>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="img-box">
-                        <img src="../view/content/images/s-2.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            apertments house
-                        </h6>
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-box">
-                        <img src="../view/content/images/s-3.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            apertments house
-                        </h6>
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-box">
-                        <img src="../view/content/images/s-4.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            apertments house
-                        </h6>
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-box">
-                        <img src="../view/content/images/s-5.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            apertments house
-                        </h6>
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-box">
-                        <img src="../view/content/images/s-6.jpg" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            apertments house
-                        </h6>
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but
-                        </p>
-                    </div>
-                </div>
+                <?php endfor;?>
             </div>
             <div class="btn-box">
                 <a href="">

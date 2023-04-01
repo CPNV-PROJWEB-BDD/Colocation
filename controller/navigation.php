@@ -2,10 +2,14 @@
 
 
 function home(){
-    require "view/home.php";
+    try {
+        require_once "model/dataBrowseAd.php";
+        $biens = addFullLocation();
+    }
+    finally {
+        require "view/home.php";
+    }
 }
-
-
 function displayLocation($values){
 
     try{
@@ -19,8 +23,6 @@ function displayLocation($values){
         require "view/location.php";
     }
 }
-
-
 
 function displayLogin(){
     require "view/loginForm.php";
