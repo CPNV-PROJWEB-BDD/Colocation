@@ -89,17 +89,19 @@ $title = "Colocation - Home";
         <div class="container-fluid">
             <div class="heading_container">
                 <h2>
-                    Nos tops location
+                    Nos tops locations
                 </h2>
                 <p>
-                    Voici le top 3 des meilleurs biens
+                    Voici le top 3 des biens les plus vus
                 </p>
             </div>
             <div class="sale_container">
                 <?php for($i=0;$i <3; $i++) :?>
                 <div class="box">
                     <div class="img-box">
+                        <a href="../index.php?action=displayDetail&Id=<?=$biens[$i]['Id']?>&Habitation=<?=$biens[$i]['Habitation']?>&Localisation=<?=$biens[$i]['Localisation']?>">
                         <img src="<?=$biens[$i]['Image']?>" alt="">
+                        </a>
                     </div>
                     <div class="detail-box">
                         <h6>
@@ -309,72 +311,36 @@ $title = "Colocation - Home";
         <div class="container-fluid">
             <div class="heading_container">
                 <h2>
-                    What is Says Our Customer
+                    Voici nos fameux développeurs !!
                 </h2>
             </div>
             <div class="client_container">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
+                        <?php $i = 0?>
+                        <?php foreach ($develop as $item) :?>
+                        <?php if ($i == 0) :?>
                         <div class="carousel-item active">
-                            <div class="box">
-                                <div class="img-box">
-                                    <img src="../view/content/images/client.jpg" alt="">
-                                </div>
-                                <div class="detail-box">
-                                    <h5>
-                                        <span>Majority</span>
-                                        <hr>
-                                    </h5>
-                                    <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority
-                                        have suffered
-                                        alteration
-                                        in some form, by injected humour, or randomised words which don't look even
-                                        slightly believable.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <?php $i++;?>
+                        <?php else :?>
                         <div class="carousel-item">
+                        <?php endif;?>
                             <div class="box">
                                 <div class="img-box">
-                                    <img src="../view/content/images/client.jpg" alt="">
+                                    <img src="<?=$item['Image']?>" alt="">
                                 </div>
                                 <div class="detail-box">
                                     <h5>
-                                        <span>Majority</span>
+                                        <span><?=$item['Prénom']?> <?=$item['Nom']?></span>
                                         <hr>
                                     </h5>
                                     <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority
-                                        have suffered
-                                        alteration
-                                        in some form, by injected humour, or randomised words which don't look even
-                                        slightly believable.
+                                        <?=$item['Description']?>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="box">
-                                <div class="img-box">
-                                    <img src="../view/content/images/client.jpg" alt="">
-                                </div>
-                                <div class="detail-box">
-                                    <h5>
-                                        <span>Majority</span>
-                                        <hr>
-                                    </h5>
-                                    <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority
-                                        have suffered
-                                        alteration
-                                        in some form, by injected humour, or randomised words which don't look even
-                                        slightly believable.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach;?>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                         <span class="sr-only">Previous</span>
