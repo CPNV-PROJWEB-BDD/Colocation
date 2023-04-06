@@ -7,6 +7,7 @@
  * @file  24.02.2023
  */
 
+require 'model/dataBrowseAd.php';
 
 function signUp($signUpDataUser)
 {
@@ -14,7 +15,8 @@ function signUp($signUpDataUser)
         require 'view/signUpForm.php';
     } else {
         require 'model/signUp.php';
-        signUp($signUpDataUser);
+        $biens = addFullLocation();
+        $develop = addFullDevelop();
         require 'view/home.php';
     }
 
@@ -26,6 +28,9 @@ function login($loginDataUser)
         require 'view/loginForm.php';
     } else {
         require 'model/login.php';
+        $biens = addFullLocation();
+        $develop = addFullDevelop();
+        require 'view/home.php';
     }
 
 }
@@ -34,7 +39,9 @@ function logout()
 {
     $_SESSION = array();
     session_destroy();
-    require "view/home.php";
+    $biens = addFullLocation();
+    $develop = addFullDevelop();
+    require 'view/home.php';
 }
 
 

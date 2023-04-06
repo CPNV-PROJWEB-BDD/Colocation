@@ -67,10 +67,13 @@
 
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
-                            <a href="../index.php?action=home">HOME</a>
-                            <a href="../index.php?action=signUp">SIGN UP</a>
-                            <a href="../index.php?action=displayLogin">LOGIN</a>
-                            <a href="../index.php?action=logout">se déconnecter</a>
+                            <a href="../index.php?action=home">ACCUEIL</a>
+                            <?php if(!isset($_SESSION['username'])) :?>
+                            <a href="../index.php?action=signUp">S'ENREGISTRER</a>
+                            <a href="../index.php?action=displayLogin">SE CONNECTER</a>
+                            <?php else:?>
+                            <a href="../index.php?action=logout">SE DECONNECTER</a>
+                            <?php endif;?>
                         </div>
                     </div>
                 </div>
@@ -85,12 +88,12 @@
                 <div class="col-md-4 offset-md-1">
                     <div class="detail-box">
                         <h1>
-                            <span> Modern</span> <br>
-                            Apartment <br>
-                            House
+                            <span> Colocation</span> <br>
+                            Appartement <br>
+                            Maison
                         </h1>
                         <p>
-                            It is a long established fact that a reader will be distracted by the readable content of
+                            Plein de biens mis à disposition rien que pour vous
                         </p>
                         <div class="btn-box">
 
