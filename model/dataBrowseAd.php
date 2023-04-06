@@ -6,6 +6,7 @@
  * @version 23.02.2023
  */
 
+//Cette fonction permettra de d'extraire les choix de la barre de la recherche et de les ajoutés dans un tableau
 function extractFilter($filter){
     $habitation = $filter['habitation'];
     $localisation = $filter['localisation'];
@@ -25,7 +26,7 @@ function filter($filter){
     //Définir les détails
     $detailFilter = extractFilter($filter);
 
-    //Vérifie si
+    //Vérifie si il y a un filtre pré-déterminé
     if ($detailFilter[0] == ""){
         $midDetail = $colocation;
     }else{
@@ -61,7 +62,6 @@ function filterArrayByKeyValueHabitation($colocation, $index, $detailFilter){
     }
     return $colocationFilter;
 }
-
 function filterArrayByKeyValueLocalisation($colocation, $index, $detailFilter){
 
     $colocationFilter = [];
