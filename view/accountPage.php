@@ -2,7 +2,7 @@
 ob_start();
 ?>
     <link rel="stylesheet" type="text/css" href="content/css/userPage.css">
-    <script src="view/content/js/adButtonFunction.js"></script>
+    <script src="../view/content/js/adButtonFunction.js"></script>
     <a href="../index.php?action=Account"></a>
     
     <div class="container-box">
@@ -56,7 +56,7 @@ ob_start();
                                 <div class="sale_container">
                                     <table id="data-table">
                                     </table>
-                                    <script src="view/content/js/displayAdData.js"></script>
+                                    <script src="../view/content/js/displayAdData.js"></script>
                                 </div>
                             </div>
                         </div>
