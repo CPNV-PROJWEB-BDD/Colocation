@@ -5,13 +5,13 @@ function home(){
     try {
         require_once "model/dataBrowseAd.php";
         $biens = addFullLocation();
+        $develop = addFullDevelop();
     }
     finally {
         require "view/home.php";
     }
 }
 function displayLocation($values){
-
     try{
         require_once "model/dataBrowseAd.php";
         $filter = filter($values);

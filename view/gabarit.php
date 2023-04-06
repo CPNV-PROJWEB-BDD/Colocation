@@ -67,12 +67,12 @@
 
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
-                            <a href="../index.php?action=home">HOME</a>
+                            <a href="../index.php?action=home">ACCUEIL</a>
                             <?php if(!isset($_SESSION['username'])) :?>
-                            <a href="../index.php?action=signUp">SIGN UP</a>
-                            <a href="../index.php?action=displayLogin">LOGIN</a>
+                            <a href="../index.php?action=signUp">S'ENREGISTRER</a>
+                            <a href="../index.php?action=displayLogin">SE CONNECTER</a>
                             <?php else:?>
-                            <a href="../index.php?action=logout">LOGOUT</a>
+                            <a href="../index.php?action=logout">SE DECONNECTER</a>
                             <?php endif;?>
                         </div>
                     </div>

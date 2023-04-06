@@ -36,5 +36,13 @@
     {
         "email": "jonathan@cpnv.ch",
         "motDePasse": "kebab"
+    },
+    {
+        "email": "binks@cpnv.ch",
+        "motDePasse": "jony"
+    },
+    {
+        "email": "yespapa@cpnv.ch",
+        "motDePasse": "eatingsugar"
     }
 ]

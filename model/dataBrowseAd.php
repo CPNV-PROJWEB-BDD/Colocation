@@ -49,6 +49,13 @@ function addFullLocation(){
 
     return $colocation;
 }
+function addFullDevelop(){
+    $path = 'data/developpeurs.json';
+    $json = file_get_contents($path);
+    $colocation = json_decode($json, true);
+
+    return $colocation;
+}
 
 function filterArrayByKeyValueHabitation($colocation, $index, $detailFilter){
     $colocationFilter = [];
