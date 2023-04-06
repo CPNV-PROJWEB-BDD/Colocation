@@ -43,22 +43,28 @@ $title = "Colocation - Location"
 <section class="sale_section layout_padding">
     <div class="container-fluid">
         <div class="heading_container">
+            <?php if (isset($errorMessage)) :?>
+                <h5><span style="color:red"><?=$errorMessage; ?></span></h5>
+            <?php else:?>
             <h2>
                 Colocation disponible
             </h2>
             <p>
                 Voici les différents colocations mis à disposition
             </p>
+            <?php endif;?>
         </div>
         <div class="sale_container">
             <?php foreach($filter as $item) :?>
             <div class="box">
                 <div class="img-box">
+                    <a href="../index.php?action=displayDetail&Id=<?=$item['Id']?>&Habitation=<?=$item['Habitation']?>&Localisation=<?=$item['Localisation']?>">
                     <img src="<?=$item['Image']?>" alt="">
+                    </a>
                 </div>
                 <div class="detail-box">
                     <h6>
-                        <?=$item['Habitation']?>
+                        <?=$item['Titre']?>
                     </h6>
                     <p>
                         <?=$item['Localisation']?>

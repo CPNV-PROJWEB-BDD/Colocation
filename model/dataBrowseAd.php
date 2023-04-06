@@ -6,7 +6,6 @@
  * @version 23.02.2023
  */
 
-
 function extractFilter($filter){
     $habitation = $filter['habitation'];
     $localisation = $filter['localisation'];
@@ -18,47 +17,15 @@ function extractFilter($filter){
     return $resultFilter;
 }
 function filter($filter){
+    //Cherche les données
+    $path = 'data/location.json';
+    $json = file_get_contents($path);
+    $colocation = json_decode($json, true);
 
-    $colocation = array(
-        array(
-            'Image' => '../view/content/images/s-1.jpg',
-            'Habitation' => 'Appartement',
-            'Localisation' => 'Yverdon',
-            'Pièces' => 3.5
-        ),
-        array(
-            'Image' => '../view/content/images/s-2.jpg',
-            'Habitation' => 'Appartement',
-            'Localisation' => 'Ste-Croix',
-            'Pièces' => 4
-        ),
-        array(
-            'Image' => '../view/content/images/s-3.jpg',
-            'Habitation' => 'Maison',
-            'Localisation' => 'Yverdon',
-            'Pièces' => 3.5
-        ),
-        array(
-            'Image' => '../view/content/images/s-4.jpg',
-            'Habitation' => 'Appartement',
-            'Localisation' => 'Grandson',
-            'Pièces' => 2
-        ),
-        array(
-            'Image' => '../view/content/images/s-5.jpg',
-            'Habitation' => 'Maison',
-            'Localisation' => 'Fribourg',
-            'Pièces' => 3.5
-        ),
-        array(
-            'Image' => '../view/content/images/s-6.jpg',
-            'Habitation' => 'Appartement',
-            'Localisation' => 'Yverdon',
-            'Pièces' => 2.5
-        )
-    );
-
+    //Définir les détails
     $detailFilter = extractFilter($filter);
+
+    //Vérifie si
     if ($detailFilter[0] == ""){
         $midDetail = $colocation;
     }else{
@@ -74,7 +41,16 @@ function filter($filter){
     return $fullDetail;
 }
 
+function addFullLocation(){
+    $path = 'data/location.json';
+    $json = file_get_contents($path);
+    $colocation = json_decode($json, true);
+
+    return $colocation;
+}
+
 function filterArrayByKeyValueHabitation($colocation, $index, $detailFilter){
+    $colocationFilter = [];
     if(is_array($colocation)){
         foreach (array_keys($colocation) as $key){
             $temp[$key] = $colocation[$key][$index];
@@ -87,6 +63,8 @@ function filterArrayByKeyValueHabitation($colocation, $index, $detailFilter){
 }
 
 function filterArrayByKeyValueLocalisation($colocation, $index, $detailFilter){
+
+    $colocationFilter = [];
     if(is_array($colocation)){
         foreach (array_keys($colocation) as $key){
             $temp[$key] = $colocation[$key][$index];
@@ -97,7 +75,3 @@ function filterArrayByKeyValueLocalisation($colocation, $index, $detailFilter){
     }
     return $colocationFilter;
 }
-
-
-
-

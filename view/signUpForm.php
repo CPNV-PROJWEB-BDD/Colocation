@@ -33,7 +33,7 @@ $title = "signUp";
             <input type="text" placeholder="Entrez-votre nom" id="nom" name="inputLastName" required>
 
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Entrez-votre Email" id="email" name="inputEmailAddress" required>
+            <input type="email" placeholder="Entrez-votre Email" id="email" name="inputEmailAddress" required>
 
             <label for="inputPassword"><b>Password</b></label>
             <input type="password" placeholder="Entrez-votre mot de passe" id="inputPassword" name="inputPassword"
