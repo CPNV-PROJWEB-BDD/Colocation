@@ -114,11 +114,7 @@ $title = "Colocation - Home";
                 </div>
                 <?php endfor;?>
             </div>
-            <div class="btn-box">
-                <a href="">
-                    Find More
-                </a>
-            </div>
+
         </div>
     </section>
 
