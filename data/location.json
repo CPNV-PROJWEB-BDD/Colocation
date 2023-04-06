@@ -1,62 +1,206 @@
 [
-  {
-    "Id" : 1,
-    "Titre" : "Appartement original",
-    "Image": "../view/content/images/s-1.jpg",
-    "Habitation": "Appartement",
-    "Localisation": "Fribourg",
-    "Adresse": "Rue de Morat",
-    "Description" : "C'est un très beau appartement avec une vue extraordinaire.",
-    "Pièces": 3.5
-  },
-  {
-    "Id" : 2,
-    "Titre" : "Appartement moderne",
-    "Image": "../view/content/images/s-2.jpg",
-    "Habitation": "Appartement",
-    "Localisation": "Ste-croix",
-    "Adresse": "Rue des Rasses",
-    "Description" : "C'est un très beau appartement avec une vue extraordinaire.",
-    "Pièces": 4
-  },
-  {
-    "Id" : 3,
-    "Titre" : "Maison ancienne",
-    "Image": "../view/content/images/s-3.jpg",
-    "Habitation": "Maison",
-    "Localisation": "Yverdon",
-    "Adresse": "Rue d'Orbe",
-    "Description" : "C'est une très belle maison avec une vue extraordinaire.",
-    "Pièces": 3.5
-  },
-  {
-    "Id" : 4,
-    "Titre" : "Appartement luxe",
-    "Image": "../view/content/images/s-4.jpg",
-    "Habitation": "Appartement",
-    "Localisation": "Grandson",
-    "Adresse" : "Chemin de Bellevue",
-    "Description" : "C'est un très beau appartement avec une vue extraordinaire.",
-    "Pièces": 2
-  },
-  {
-    "Id" : 5,
-    "Titre" : "Maison tranquille",
-    "Image": "../view/content/images/s-5.jpg",
-    "Habitation": "Maison",
-    "Localisation": "Yverdon",
-    "Adresse" : "Avenue Général Guisans 12",
-    "Description" : "C'est une très belle maison avec une vue extraordinaire.",
-    "Pièces": 3.5
-  },
-  {
-    "Id" : 6,
-    "Titre" : "Appartement avec balcon",
-    "Image": "../view/content/images/s-6.jpg",
-    "Habitation": "Appartement",
-    "Localisation": "Yverdon",
-    "Adresse" : "Chemin des roses",
-    "Description" : "C'est un très beau appartement avec une vue extraordinaire.",
-    "Pièces": 2.5
-  }
+    {
+        "Id": 1,
+        "Title": "Joli appartement",
+        "Image": "..\/view\/content\/images\/s-1.jpg",
+        "Habitation": "Appartement",
+        "Localisation": "Yverdon",
+        "Pieces": 3.5,
+        "Description": "Loyer 500 CHF net 32m2"
+    },
+    {
+        "Id": 2,
+        "Title": "Joli appartement",
+        "Image": "..\/view\/content\/images\/s-2.jpg",
+        "Habitation": "Appartement",
+        "Localisation": "Ste-croix",
+        "Pieces": 4,
+        "Description": "Loyer 500 CHF net 32m2"
+    },
+    {
+        "Id": 3,
+        "Title": "Joli maison",
+        "Image": "..\/view\/content\/images\/s-3.jpg",
+        "Habitation": "Maison",
+        "Localisation": "Yverdon",
+        "Pieces": 3.5,
+        "Description": "50'000'000 CHF, 50m2"
+    },
+    {
+        "Id": 4,
+        "Title": "Joli appartement",
+        "Image": "..\/view\/content\/images\/s-4.jpg",
+        "Habitation": "Appartement",
+        "Localisation": "Grandson",
+        "Pieces": 2,
+        "Description": "Loyer 500 CHF net 32m2"
+    },
+    {
+        "Id": 5,
+        "Title": "Joli maison",
+        "Image": "..\/view\/content\/images\/s-5.jpg",
+        "Habitation": "Maison",
+        "Localisation": "Yverdon",
+        "Pieces": 3.5,
+        "Description": "50'000'000 CHF, 50m2"
+    },
+    {
+        "Id": 6,
+        "Title": "Joli appartement",
+        "Image": "..\/view\/content\/images\/s-6.jpg",
+        "Habitation": "Appartement",
+        "Localisation": "Yverdon",
+        "Pieces": 2.5,
+        "Description": "Loyer 500 CHF net 32m2"
+    },
+    {
+        "Id": "64259a467785d",
+        "Title": "asdsf",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "appartement",
+        "Localisation": "fsfasf",
+        "Pieces": "2",
+        "Description": "sdadsa",
+        "Adresse": "fsafsa"
+    },
+    {
+        "Id": "64259a5a14e9d",
+        "Title": "asdas",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "appartement",
+        "Localisation": "dsada",
+        "Pieces": "2",
+        "Description": "sdasd",
+        "Adresse": "dasdsa"
+    },
+    {
+        "Id": "64259abc2b0dc",
+        "Title": "asdas",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "appartement",
+        "Localisation": "dsada",
+        "Pieces": "2",
+        "Description": "sdasd",
+        "Adresse": "dasdsa"
+    },
+    {
+        "Id": "64259ac2bdca7",
+        "Title": "asdas",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "appartement",
+        "Localisation": "dsada",
+        "Pieces": "2",
+        "Description": "sdasd",
+        "Adresse": "dasdsa"
+    },
+    {
+        "Id": "64259b76e5a11",
+        "Title": "test",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "maison",
+        "Localisation": "lo",
+        "Pieces": "4",
+        "Description": "cher",
+        "Adresse": "mo"
+    },
+    {
+        "Id": "64259b7d4e85d",
+        "Title": "test",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "maison",
+        "Localisation": "lo",
+        "Pieces": "4",
+        "Description": "cher",
+        "Adresse": "mo"
+    },
+    {
+        "Id": "64259bdb22594",
+        "Title": "asd",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "maison",
+        "Localisation": "asd",
+        "Pieces": "7",
+        "Description": "wqe",
+        "Adresse": "qwe"
+    },
+    {
+        "Id": "64259be694585",
+        "Title": "asd",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "maison",
+        "Localisation": "asd",
+        "Pieces": "7",
+        "Description": "wqe",
+        "Adresse": "qwe"
+    },
+    {
+        "Id": "642688929d3da",
+        "Title": "yxy",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "maison",
+        "Localisation": "yyy",
+        "Pieces": "6",
+        "Description": "yyy",
+        "Adresse": "yyy"
+    },
+    {
+        "Id": "6426889dc0b91",
+        "Title": "yxy",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "maison",
+        "Localisation": "yyy",
+        "Pieces": "6",
+        "Description": "yyy",
+        "Adresse": "yyy"
+    },
+    {
+        "Id": "642688baa3971",
+        "Title": "yxy",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "maison",
+        "Localisation": "yyy",
+        "Pieces": "6",
+        "Description": "yyy",
+        "Adresse": "yyy"
+    },
+    {
+        "Id": "6426895c15e3a",
+        "Title": "yxy",
+        "Image": "Capture sce\u0301nario1.PNG",
+        "Habitation": "maison",
+        "Localisation": "yyy",
+        "Pieces": "6",
+        "Description": "yyy",
+        "Adresse": "yyy"
+    },
+    {
+        "Id": "64268a078a78e",
+        "Title": "aa",
+        "Image": "",
+        "Habitation": "appartement",
+        "Localisation": "aa",
+        "Pieces": "1",
+        "Description": "aa",
+        "Adresse": "aa"
+    },
+    {
+        "Id": "64268aadd699d",
+        "Title": "aa",
+        "Image": "",
+        "Habitation": "appartement",
+        "Localisation": "aa",
+        "Pieces": "1",
+        "Description": "aa",
+        "Adresse": "aa"
+    },
+    {
+        "Id": "6426c912cf738",
+        "Title": "ff",
+        "Image": "",
+        "Habitation": "maison",
+        "Localisation": "fff",
+        "Pieces": "9",
+        "Description": "ffff",
+        "Adresse": "fffff"
+    }
 ]

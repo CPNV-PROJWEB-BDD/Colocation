@@ -11,6 +11,11 @@ function home(){
         require "view/home.php";
     }
 }
+
+
+
+
+
 function displayLocation($values){
     try{
         require_once "model/dataBrowseAd.php";
@@ -21,6 +26,23 @@ function displayLocation($values){
         }
     } finally {
         require "view/location.php";
+    }
+}
+
+
+
+function Account(){
+    require'view/accountPage.php';
+}
+
+function insertAdJSON($dataAdCreation){
+    
+    if (count($dataAdCreation) == 0) {
+        require 'view/adCreationForm.php';
+    } else {
+        require "model/adFileRegister.php";
+        signUp($dataAdCreation);
+        require 'view/home.php';
     }
 }
 
