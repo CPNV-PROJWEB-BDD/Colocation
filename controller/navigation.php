@@ -24,7 +24,5 @@ function displayLocation($values){
     }
 }
 
-function displayLogin(){
-    require "view/loginForm.php";
-}
+
 
