@@ -33,12 +33,9 @@ if ($motDePasse == $verificationMDP) {
 
         $_SESSION['username'] = $email;
 
-        require "view/home.php";
-        exit();
+        return;
 }else{
 require "view/signUpForm.php";
 exit();
 }
-
 ?>
-

@@ -12,7 +12,6 @@ function displayDetail($id, $habitation, $localisation){
         $adSimilar = getAdSimilar($habitation, $localisation);
 
         $adSimilar = extractAd($detail, $adSimilar);
-
     }
     require "view/adDetail.php";
 }

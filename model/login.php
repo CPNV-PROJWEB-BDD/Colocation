@@ -30,9 +30,8 @@ foreach ($users as $item) {
 // Les informations de connexion sont correctes, créer une session
 if ($verification==true) {
     $_SESSION['username'] = $mail;
-    // Rediriger vers la page d'accueil
-    require "view/home.php";
-    exit();
+
+    return;
 } else {
     // Les informations de connexion sont incorrectes, afficher un message d'erreur
     echo 'Nom d\'utilisateur ou mot de passe incorrect.';
