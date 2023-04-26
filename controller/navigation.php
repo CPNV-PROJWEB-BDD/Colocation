@@ -27,7 +27,6 @@ function displayLocation($values){
 }
 
 
-
 function Account(){
     require'view/accountPage.php';
 }
@@ -43,7 +42,4 @@ function insertAdJSON($dataAdCreation){
     }
 }
 
-function displayLogin(){
-    require "view/loginForm.php";
-}
 

@@ -70,7 +70,7 @@
                             <a href="../index.php?action=home">ACCUEIL</a>
                             <?php if(!isset($_SESSION['username'])) :?>
                             <a href="../index.php?action=signUp">S'ENREGISTRER</a>
-                            <a href="../index.php?action=displayLogin">SE CONNECTER</a>
+                            <a href="../index.php?action=login">SE CONNECTER</a>
                             <?php else:?>
                                 <a href="../index.php?action=Account">COMPTE</a>
                             <a href="../index.php?action=logout">SE DECONNECTER</a>
