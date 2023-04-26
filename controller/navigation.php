@@ -13,9 +13,6 @@ function home(){
 }
 
 
-
-
-
 function displayLocation($values){
     try{
         require_once "model/dataBrowseAd.php";
