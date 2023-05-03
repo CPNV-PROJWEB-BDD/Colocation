@@ -52,5 +52,9 @@
     {
         "email": "aaaa@jerg",
         "motDePasse": "bbbb"
+    },
+    {
+        "email": "egreg@uzk",
+        "motDePasse": "aaaa"
     }
 ]
