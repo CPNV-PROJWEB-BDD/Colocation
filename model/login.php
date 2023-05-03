@@ -14,7 +14,7 @@ $password = $_POST['inputPassword'];
 
 
 // Ouvrir le fichier JSON contenant les informations de connexion
-$data = file_get_contents('data/signUp.json');
+$data = file_get_contents('data/users.json');
 // Convertir les données JSON en un tableau associatif PHP
 $users = json_decode($data, true);
 

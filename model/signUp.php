@@ -1,11 +1,15 @@
 <?php
 //Récupération des données du formulaire
+$prenom = $_POST["inputFirstName"];
+$nom = $_POST["inputLastName"];
 $email = $_POST["inputEmailAddress"];
 $motDePasse = $_POST["inputPassword"];
 $verificationMDP = $_POST["inputPasswordCheck"];
 
 // Création d'un tableau avec les données
 $data = array(
+    "prenom" => $prenom,
+    "nom" => $nom,
     "email" => $email,
     "motDePasse" => $motDePasse
 );
@@ -13,7 +17,7 @@ $data = array(
 if ($motDePasse == $verificationMDP) {
 
     // Chargement du contenu du fichier JSON existant
-        $file = "data/signUp.json";
+        $file = "data/users.json";
         $current_data = file_get_contents($file);
 
     // Décodage du JSON en un tableau PHP
@@ -31,7 +35,9 @@ if ($motDePasse == $verificationMDP) {
     // Stockage du JSON dans le fichierf
         file_put_contents($file, $json_data);
 
-        $_SESSION['username'] = $email;
+        $_SESSION['email'] = $email;
+        $_SESSION['prenom'] = $prenom;
+        $_SESSION['nom'] = $nom;
 
         return;
 }else{

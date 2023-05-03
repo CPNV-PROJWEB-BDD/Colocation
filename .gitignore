@@ -81,4 +81,4 @@ fabric.properties
 /vendor
 
 # sensitiveData
-data/signUp.json
+data/users.json

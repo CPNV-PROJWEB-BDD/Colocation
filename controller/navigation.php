@@ -28,6 +28,9 @@ function displayLocation($values){
 
 
 function Account(){
+    if (isset($_SESSION['email'])){
+
+    }
     require'view/accountPage.php';
 }
 

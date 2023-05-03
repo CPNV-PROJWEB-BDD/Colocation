@@ -14,7 +14,7 @@ ob_start();
                             <div class="d-flex flex-column align-items-center text-center">
                                 <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
                                 <div class="mt-3">
-                                    <h4>User</h4>
+                                    <h4>Bonjour <?=$_SESSION['prenom']?></h4>
                                     
                                     <button onclick="window.location.href='../index.php?action=insertAdJSON'">crée annonce</button>  
                                     <button onclick="askId()" id="modify-ad">modifier annonce</button>  
@@ -32,7 +32,7 @@ ob_start();
                                     <h6 class="mb-0">Nom complet</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    Nom Prénom
+                                    <?=$_SESSION['prenom']?> <?=$_SESSION['nom']?>
                                 </div>
                             </div>
                             <hr>
@@ -41,7 +41,7 @@ ob_start();
                                     <h6 class="mb-0">Email</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    email@email.com
+                                    <?=$_SESSION['email']?>
                                 </div>
                             </div>
                             <hr>
