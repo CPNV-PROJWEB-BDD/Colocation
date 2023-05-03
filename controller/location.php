@@ -5,8 +5,13 @@
  * @author Created by Jonathan.PENARANDA-G
  * @version 15.03.2023
  */
-function displayDetail($id, $habitation, $localisation){
-    if(isset($id)){
+function displayDetail($filter){
+    if(isset($filter['id']) && isset($filter['Habitation']) && isset($filter['Localisation'])){
+
+        $id = $filter['Id'];
+        $habitation = $filter['Habitation'];
+        $localisation = $filter['Localisation'];
+
         require_once "model/dataDetail.php";
         $detail = getDetail($id);
         $adSimilar = getAdSimilar($habitation, $localisation);

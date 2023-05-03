@@ -26,24 +26,3 @@ function displayLocation($values){
     }
 }
 
-
-
-function Account(){
-    require'view/accountPage.php';
-}
-
-function insertAdJSON($dataAdCreation){
-    
-    if (count($dataAdCreation) == 0) {
-        require 'view/adCreationForm.php';
-    } else {
-        require "model/adFileRegister.php";
-        signUp($dataAdCreation);
-        require 'view/home.php';
-    }
-}
-
-function displayLogin(){
-    require "view/loginForm.php";
-}
-
