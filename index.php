@@ -20,8 +20,8 @@ if (isset($_GET['action'])) {
       case 'insertAdJSON':
           insertAdJSON($_POST);
           break;
-       case 'Account':
-            Account(); 
+      case 'account':
+            account();
             break;
       case 'displayDetail' :
           displayDetail($_GET);

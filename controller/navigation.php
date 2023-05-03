@@ -27,11 +27,10 @@ function displayLocation($values){
 }
 
 
-function Account(){
-    if (isset($_SESSION['email'])){
-
-    }
-    require'view/accountPage.php';
+function account(){
+    require_once 'model/dataBrowseAd.php';
+    $biens = addFullLocation();
+    require_once 'view/accountPage.php';
 }
 
 function insertAdJSON($dataAdCreation){

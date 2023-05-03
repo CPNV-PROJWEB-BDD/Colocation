@@ -23,12 +23,16 @@ $users = json_decode($data, true);
 $verification = false;
 foreach ($users as $item) {
     if ($item['email'] == $mail && $item['motDePasse'] == $password ) {
+        $nom = $item['nom'];
+        $prenom = $item['prenom'];
         $verification = true;
     }
 }
 
 // Les informations de connexion sont correctes, créer une session
 if ($verification==true) {
+    $_SESSION['nom'] = $nom;
+    $_SESSION['prenom'] = $prenom;
     $_SESSION['username'] = $mail;
 
     return;

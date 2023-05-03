@@ -3,7 +3,6 @@ ob_start();
 ?>
     <link rel="stylesheet" type="text/css" href="content/css/userPage.css">
     <script src="../view/content/js/adButtonFunction.js"></script>
-    <a href="../index.php?action=Account"></a>
     
     <div class="container-box">
         <div class="main-body">
@@ -41,7 +40,7 @@ ob_start();
                                     <h6 class="mb-0">Email</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <?=$_SESSION['email']?>
+                                    <?=$_SESSION['username']?>
                                 </div>
                             </div>
                             <hr>
@@ -50,13 +49,36 @@ ob_start();
                     <div class="row gutters-sm">
                         <div class="col-sm-12">
                             <div class="card h-100">
-                                <div class="card-body">
-                                    <h6 class="d-flex align-items-center mb-6"><i class="material-icons text-info mr-2">Current ad offer</h6>
-                                </div>
                                 <div class="sale_container">
                                     <table id="data-table">
+                                        <tbody>
+                                        <?php foreach ($biens as $item) :?>
+                                            <tr>
+                                                <td>
+                                                    <?=$item['Id']?>
+                                                </td>
+                                                <td>
+                                                    <?=$item['Titre']?>
+                                                </td>
+                                                <td>
+                                                   <img src="<?=$item['Image']?>">
+                                                </td>
+                                                <td>
+                                                    <?=$item['Habitation']?>
+                                                </td>
+                                                <td>
+                                                    <?=$item['Localisation']?>
+                                                </td>
+                                                <td>
+                                                    <?=$item['Description']?>
+                                                </td>
+                                                <td>
+                                                    <?=$item['Pièces']?>
+                                                </td>
+                                                <?php endforeach;?>
+                                            </tr>
+                                        </tbody>
                                     </table>
-                                    <script src="../view/content/js/displayAdData.js"></script>
                                 </div>
                             </div>
                         </div>
