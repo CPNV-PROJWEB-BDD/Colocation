@@ -5,12 +5,14 @@
  * @author Created by Jonathan.PENARANDA-G
  * @version 15.03.2023
  */
-function displayDetail($detail){
-    if(isset($detail['Id']) && isset($detail['Habitation']) && isset($detail['Localisation'])){
 
-        $id = $detail['Id'];
-        $habitation = $detail['Habitation'];
-        $localisation = $detail['Localisation'];
+
+function displayDetail($filter){
+    if(isset($filter['id']) && isset($filter['Habitation']) && isset($filter['Localisation'])){
+
+        $id = $filter['Id'];
+        $habitation = $filter['Habitation'];
+        $localisation = $filter['Localisation'];
 
         require_once "model/dataDetail.php";
         $detail = getDetail($id);

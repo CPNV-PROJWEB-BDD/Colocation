@@ -17,12 +17,6 @@ if (isset($_GET['action'])) {
       case 'signUp' :
           signUp($_POST);
           break;
-      case 'insertAdJSON':
-          insertAdJSON($_POST);
-          break;
-       case 'Account':
-            Account(); 
-            break;
       case 'displayDetail' :
           displayDetail($_GET);
           break;
