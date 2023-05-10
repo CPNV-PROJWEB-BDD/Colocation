@@ -3,7 +3,7 @@
 -- Requete utilse pour insérer les donnés dans les différentes tables
 -- ProjetWeb BDD
 
-goods
+
 -- Insérer les donnés dans la tables members
 INSERT INTO members (firstname, lastname, email, password) VALUES ('Adem', 'Mujanovic', 'Adem.Mujanovic@cpnv.ch', 'Pa$$w0rd');
 INSERT INTO members (firstname, lastname, email, PASSWORD) VALUES ('Ahmed', 'Mujanovic', 'Ahmed.Mujanovic@cpnv.ch', 'Pa$$w0rd');
