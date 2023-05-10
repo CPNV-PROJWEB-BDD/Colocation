@@ -58,5 +58,15 @@
         "Adresse": "Chemin des roses",
         "Description": "C'est un tr\u00e8s beau appartement avec une vue extraordinaire.",
         "Pi\u00e8ces": 2.5
+    },
+    {
+        "Id": 7,
+        "Titre": "Appartement avec un beau frigo",
+        "Image": "about-img.jpg",
+        "Habitation": "appartement",
+        "Localisation": "Renens",
+        "Pi\u00e8ces": "4",
+        "Description": "un frigo beau",
+        "Adresse": "Avenue du 24-janvier"
     }
 ]

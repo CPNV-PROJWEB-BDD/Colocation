@@ -39,8 +39,7 @@ function insertAdJSON($dataAdCreation){
         require 'view/adCreationForm.php';
     } else {
         require 'model/adFileRegister.php';
-        require_once 'model/dataBrowseAd.php';
-        $biens = addFullLocation();
+        $biens = addColocation($dataAdCreation);
         require 'view/accountPage.php';
     }
 }
