@@ -4,7 +4,6 @@ require "controller/navigation.php";
 require "controller/user.php";
 require "controller/location.php";
 
-
 if (isset($_GET['action'])) {
   $action = $_GET['action'];
   switch ($action) {
