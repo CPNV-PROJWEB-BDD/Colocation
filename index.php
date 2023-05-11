@@ -2,7 +2,7 @@
 session_start();
 require "controller/navigation.php";
 require "controller/user.php";
-require "controller/location.php";
+require "controller/colocation.php";
 
 
 if (isset($_GET['action'])) {
@@ -31,6 +31,12 @@ if (isset($_GET['action'])) {
           break;
       case 'logout' :
           logout();
+          break;
+      case 'displayModifyForm' :
+          displayModifyForm($_GET);
+          break;
+      case 'adModifyForm' :
+          adModifyForm($_POST);
           break;
       default :
           home();

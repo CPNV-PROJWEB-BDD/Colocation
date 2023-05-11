@@ -1,8 +1,13 @@
 <?php
+/**
+ * @file   adModifyForm.php
+ * @brief  description
+ * @author Created by Jonathan.PENARANDA-G
+ * @version 11.05.2023
+ */
 ob_start();
-$title = "adCreationForm";
 ?>
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html>
     <head>
         <meta charset="UTF-8">
@@ -11,19 +16,19 @@ $title = "adCreationForm";
         <link rel="stylesheet" href="../view/bootstrap/css/signUpForm.css">
     </head>
     <body>
-    <form class="modal-content" method="post" name="adCreationForm" action="../index.php?action=insertAdJSON">
-
+    <form class="modal-content" method="post" name="adModifyForm" action="../index.php?action=adModifyForm">
+<?php foreach ($colocation as $item) :?>
         <div class="container">
-            <h1>créer une annonce</h1>
-            <p>Pour créer une annonce remplissez les champs ci-dessus</p>
+            <h1>Modifier une annonce</h1>
+            <p>Pour modifiez cette annonce, veuillez changer le contenu des champs ci-dessous</p>
             <hr>
 
             <label for="adTitle"><b>titre annonce </b></label>
-            <input type="text" placeholder="Entrez le titre de votre annonce" id="adTitle" name="inputAdTitle" required>
+            <input type="text" placeholder="Entrez le titre de votre annonce" id="adTitle" name="inputAdTitle" required value="<?=$item['Titre']?>">
 
             <label for="previewPhoto"><b>Image de colocation </b></label>
             <input type="file" id="inputPhoto" name="inputPhoto" accept="image/jpeg, image/png, image/jpg" onchange="previewImage(event)">
-            <img id="preview" src="#" alt="Preview Image" width="500px" height="500px" >
+            <img id="preview" src="<?=$item['Image']?>" alt="Preview Image" width="500px" height="500px" >
 
             <script>
                 function previewImage(event) {
@@ -38,10 +43,10 @@ $title = "adCreationForm";
 
             <br><br>
             <label for="localisation"><b>Location</b></label>
-            <input type="text" placeholder="Entrez le lieu de la colocation" id="Localisation" name="inputLocalisation" required>
-            
+            <input type="text" placeholder="Entrez le lieu de la colocation" id="Localisation" name="inputLocalisation" required value="<?=$item['Localisation']?>">
+
             <label for="adresse"><b>Adresse</b></label>
-            <input type="text" placeholder="chemin de Gransson" id="adresse" name="inputAdresse" required>
+            <input type="text" placeholder="chemin de Gransson" id="adresse" name="inputAdresse" required value="<?=$item['Adresse']?>">
 
             <fieldset>
                 <legend>Type d'habitation</legend>
@@ -59,19 +64,19 @@ $title = "adCreationForm";
             <br>
 
             <label for="nbPieces"><b>Nombre de pièces</b></label>
-            <input type="number" placeholder="Nombres de pieces" id="nbPieces" name="inputNbPieces" required>
+            <input type="number" placeholder="Nombres de pieces" id="nbPieces" name="inputNbPieces" required value="<?=$item['Pièces']?>">
             <br><br>
 
             <label for="description"><b>Detail</b></label>
-            <input type="text" placeholder="Loyer, condition, etc..." id="detail" name="inputDescription" required>
+            <input type="text" placeholder="Loyer, condition, etc..." id="detail" name="inputDescription" required value="<?=$item['Description']?>">
 
 
         </div>
+        <?php endforeach;?>
         <button type="submit" class="signupbtn">Envoyer</button>
     </form>
     </body>
     </html>
-
 <?php
 $content = ob_get_clean();
-require "gabarit.php";
+require "view/gabarit.php";

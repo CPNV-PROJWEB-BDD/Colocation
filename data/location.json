@@ -61,12 +61,12 @@
     },
     {
         "Id": 7,
-        "Titre": "Appartement avec un beau frigo",
-        "Image": "about-img.jpg",
-        "Habitation": "appartement",
-        "Localisation": "Renens",
+        "Titre": "Appartement cuisiniaire",
+        "Image": "..\/view\/content\/images\/about-img.jpg",
+        "Habitation": "Maison",
+        "Localisation": "Lausanne",
         "Pi\u00e8ces": "4",
-        "Description": "un frigo beau",
-        "Adresse": "Avenue du 24-janvier"
+        "Description": "Description styl\u00e9",
+        "Adresse": "Chemin de maillefer"
     }
 ]

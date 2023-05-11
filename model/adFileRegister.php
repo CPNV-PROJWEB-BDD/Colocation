@@ -6,6 +6,7 @@ function verifyData($newData){
     //Récupération des données du formulaire
     $adTitle = $newData["inputAdTitle"];
     $locationPhoto = $newData["inputPhoto"];
+    $locationPhoto = "../view/content/images/".$locationPhoto;
     $localisation = $newData["inputLocalisation"];
     $description = $newData["inputDescription"];
     $habitationType = $newData["inputHabitation"];
