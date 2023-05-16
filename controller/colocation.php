@@ -32,10 +32,34 @@ function displayModifyForm($colocation){
 }
 
 function adModifyForm($colocation){
-    if (isset($colocation['Titre']) && isset($colocation['Image']) && isset($colocation['Habitation'])
-    && isset($colocation['Localisation']) && isset($colocation['Adresse']) && isset($colocation['Description'])
-    && isset($colocation['Pièces']))
+    if (isset($colocation['Id']) &&isset($colocation['Titre']) && isset($colocation['Habitation'])
+    && isset($colocation['Localisation']) && isset($colocation['Adresse'])
+    && isset($colocation['Description']) && isset($colocation['Pièces']))
     {
+        if (isset($colocation['Image']) != ""){
+            $image = null;
+        }
+        $Id = $colocation['Id'];
+        $titre = $colocation['Titre'];
+        $habitation = $colocation['Habitation'];
+        $localisation = $colocation['Localisation'];
+        $adresse = $colocation['Adresse'];
+        $description = $colocation['Description'];
+        $pieces = $colocation['Pièces'];
 
+        require_once "model/adModify.php";
+        if (adModify($Id, $titre, $image, $habitation, $adresse, $localisation, $description, $pieces)){
+            require_once "model/dataBrowseAd.php";
+            $biens = addFullLocation();
+            require "view/accountPage.php";
+        }
+        else{
+            $errorMessage = "Désolé mais il y a une erreur quelque part là";
+            require "view/adModifyForm.php";
+        }
     }
+    $errorMessage = "Là t'as pas tout les données remplis";
+    require_once "model/dataDetail.php";
+    $colocation = getDetail($colocation['Id']);
+    require "view/adModifyForm.php";
 }

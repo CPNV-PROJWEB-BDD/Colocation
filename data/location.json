@@ -7,7 +7,8 @@
         "Localisation": "Fribourg",
         "Adresse": "Rue de Morat",
         "Description": "C'est un tr\u00e8s beau appartement avec une vue extraordinaire.",
-        "Pi\u00e8ces": 3.5
+        "Pi\u00e8ces": 3.5,
+        "Active" : 1
     },
     {
         "Id": 2,
@@ -17,7 +18,8 @@
         "Localisation": "Ste-croix",
         "Adresse": "Rue des Rasses",
         "Description": "C'est un tr\u00e8s beau appartement avec une vue extraordinaire.",
-        "Pi\u00e8ces": 4
+        "Pi\u00e8ces": 4,
+        "Active" : 1
     },
     {
         "Id": 3,
@@ -27,7 +29,8 @@
         "Localisation": "Yverdon",
         "Adresse": "Rue d'Orbe",
         "Description": "C'est une tr\u00e8s belle maison avec une vue extraordinaire.",
-        "Pi\u00e8ces": 3.5
+        "Pi\u00e8ces": 3.5,
+        "Active" : 1
     },
     {
         "Id": 4,
@@ -37,7 +40,8 @@
         "Localisation": "Grandson",
         "Adresse": "Chemin de Bellevue",
         "Description": "C'est un tr\u00e8s beau appartement avec une vue extraordinaire.",
-        "Pi\u00e8ces": 2
+        "Pi\u00e8ces": 2,
+        "Active" : 1
     },
     {
         "Id": 5,
@@ -47,7 +51,8 @@
         "Localisation": "Yverdon",
         "Adresse": "Avenue G\u00e9n\u00e9ral Guisans 12",
         "Description": "C'est une tr\u00e8s belle maison avec une vue extraordinaire.",
-        "Pi\u00e8ces": 3.5
+        "Pi\u00e8ces": 3.5,
+        "Active" : 1
     },
     {
         "Id": 6,
@@ -57,7 +62,8 @@
         "Localisation": "Yverdon",
         "Adresse": "Chemin des roses",
         "Description": "C'est un tr\u00e8s beau appartement avec une vue extraordinaire.",
-        "Pi\u00e8ces": 2.5
+        "Pi\u00e8ces": 2.5,
+        "Active" : 1
     },
     {
         "Id": 7,
@@ -67,6 +73,7 @@
         "Localisation": "Lausanne",
         "Pi\u00e8ces": "4",
         "Description": "Description styl\u00e9",
-        "Adresse": "Chemin de maillefer"
+        "Adresse": "Chemin de maillefer",
+        "Active" : 1
     }
 ]

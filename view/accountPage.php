@@ -3,7 +3,6 @@ ob_start();
 ?>
     <link rel="stylesheet" type="text/css" href="content/css/userPage.css">
     <script src="../view/content/js/adButtonFunction.js"></script>
-    <link rel="stylesheet" type="text/css" href="../view/bootstrap/css/css.css"/>
 
     <div class="container-box">
         <div class="main-body">
@@ -16,7 +15,7 @@ ob_start();
                                      class="rounded-circle" width="150">
                                 <div class="mt-1">
                                     <h4>Bonjour <?= $_SESSION['prenom'] ?></h4>
-                                    <button onclick="window.location.href='../index.php?action=insertAdJSON'">crée
+                                    <button style="background-color: green; color: white" onclick="window.location.href='../index.php?action=insertAdJSON'">crée
                                         annonce
                                     </button>
                                 </div>
@@ -111,11 +110,11 @@ ob_start();
                                         <?= $item['Pièces'] ?>
                                     </td>
                                     <td><a href="../index.php?action=displayModifyForm&Id=<?=$item['Id']?>">
-                                            <button id="modify-ad">modifier annonce</button>
+                                            <button style="background-color: green; color: white" id="modify-ad">modifier annonce</button>
                                         </a>
                                         <br><br>
                                         <a href="../index.php?action=deleteColocation&id=<?=$item['Id']?>">
-                                            <button id="delete-ad">supprimer annonce</button>
+                                            <button style="background-color: green; color: white" id="delete-ad">supprimer annonce</button>
                                         </a>
                                     </td>
                                     <?php endforeach; ?>
