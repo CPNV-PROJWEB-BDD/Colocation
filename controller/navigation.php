@@ -28,8 +28,8 @@ function displayLocation($values){
 
 
 function account(){
-    require_once 'model/dataBrowseAd.php';
-    $biens = addFullLocation();
+    require_once 'model/account.php';
+    $biens = getColocations();
     require_once 'view/accountPage.php';
 }
 

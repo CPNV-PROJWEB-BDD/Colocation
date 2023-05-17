@@ -87,33 +87,33 @@ ob_start();
                                 as $item) : ?>
                                 <tr>
                                     <td>
-                                        <?= $item['Id'] ?>
+                                        <?= $item['id'] ?>
                                     </td>
                                     <td>
-                                        <?= $item['Titre'] ?>
+                                        <?= $item['title'] ?>
                                     </td>
                                     <td>
-                                        <a href="../index.php?action=displayDetail&Id=<?= $item['Id'] ?>&Habitation=<?= $item['Habitation'] ?>&Localisation=<?= $item['Localisation'] ?>">
-                                            <img src="<?= $item['Image'] ?>" alt="" style="width: 400px; height: 250px">
+                                        <a href="../index.php?action=displayDetail&Id=<?= $item['id'] ?>&Habitation=<?= $item['kindOfGood'] ?>&Localisation=<?= $item['town'] ?>">
+                                            <img src="<?= $item['picture'] ?>" alt="" style="width: 400px; height: 250px">
                                         </a>
                                     </td>
                                     <td>
-                                        <?= $item['Habitation'] ?>
+                                        <?= $item['kindOfGood'] ?>
                                     </td>
                                     <td>
-                                        <?= $item['Localisation'] ?><br><?= $item['Adresse'] ?>
+                                        <?= $item['town'] ?><br><?= $item['address'] ?>
                                     </td>
                                     <td>
-                                        <?= $item['Description'] ?>
+                                        <?= $item['description'] ?>
                                     </td>
                                     <td>
-                                        <?= $item['Pièces'] ?>
+                                        <?= $item['numberOfPieces'] ?>
                                     </td>
-                                    <td><a href="../index.php?action=displayModifyForm&Id=<?=$item['Id']?>">
+                                    <td><a href="../index.php?action=displayModifyForm&Id=<?=$item['id']?>">
                                             <button style="background-color: green; color: white" id="modify-ad">modifier annonce</button>
                                         </a>
                                         <br><br>
-                                        <a href="../index.php?action=deleteColocation&id=<?=$item['Id']?>">
+                                        <a href="../index.php?action=deleteColocation&id=<?=$item['id']?>">
                                             <button style="background-color: green; color: white" id="delete-ad">supprimer annonce</button>
                                         </a>
                                     </td>

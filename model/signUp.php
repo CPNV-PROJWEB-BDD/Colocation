@@ -36,8 +36,7 @@ if ($motDePasse == $verificationMDP) {
         file_put_contents($file, $json_data);
 
         $_SESSION['email'] = $email;
-        $_SESSION['prenom'] = $prenom;
-        $_SESSION['nom'] = $nom;
+
 
         return;
 }else{
