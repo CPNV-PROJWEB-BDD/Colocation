@@ -37,6 +37,12 @@ if (isset($_GET['action'])) {
       case 'adModifyForm' :
           adModifyForm($_POST);
           break;
+      case 'adDesactive' :
+          adDesactive($_GET);
+          break;
+      case 'adActive' :
+          adActive($_GET);
+          break;
       default :
           home();
       }

@@ -37,7 +37,7 @@ function signUp($signUpDataUser)
                         if (registerUser($userFirstname, $userLastname, $userEmailAdress, $userPwd)) {
                             $biens = addFullLocation();
                             $develop = addFullDevelop();
-                            CreateSession($userEmailAdress);
+                            CreateSession($userEmailAdress, $userFirstname, $userLastname);
                             require "view/home.php";
                         } else {
                             $ErrorMessage = "Zebi il y a une erreur";
@@ -72,7 +72,7 @@ function login($loginDataUser)
                 $userPwd = $loginDataUser['inputPassword'];
 
                 if (IsLoginCorrect($userEmailAdress, $userPwd)) {
-                    CreateSession($userEmailAdress);
+                    CreateSession($userEmailAdress, $prenom = null, $nom = null);
                     $biens = addFullLocation();
                     $develop = addFullDevelop();
                     require "view/home.php";

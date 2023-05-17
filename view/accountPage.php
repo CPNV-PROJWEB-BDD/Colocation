@@ -86,9 +86,15 @@ ob_start();
 
                                 as $item) : ?>
                                 <tr>
+                                    <?php if ($item['active'] == 1) :?>
                                     <td>
                                         <?= $item['id'] ?>
                                     </td>
+                                    <?php else:?>
+                                    <td style="background-color: red">
+                                        <?= $item['id'] ?>
+                                    </td>
+                                    <?php endif;?>
                                     <td>
                                         <?= $item['title'] ?>
                                     </td>
@@ -113,9 +119,15 @@ ob_start();
                                             <button style="background-color: green; color: white" id="modify-ad">modifier annonce</button>
                                         </a>
                                         <br><br>
-                                        <a href="../index.php?action=deleteColocation&id=<?=$item['id']?>">
+                                        <?php if ($item['active'] == 1) :?>
+                                        <a href="../index.php?action=adDesactive&id=<?=$item['id']?>">
                                             <button style="background-color: green; color: white" id="delete-ad">supprimer annonce</button>
                                         </a>
+                                        <?php else:?>
+                                        <a href="../index.php?action=adActive&id=<?=$item['id']?>">
+                                            <button style="background-color: Red; color: white" id="delete-ad">Activer annonce</button>
+                                        </a>
+                                        <?php endif;?>
                                     </td>
                                     <?php endforeach; ?>
                                 </tr>

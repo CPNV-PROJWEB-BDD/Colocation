@@ -8,7 +8,7 @@
 
 require_once "dbConnector.php";
 function getColocations(){
-    $query = 'Select id, title, picture, kindOfGood, town, address, description, numberOfPieces';
+    $query = 'Select id, title, picture, kindOfGood, town, address, description, numberOfPieces, active';
     $queryComplete = $query." from goods";
     $result = executeQuerySelect($queryComplete);
     return $result;

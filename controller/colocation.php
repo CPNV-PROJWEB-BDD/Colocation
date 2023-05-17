@@ -36,7 +36,8 @@ function adModifyForm($colocation){
     && isset($colocation['Localisation']) && isset($colocation['Adresse'])
     && isset($colocation['Description']) && isset($colocation['Pièces']))
     {
-        if (isset($colocation['Image']) != ""){
+        if (isset($colocation['Image'])){
+            if ($colocation['Image'] == "")
             $image = null;
         }
         $Id = $colocation['Id'];
@@ -62,4 +63,29 @@ function adModifyForm($colocation){
     require_once "model/dataDetail.php";
     $colocation = getDetail($colocation['Id']);
     require "view/adModifyForm.php";
+}
+
+function adDesactive($idColocation){
+    if (isset($idColocation['id'])){
+        $id = $idColocation['id'];
+
+        require_once 'model/adModify.php';
+        if(adModifyActiveOff($id)){
+            require_once 'model/account.php';
+            $biens = getColocations();
+            require_once 'view/accountPage.php';
+        }
+    }
+}
+function adActive($idColocation){
+    if (isset($idColocation['id'])){
+        $id = $idColocation['id'];
+
+        require_once 'model/adModify.php';
+        if(adModifyActiveOn($id)){
+            require_once 'model/account.php';
+            $biens = getColocations();
+            require_once 'view/accountPage.php';
+        }
+    }
 }
