@@ -44,4 +44,3 @@ function insertAdJSON($dataAdCreation){
     }
 }
 
-

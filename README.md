@@ -25,6 +25,22 @@ C:\php\php.exe -S localhost:8081 -t C:\Users\nicolas.glassey\MyDevs\CPNV\CFC\151
 [Mon Jan 30 18:06:46 2023] PHP 8.2.1 Development Server (http://localhost:8081) started
 ```
 
+* Configuration des accès à la db
+
+En reprenant le modèle data/userDB.json.temp, il faut mettre à jour userName et userPwd (plus les paramètres spécifiques à votre installation de MySql).
+
+```
+{
+  "sqlDriver": "mysql",
+  "hostname": "127.0.0.1",
+  "port": 3306,
+  "charset": "utf8",
+  "dbName": "colocations",
+  "userName": "",
+  "userPwd": ""
+}
+```
+
 * Résultat à obtenir
 
 ![image](https://user-images.githubusercontent.com/5616312/215457793-5f2c5bec-8e2e-4407-8d04-82b9da793d7d.png)

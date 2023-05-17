@@ -81,4 +81,9 @@ fabric.properties
 /vendor
 
 # sensitiveData
+<<<<<<< HEAD
 data/users.json
+=======
+data/signUp.json
+data/userDB.json
+>>>>>>> develop
