@@ -25,6 +25,9 @@ if (isset($_GET['action'])) {
       case 'logout' :
           logout();
           break;
+      case 'sendAFormRequest' :
+          sendAFormRequest($_POST);
+          break;
       default :
           home();
       }
