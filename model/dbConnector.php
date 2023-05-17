@@ -7,26 +7,26 @@
  * @file  15.05.2023
  */
 
-function addFullLocation(){
-    $path = 'data/usersDB.json';
-    $json = file_get_contents($path);
-    $colocation = json_decode($json, true);
+const PATH_TO_CONFIG_FILE = "data/userDB.json";
 
-    return $colocation;
+function readJsonUsers(){
+    $path = PATH_TO_CONFIG_FILE;
+    $json = file_get_contents($path);
+    return json_decode($json, true);
 }
 
 function openDBConnection()
 {
-    $Informations = addFullLocation();
+    $informations = readJsonUsers();
 
-    foreach ($Informations as $key){
-        $sqlDriver = $key['sqldriver'];
-        $hostname = $key['hostname'];
-        $port = $key['port'];
-        $charset = $key['charset'];
-        $dbName = $key['dbName'];
-        $userName = $key['userName'];
-        $userPwd = $key['userPwd'];
+
+        $sqlDriver = $informations['sqlDriver'];
+        $hostname = $informations['hostname'];
+        $port = $informations['port'];
+        $charset = $informations['charset'];
+        $dbName = $informations['dbName'];
+        $userName = $informations['userName'];
+        $userPwd = $informations['userPwd'];
 
         $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
 
@@ -35,7 +35,6 @@ function openDBConnection()
         } catch (PDOException $exception) {
             echo 'Connection failed' . $exception->getMessage();
         }
-    }
 
 
     return $tempDBConnexion;
