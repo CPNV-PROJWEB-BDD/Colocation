@@ -20,6 +20,11 @@ $title = "Colocation - login"
 <body>
 <form class="modal-content" method="post" name="loginForm" action="../index.php?action=login">
 
+
+    <?php if (isset($ErrorMessage)) : ?>
+        <h5><span style="color:red"><?= $ErrorMessage; ?></span></h5>
+    <?php endif;?>
+
     <div class="container">
         <h1>se connecter</h1>
         <p>Pour se connecter remplissez le formulaire ci-dessus</p>
@@ -38,12 +43,6 @@ $title = "Colocation - login"
 </form>
 </body>
 </html>
-
-
-
-
-
-
 
 <?php
 $content = ob_get_clean();
