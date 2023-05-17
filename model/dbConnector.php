@@ -6,22 +6,38 @@
  * @author Created by Ahmed.MUJANOVIC
  * @file  15.05.2023
  */
+
+function addFullLocation(){
+    $path = 'data/usersDB.json';
+    $json = file_get_contents($path);
+    $colocation = json_decode($json, true);
+
+    return $colocation;
+}
+
 function openDBConnection()
 {
-    $sqlDriver = 'mysql';
-    $hostname = '127.0.0.1';
-    $port = 3306;
-    $charset = 'utf8';
-    $dbName = 'colocations';
-    $userName = 'Ahmed';
-    $userPwd = 'Ahmedleboss12345';
-    $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
+    $Informations = addFullLocation();
 
-    try {
-        $tempDBConnexion = new PDO($dsn, $userName, $userPwd);
-    } catch (PDOException $exception) {
-        echo 'Connection failed' . $exception->getMessage();
+    foreach ($Informations as $key){
+        $sqlDriver = $key['sqldriver'];
+        $hostname = $key['hostname'];
+        $port = $key['port'];
+        $charset = $key['charset'];
+        $dbName = $key['dbName'];
+        $userName = $key['userName'];
+        $userPwd = $key['userPwd'];
+
+        $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
+
+        try {
+            $tempDBConnexion = new PDO($dsn, $userName, $userPwd);
+        } catch (PDOException $exception) {
+            echo 'Connection failed' . $exception->getMessage();
+        }
     }
+
+
     return $tempDBConnexion;
 }
 

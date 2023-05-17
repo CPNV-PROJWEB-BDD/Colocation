@@ -82,3 +82,4 @@ fabric.properties
 
 # sensitiveData
 data/signUp.json
+data/userDB.json
