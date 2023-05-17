@@ -6,6 +6,7 @@
  * @version 16.03.2023
  */
 
+
 function getDetail($id)
 {
     //Cherche les données
