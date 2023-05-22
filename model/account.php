@@ -13,3 +13,10 @@ function getColocations(){
     $result = executeQuerySelect($queryComplete);
     return $result;
 }
+function getColocationsId($id){
+    $query = 'Select id, title, picture, kindOfGood, town, address, description, numberOfPieces, active';
+    $query = $query." from goods";
+    $queryComplete = $query. " WHERE id ='".$id."';";
+    $result = executeQuerySelect($queryComplete);
+    return $result;
+}

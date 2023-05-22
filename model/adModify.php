@@ -7,39 +7,23 @@
  */
 
 require_once "model/dataDetail.php";
-function adModify($id, $titre, $image, $habitation, $localisation, $adresse, $description, $pieces){
-    $colocations = addFullLocation();
+function adModify($id, $title, $picture, $kindOfGood, $address, $town, $description, $numberOfPieces){
+    if($picture == null){
+        $query = 'Update goods';
+        $query = $query.' SET title="'.$title.'", kindOfGood="'.$kindOfGood.'", town="'.$town.'", address="'.$address.'", description="'.$description.'", numberOfPieces="'.$numberOfPieces.'"';
+        $queryComplete = $query.' WHERE id ="'.$id.'";';
+        $result = executeQueryInsertUpdate($queryComplete);
 
-    if ($image != null){
-        foreach ($colocations as $colocation){
-            if ($colocation['Id'] == $id){
-                $colocation['Titre'] = $titre;
-                $colocation['Image'] = $image;
-                $colocation['Habitation'] = $habitation;
-                $colocation['Localisation'] = $localisation;
-                $colocation['Adresse'] = $adresse;
-                $colocation['Description'] = $description;
-                $colocation['Pièces'] = $pieces;
-
-                break;
-            }
-        }
+        return $result;
     }else{
-        foreach ($colocations as $colocation){
-            if ($colocation['Id'] == $id){
-                $colocation['Titre'] = $titre;
-                $colocation['Habitation'] = $habitation;
-                $colocation['Localisation'] = $localisation;
-                $colocation['Adresse'] = $adresse;
-                $colocation['Description'] = $description;
-                $colocation['Pièces'] = $pieces;
+        $query = 'Update goods';
+        $query = $query.' SET title="'.$title.'", picture="'.$picture.'", kindOfGood="'.$kindOfGood.'", town="'.$town.'", address="'.$address.'", description="'.$description.'", numberOfPieces="'.$numberOfPieces.'"';
+        $queryComplete = $query.' WHERE id ="'.$id.'";';
+        $result = executeQueryInsertUpdate($queryComplete);
 
-                break;
-            }
-        }
+        return $result;
     }
-    file_put_contents('data/location.json', json_encode($colocations), JSON_PRETTY_PRINT);
-    return true;
+
 }
 
 function adModifyActiveOff($id){
