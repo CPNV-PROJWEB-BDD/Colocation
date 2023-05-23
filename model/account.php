@@ -20,3 +20,5 @@ function getColocationsId($id){
     $result = executeQuerySelect($queryComplete);
     return $result;
 }
+
+function
