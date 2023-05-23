@@ -43,6 +43,9 @@ if (isset($_GET['action'])) {
       case 'adActive' :
           adActive($_GET);
           break;
+      case 'colocationAdd' :
+          articleAddItem($_POST);
+          break;
       default :
           home();
       }

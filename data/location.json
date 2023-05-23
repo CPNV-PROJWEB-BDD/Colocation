@@ -8,7 +8,7 @@
         "Adresse": "Rue de Morat",
         "Description": "C'est un tr\u00e8s beau appartement avec une vue extraordinaire.",
         "Pi\u00e8ces": 3.5,
-        "Active" : 1
+        "Active": 1
     },
     {
         "Id": 2,
@@ -19,7 +19,7 @@
         "Adresse": "Rue des Rasses",
         "Description": "C'est un tr\u00e8s beau appartement avec une vue extraordinaire.",
         "Pi\u00e8ces": 4,
-        "Active" : 1
+        "Active": 1
     },
     {
         "Id": 3,
@@ -30,7 +30,7 @@
         "Adresse": "Rue d'Orbe",
         "Description": "C'est une tr\u00e8s belle maison avec une vue extraordinaire.",
         "Pi\u00e8ces": 3.5,
-        "Active" : 1
+        "Active": 1
     },
     {
         "Id": 4,
@@ -41,7 +41,7 @@
         "Adresse": "Chemin de Bellevue",
         "Description": "C'est un tr\u00e8s beau appartement avec une vue extraordinaire.",
         "Pi\u00e8ces": 2,
-        "Active" : 1
+        "Active": 1
     },
     {
         "Id": 5,
@@ -52,7 +52,7 @@
         "Adresse": "Avenue G\u00e9n\u00e9ral Guisans 12",
         "Description": "C'est une tr\u00e8s belle maison avec une vue extraordinaire.",
         "Pi\u00e8ces": 3.5,
-        "Active" : 1
+        "Active": 1
     },
     {
         "Id": 6,
@@ -63,7 +63,7 @@
         "Adresse": "Chemin des roses",
         "Description": "C'est un tr\u00e8s beau appartement avec une vue extraordinaire.",
         "Pi\u00e8ces": 2.5,
-        "Active" : 1
+        "Active": 1
     },
     {
         "Id": 7,
@@ -74,6 +74,26 @@
         "Pi\u00e8ces": "4",
         "Description": "Description styl\u00e9",
         "Adresse": "Chemin de maillefer",
-        "Active" : 1
+        "Active": 1
+    },
+    {
+        "Id": 8,
+        "Titre": "Appatemet",
+        "Image": "..\/view\/content\/images\/about-img.jpg",
+        "Habitation": "Maison",
+        "Localisation": "fribouirg",
+        "Pi\u00e8ces": "3",
+        "Description": "23r43f3rfgregm34opgjn3o4jg",
+        "Adresse": "jean-andr\u00e9 Venel 150"
+    },
+    {
+        "Id": 9,
+        "Titre": "aaaa",
+        "Image": "..\/view\/content\/images\/about-img.jpg",
+        "Habitation": "Maison",
+        "Localisation": "aaa",
+        "Pi\u00e8ces": "2",
+        "Description": "hmgzjhgjhg",
+        "Adresse": "Jean-Andr\u00e9 venel 150"
     }
 ]
