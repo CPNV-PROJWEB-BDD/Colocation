@@ -19,7 +19,6 @@ function openDBConnection()
 {
     $informations = readJsonUsers();
 
-
         $sqlDriver = $informations['sqlDriver'];
         $hostname = $informations['hostname'];
         $port = $informations['port'];
@@ -35,7 +34,6 @@ function openDBConnection()
         } catch (PDOException $exception) {
             echo 'Connection failed' . $exception->getMessage();
         }
-
 
     return $tempDBConnexion;
 }
@@ -64,5 +62,17 @@ function executeQueryInsertUpdate($query)
         $queryResult = $statement->execute();                          //Exécution de la requête
     }
     $dbConnection = null; //fermeture de la connexion
+    return $queryResult;
+}
+
+function executeQueryAddItem($query){
+    $queryResult = null;
+
+    $dbConnection = openDBConnection();
+    if($dbConnection!= null){
+        $statement = $dbConnection->prepare($query);   //préparations de la requete
+        $queryResult = $statement->execute();                       // exécute la requete
+    }
+    $dbConnection = null;
     return $queryResult;
 }

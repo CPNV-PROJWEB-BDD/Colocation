@@ -1,62 +1,99 @@
 [
-  {
-    "Id" : 1,
-    "Titre" : "Appartement original",
-    "Image": "../view/content/images/s-1.jpg",
-    "Habitation": "Appartement",
-    "Localisation": "Fribourg",
-    "Adresse": "Rue de Morat",
-    "Description" : "C'est un très beau appartement avec une vue extraordinaire.",
-    "Pièces": 3.5
-  },
-  {
-    "Id" : 2,
-    "Titre" : "Appartement moderne",
-    "Image": "../view/content/images/s-2.jpg",
-    "Habitation": "Appartement",
-    "Localisation": "Ste-croix",
-    "Adresse": "Rue des Rasses",
-    "Description" : "C'est un très beau appartement avec une vue extraordinaire.",
-    "Pièces": 4
-  },
-  {
-    "Id" : 3,
-    "Titre" : "Maison ancienne",
-    "Image": "../view/content/images/s-3.jpg",
-    "Habitation": "Maison",
-    "Localisation": "Yverdon",
-    "Adresse": "Rue d'Orbe",
-    "Description" : "C'est une très belle maison avec une vue extraordinaire.",
-    "Pièces": 3.5
-  },
-  {
-    "Id" : 4,
-    "Titre" : "Appartement luxe",
-    "Image": "../view/content/images/s-4.jpg",
-    "Habitation": "Appartement",
-    "Localisation": "Grandson",
-    "Adresse" : "Chemin de Bellevue",
-    "Description" : "C'est un très beau appartement avec une vue extraordinaire.",
-    "Pièces": 2
-  },
-  {
-    "Id" : 5,
-    "Titre" : "Maison tranquille",
-    "Image": "../view/content/images/s-5.jpg",
-    "Habitation": "Maison",
-    "Localisation": "Yverdon",
-    "Adresse" : "Avenue Général Guisans 12",
-    "Description" : "C'est une très belle maison avec une vue extraordinaire.",
-    "Pièces": 3.5
-  },
-  {
-    "Id" : 6,
-    "Titre" : "Appartement avec balcon",
-    "Image": "../view/content/images/s-6.jpg",
-    "Habitation": "Appartement",
-    "Localisation": "Yverdon",
-    "Adresse" : "Chemin des roses",
-    "Description" : "C'est un très beau appartement avec une vue extraordinaire.",
-    "Pièces": 2.5
-  }
+    {
+        "Id": 1,
+        "Titre": "Appartement original",
+        "Image": "..\/view\/content\/images\/s-1.jpg",
+        "Habitation": "Appartement",
+        "Localisation": "Fribourg",
+        "Adresse": "Rue de Morat",
+        "Description": "C'est un tr\u00e8s beau appartement avec une vue extraordinaire.",
+        "Pi\u00e8ces": 3.5,
+        "Active": 1
+    },
+    {
+        "Id": 2,
+        "Titre": "Appartement moderne",
+        "Image": "..\/view\/content\/images\/s-2.jpg",
+        "Habitation": "Appartement",
+        "Localisation": "Ste-croix",
+        "Adresse": "Rue des Rasses",
+        "Description": "C'est un tr\u00e8s beau appartement avec une vue extraordinaire.",
+        "Pi\u00e8ces": 4,
+        "Active": 1
+    },
+    {
+        "Id": 3,
+        "Titre": "Maison ancienne",
+        "Image": "..\/view\/content\/images\/s-3.jpg",
+        "Habitation": "Maison",
+        "Localisation": "Yverdon",
+        "Adresse": "Rue d'Orbe",
+        "Description": "C'est une tr\u00e8s belle maison avec une vue extraordinaire.",
+        "Pi\u00e8ces": 3.5,
+        "Active": 1
+    },
+    {
+        "Id": 4,
+        "Titre": "Appartement luxe",
+        "Image": "..\/view\/content\/images\/s-4.jpg",
+        "Habitation": "Appartement",
+        "Localisation": "Grandson",
+        "Adresse": "Chemin de Bellevue",
+        "Description": "C'est un tr\u00e8s beau appartement avec une vue extraordinaire.",
+        "Pi\u00e8ces": 2,
+        "Active": 1
+    },
+    {
+        "Id": 5,
+        "Titre": "Maison tranquille",
+        "Image": "..\/view\/content\/images\/s-5.jpg",
+        "Habitation": "Maison",
+        "Localisation": "Yverdon",
+        "Adresse": "Avenue G\u00e9n\u00e9ral Guisans 12",
+        "Description": "C'est une tr\u00e8s belle maison avec une vue extraordinaire.",
+        "Pi\u00e8ces": 3.5,
+        "Active": 1
+    },
+    {
+        "Id": 6,
+        "Titre": "Appartement avec balcon",
+        "Image": "..\/view\/content\/images\/s-6.jpg",
+        "Habitation": "Appartement",
+        "Localisation": "Yverdon",
+        "Adresse": "Chemin des roses",
+        "Description": "C'est un tr\u00e8s beau appartement avec une vue extraordinaire.",
+        "Pi\u00e8ces": 2.5,
+        "Active": 1
+    },
+    {
+        "Id": 7,
+        "Titre": "Appartement cuisiniaire",
+        "Image": "..\/view\/content\/images\/about-img.jpg",
+        "Habitation": "Maison",
+        "Localisation": "Lausanne",
+        "Pi\u00e8ces": "4",
+        "Description": "Description styl\u00e9",
+        "Adresse": "Chemin de maillefer",
+        "Active": 1
+    },
+    {
+        "Id": 8,
+        "Titre": "Appatemet",
+        "Image": "..\/view\/content\/images\/about-img.jpg",
+        "Habitation": "Maison",
+        "Localisation": "fribouirg",
+        "Pi\u00e8ces": "3",
+        "Description": "23r43f3rfgregm34opgjn3o4jg",
+        "Adresse": "jean-andr\u00e9 Venel 150"
+    },
+    {
+        "Id": 9,
+        "Titre": "aaaa",
+        "Image": "..\/view\/content\/images\/about-img.jpg",
+        "Habitation": "Maison",
+        "Localisation": "aaa",
+        "Pi\u00e8ces": "2",
+        "Description": "hmgzjhgjhg",
+        "Adresse": "Jean-Andr\u00e9 venel 150"
+    }
 ]

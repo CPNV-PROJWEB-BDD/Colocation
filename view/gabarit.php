@@ -72,7 +72,7 @@
                             <a href="../index.php?action=signUp">S'ENREGISTRER</a>
                             <a href="../index.php?action=login">SE CONNECTER</a>
                             <?php else:?>
-                                <a href="../index.php?action=Account">COMPTE</a>
+                            <a href="../index.php?action=account">COMPTE</a>
                             <a href="../index.php?action=logout">SE DECONNECTER</a>
                             <?php endif;?>
                         </div>

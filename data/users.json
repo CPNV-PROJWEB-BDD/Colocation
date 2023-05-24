@@ -1,0 +1,20 @@
+[
+    {
+        "prenom": "Jony",
+        "nom": "kebab",
+        "email": "jonathan@cpnv.ch",
+        "motDePasse": "aaaa"
+    },
+    {
+        "prenom": "Jony",
+        "nom": "kebab",
+        "email": "jonathan@cpnv.ch",
+        "motDePasse": "aaaa"
+    },
+    {
+        "prenom": "Jony",
+        "nom": "jony",
+        "email": "jony@cpnv.ch",
+        "motDePasse": "aaaa"
+    }
+]

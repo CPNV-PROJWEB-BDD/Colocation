@@ -9,12 +9,28 @@
 
 require "model/dbConnector.php";
 require "model/dataBrowseAd.php";
-function CreateSession($email)
+function CreateSession($email, $prenom, $nom)
 {
-    $_SESSION['username'] = $email;
+    if ($prenom == null || $nom == null){
+        $user = getUser($email);
+        foreach ($user as $key){
+            $_SESSION['prenom'] = $key['firstname'];
+            $_SESSION['nom'] = $key['lastname'];
+            $_SESSION['username'] = $email;
+        }
+    }else{
+        $_SESSION['prenom'] = $prenom;
+        $_SESSION['nom'] = $nom;
+        $_SESSION['username'] = $email;
+    }
     return true;
 }
 
+function getUser($email){
+    $query = 'SELECT * FROM members WHERE email="'. $email .'"';
+    $result = executeQuerySelect($query);
+    return $result;
+}
 function verifyEmailAdress($email)
 {
     $queryCheck = 'SELECT email FROM members WHERE email="' . $email . '"';

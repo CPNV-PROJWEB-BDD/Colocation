@@ -25,3 +25,11 @@ function displayLocation($values){
         require "view/location.php";
     }
 }
+
+
+function account(){
+    require_once 'model/account.php';
+    $biens = getColocations();
+    require_once 'view/accountPage.php';
+}
+
