@@ -5,6 +5,8 @@
  * @author Created by Jonathan.PENARANDA-G
  * @version 15.03.2023
  */
+
+
 function displayDetail($detail){
     if(isset($detail['Id']) && isset($detail['Habitation']) && isset($detail['Localisation'])){
 
@@ -20,6 +22,42 @@ function displayDetail($detail){
     }
     require "view/adDetail.php";
 }
+
+function adAdd($newData)
+{
+    if (count($newData) == 0) {
+        require 'view/adCreationForm.php';
+    } else {
+        try {
+            if (isset($newData['inputAdTitle']) && isset($newData['inputPhoto']) &&
+                isset($newData['inputLocalisation']) && isset($newData['inputAdresse']) &&
+                isset($newData['inputHabitation']) && isset($newData['inputNbPieces']) &&
+                isset($newData['inputDescription'])) {
+                //extract login parameters
+                $titre = $newData['inputAdTitle'];
+                $picture = "../view/content/images/".$newData['inputPhoto'];
+                $habitation = $newData['inputHabitation'];
+                $localisation = $newData['inputLocalisation'];
+                $adresse = $newData['inputAdresse'];
+                $description = $newData['inputDescription'];
+                $pieces = $newData['inputNbPieces'];
+                require_once "model/account.php";
+                if (addColocation($titre, $picture,  $habitation, $localisation, $adresse, $description, $pieces)) {
+                    $biens = getColocations();
+                    require "view/accountPage.php";
+                } else {
+                    require "view/adCreationForm.php";
+                }
+
+            }
+        } catch (ModelDataBaseException $ex) {
+            $loginErrorMessage = "Nous rencontrons actuellement un problème technique. Il est temporairement impossible de s'annoncer. Désolé du dérangement !";
+            require "view/AddItem.php";
+
+        }
+    }
+}
+
 
 function displayModifyForm($colocation){
     if (isset($colocation['Id']))
@@ -51,9 +89,8 @@ function adModifyForm($colocation){
         $description = $colocation['Description'];
         $pieces = $colocation['Pièces'];
 
-        require_once "model/adModify.php";
+        require_once "model/account.php";
         if (adModify($Id, $titre, $image, $habitation, $adresse, $localisation, $description, $pieces)){
-            require_once "model/account.php";
             $biens = getColocations();
             require "view/accountPage.php";
         }

@@ -11,20 +11,18 @@ require "model/dbConnector.php";
 require "model/dataBrowseAd.php";
 function CreateSession($email, $prenom, $nom)
 {
-    if ($prenom == null || $nom =null){
+    if ($prenom == null || $nom == null){
         $user = getUser($email);
         foreach ($user as $key){
             $_SESSION['prenom'] = $key['firstname'];
             $_SESSION['nom'] = $key['lastname'];
             $_SESSION['username'] = $email;
         }
-
     }else{
         $_SESSION['prenom'] = $prenom;
         $_SESSION['nom'] = $nom;
         $_SESSION['username'] = $email;
     }
-
     return true;
 }
 

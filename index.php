@@ -16,9 +16,6 @@ if (isset($_GET['action'])) {
       case 'signUp' :
           signUp($_POST);
           break;
-      case 'insertAdJSON':
-          insertAdJSON($_POST);
-          break;
       case 'account':
             account();
             break;
@@ -42,6 +39,9 @@ if (isset($_GET['action'])) {
           break;
       case 'adActive' :
           adActive($_GET);
+          break;
+      case 'colocationAdd' :
+          adAdd($_POST);
           break;
       default :
           home();

@@ -15,7 +15,7 @@ ob_start();
                                      class="rounded-circle" width="150">
                                 <div class="mt-1">
                                     <h4>Bonjour <?= $_SESSION['prenom'] ?></h4>
-                                    <button style="background-color: green; color: white" onclick="window.location.href='../index.php?action=insertAdJSON'">crée
+                                    <button style="background-color: green; color: white" onclick="window.location.href='../index.php?action=colocationAdd'">crée
                                         annonce
                                     </button>
                                 </div>
