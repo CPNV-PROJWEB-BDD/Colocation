@@ -40,7 +40,7 @@ if (isset($_GET['action'])) {
       case 'adActive' :
           adActive($_GET);
           break;
-      case 'colocationAdd' :
+      case 'adAdd' :
           adAdd($_POST);
           break;
       default :
