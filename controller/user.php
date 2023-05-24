@@ -24,7 +24,9 @@ function signUp($signUpDataUser)
         require 'view/signUpForm.php';
     } else {
         try {
-            if (isset($signUpDataUser['inputFirstName']) && isset($signUpDataUser['inputLastName']) && isset($signUpDataUser['inputEmailAddress']) && isset($signUpDataUser['inputPassword']) && isset($signUpDataUser['inputPasswordCheck'])) {
+            if (isset($signUpDataUser['inputFirstName']) && isset($signUpDataUser['inputLastName'])
+                && isset($signUpDataUser['inputEmailAddress']) && isset($signUpDataUser['inputPassword'])
+                && isset($signUpDataUser['inputPasswordCheck'])) {
 
                 $userFirstname = $signUpDataUser['inputFirstName'];
                 $userLastname = $signUpDataUser['inputLastName'];
