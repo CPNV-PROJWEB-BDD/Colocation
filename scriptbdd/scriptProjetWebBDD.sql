@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `colocations`.`goods` (
   `numberOfPieces` INT NOT NULL,
   `active` INT NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE INDEX `UniqueGoods` (`address` ASC, `title` ASC) 
+  UNIQUE INDEX `UniqueGoods` (`address` ASC, `title` ASC) )
 ENGINE = InnoDB;
 
 
@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `colocations`.`members` (
   `email` VARCHAR(254) NOT NULL,
   `passwordHash` VARCHAR(254) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE INDEX `email_UNIQUE` (`email` ASC) 
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) )
 ENGINE = InnoDB;
 
 
@@ -58,8 +58,8 @@ CREATE TABLE IF NOT EXISTS `colocations`.`members_has_goods` (
   `good_id` INT NOT NULL,
   `startDate` DATE NOT NULL,
   `endDate` DATE NOT NULL,
-  INDEX `fk_members_has_goods_goods1_idx` (`good_id` ASC) 
-  INDEX `fk_members_has_goods_members_idx` (`member_id` ASC) 
+  INDEX `fk_members_has_goods_goods1_idx` (`good_id` ASC),
+  INDEX `fk_members_has_goods_members_idx` (`member_id` ASC), 
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_members_has_goods_members`
     FOREIGN KEY (`member_id`)
