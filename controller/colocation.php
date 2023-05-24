@@ -105,9 +105,8 @@ function adDesactive($idColocation){
     if (isset($idColocation['id'])){
         $id = $idColocation['id'];
 
-        require_once 'model/adModify.php';
+        require_once 'model/account.php';
         if(adModifyActiveOff($id)){
-            require_once 'model/account.php';
             $biens = getColocations();
             require_once 'view/accountPage.php';
         }
@@ -117,9 +116,8 @@ function adActive($idColocation){
     if (isset($idColocation['id'])){
         $id = $idColocation['id'];
 
-        require_once 'model/adModify.php';
+        require_once 'model/account.php';
         if(adModifyActiveOn($id)){
-            require_once 'model/account.php';
             $biens = getColocations();
             require_once 'view/accountPage.php';
         }

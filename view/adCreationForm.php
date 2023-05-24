@@ -11,7 +11,7 @@ $title = "adCreationForm";
         <link rel="stylesheet" href="../view/bootstrap/css/signUpForm.css">
     </head>
     <body>
-    <form class="modal-content" method="post" name="adCreationForm" action="../index.php?action=colocationAdd">
+    <form class="modal-content" method="post" name="adCreationForm" action="../index.php?action=adAdd">
 
         <div class="container">
             <h1>créer une annonce</h1>
