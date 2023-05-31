@@ -4,8 +4,8 @@
 function home(){
     try {
         require_once "model/dataBrowseAd.php";
-        $biens = addFullLocation();
-        $develop = addFullDevelop();
+        $biens = addFullLocation();//TODO frenglish
+        $develop = addFullDevelop();//TODO meaning of develop ?
     }
     finally {
         require "view/home.php";
