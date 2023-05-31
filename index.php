@@ -2,6 +2,7 @@
 session_start();
 require "controller/navigation.php";
 require "controller/user.php";
+//TODO Typo
 require "controller/colocation.php";
 
 if (isset($_GET['action'])) {
@@ -17,8 +18,8 @@ if (isset($_GET['action'])) {
           signUp($_POST);
           break;
       case 'account':
-            account();
-            break;
+          account();//TODO indentation
+          break;
       case 'displayDetail' :
           displayDetail($_GET);
           break;
@@ -28,16 +29,16 @@ if (isset($_GET['action'])) {
       case 'logout' :
           logout();
           break;
-      case 'displayModifyForm' :
+      case 'displayModifyForm' ://TODO Should be simplified
           displayModifyForm($_GET);
           break;
       case 'adModifyForm' :
           adModifyForm($_POST);
           break;
-      case 'adDesactive' :
+      case 'adDesactive' ://TODO Mix frenchglish
           adDesactive($_GET);
           break;
-      case 'adActive' :
+      case 'adActive' ://TODO purpose of this action ?
           adActive($_GET);
           break;
       case 'adAdd' :

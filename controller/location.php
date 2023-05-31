@@ -8,6 +8,7 @@
 
 
 function displayDetail($filter){
+    //TODO Uppercase, lowercase
     if(isset($filter['id']) && isset($filter['Habitation']) && isset($filter['Localisation'])){
 
         $id = $filter['Id'];

@@ -12,12 +12,12 @@ const PATH_TO_CONFIG_FILE = "data/userDB.json";
 function readJsonUsers(){
     $path = PATH_TO_CONFIG_FILE;
     $json = file_get_contents($path);
-    return json_decode($json, true);
+    return json_decode($json, true);//TODO add json ext to composer
 }
 
 function openDBConnection()
 {
-    $informations = readJsonUsers();
+    $informations = readJsonUsers();//TODO Typo
 
         $sqlDriver = $informations['sqlDriver'];
         $hostname = $informations['hostname'];

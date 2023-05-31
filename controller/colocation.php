@@ -23,7 +23,9 @@ function displayDetail($detail){
     require "view/adDetail.php";
 }
 
+//TODO newData is not enough explicit
 function adAdd($newData)
+    //TODO This method should be split in separate functions
 {
     if (count($newData) == 0) {
         require 'view/adCreationForm.php';
@@ -38,18 +40,19 @@ function adAdd($newData)
                 $picture = "../view/content/images/".$newData['inputPhoto'];
                 $habitation = $newData['inputHabitation'];
                 $localisation = $newData['inputLocalisation'];
-                $adresse = $newData['inputAdresse'];
+                $adresse = $newData['inputAdresse'];//TODO typo
                 $description = $newData['inputDescription'];
                 $pieces = $newData['inputNbPieces'];
                 require_once "model/account.php";
                 if (addColocation($titre, $picture,  $habitation, $localisation, $adresse, $description, $pieces)) {
-                    $biens = getColocations();
+                    $biens = getColocations();//TODO Frenglish
                     require "view/accountPage.php";
                 } else {
                     require "view/adCreationForm.php";
                 }
 
             }
+            //TODO Missing exception type
         } catch (ModelDataBaseException $ex) {
             $loginErrorMessage = "Nous rencontrons actuellement un problème technique. Il est temporairement impossible de s'annoncer. Désolé du dérangement !";
             require "view/AddItem.php";
