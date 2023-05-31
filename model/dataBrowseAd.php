@@ -18,7 +18,7 @@ function extractFilter($filter){
     return $resultFilter;
 }
 function filter($filter){
-    //Cherche les données
+    //Cherche les données //TODO Remove french comment
     $path = 'data/location.json';
     $json = file_get_contents($path);
     $colocation = json_decode($json, true);

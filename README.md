@@ -6,7 +6,7 @@ Colocations est un dépot de gestion de colocations
 
 Ce projet est un site pour trouver des colocations.
 
-Use Case : https://github.com/CPNV-PROJWEB-BDD/Colocation/blob/develop/docs/cas%20d'utilisation.pdf
+[Use Case](https://github.com/CPNV-PROJWEB-BDD/Colocation/blob/develop/docs/cas%20d'utilisation.pdf)
 
 ## Prerequistes
 

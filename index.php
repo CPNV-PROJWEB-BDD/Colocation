@@ -18,8 +18,8 @@ if (isset($_GET['action'])) {
           signUp($_POST);
           break;
       case 'account':
-            account();//TODO indentation
-            break;
+          account();//TODO indentation
+          break;
       case 'displayDetail' :
           displayDetail($_GET);
           break;
