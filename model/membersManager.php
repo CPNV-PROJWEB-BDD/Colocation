@@ -8,7 +8,7 @@
  */
 
 require "model/dbConnector.php";
-require "model/dataBrowseAd.php";
+require "model/goodsManager.php";
 function CreateSession($email, $prenom, $nom)
 {
     if ($prenom == null || $nom == null){

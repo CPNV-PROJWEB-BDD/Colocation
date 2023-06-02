@@ -17,15 +17,15 @@ function readJsonUsers(){
 
 function openDBConnection()
 {
-    $informations = readJsonUsers();//TODO Typo
+    $information = readJsonUsers();
 
-        $sqlDriver = $informations['sqlDriver'];
-        $hostname = $informations['hostname'];
-        $port = $informations['port'];
-        $charset = $informations['charset'];
-        $dbName = $informations['dbName'];
-        $userName = $informations['userName'];
-        $userPwd = $informations['userPwd'];
+        $sqlDriver = $information['sqlDriver'];
+        $hostname = $information['hostname'];
+        $port = $information['port'];
+        $charset = $information['charset'];
+        $dbName = $information['dbName'];
+        $userName = $information['userName'];
+        $userPwd = $information['userPwd'];
 
         $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
 

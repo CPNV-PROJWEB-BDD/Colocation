@@ -1,6 +1,6 @@
 <?php
 /**
- * @file   colocation.php
+ * @file   account.php
  * @brief  description
  * @author Created by Jonathan.PENARANDA-G
  * @version 22.02.2023
@@ -58,19 +58,19 @@ $title = "Colocation - Location"
             <?php foreach($filter as $item) :?>
             <div class="box">
                 <div class="img-box">
-                    <a href="../index.php?action=displayDetail&Id=<?=$item['Id']?>&Habitation=<?=$item['Habitation']?>&Localisation=<?=$item['Localisation']?>">
+                    <a href="../index.php?action=displayDetail&Id=<?=$item['id']?>&Habitation=<?=$item['kindOfGood']?>&Localisation=<?=$item['town']?>">
                     <img src="<?=$item['Image']?>" alt="">
                     </a>
                 </div>
                 <div class="detail-box">
                     <h6>
-                        <?=$item['Titre']?>
+                        <?=$item['title']?>
                     </h6>
                     <p>
-                        <?=$item['Localisation']?>
+                        <?=$item['town']?>
                     </p>
                     <p>
-                        <?=$item['Pièces']?> pièces
+                        <?=$item['numberOfPieces']?> pièces
                     </p>
                 </div>
             </div>

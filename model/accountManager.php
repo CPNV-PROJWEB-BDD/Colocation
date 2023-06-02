@@ -1,6 +1,6 @@
 <?php
 /**
- * @file   account.php
+ * @file   accountManager.php
  * @brief  description
  * @author Created by Jonathan.PENARANDA-G
  * @version 03.05.2023
@@ -68,3 +68,25 @@ function adModifyActiveOn($id){
     return $result;
 }
 
+function verifyDataAd($dataAd){
+    if (isset($dataAd['inputAdTitle']) && isset($dataAd['inputPicture']) &&
+        isset($dataAd['inputTown']) && isset($dataAd['inputAddress']) &&
+        isset($dataAd['inputKindOfGood']) && isset($dataAd['inputNumberOfPieces']) &&
+        isset($dataAd['inputDescription'])) {
+        //extract login parameters
+        $title = $dataAd['inputAdTitle'];
+        $picture = "../view/content/images/" . $dataAd['inputPicture'];
+        $kindOfGood = $dataAd['inputKindOfGood'];
+        $town = $dataAd['inputTown'];
+        $address = $dataAd['inputAddress'];
+        $description = $dataAd['inputDescription'];
+        $numberOfPieces = $dataAd['inputNumberOfPieces'];
+
+        return array($title, $picture,$kindOfGood, $town, $address, $description, $numberOfPieces);
+    }
+}
+function verifyIdAd($idAd){
+    if (isset($idAd['Id']) ){
+        return $idAd['Id'];
+    }
+}

@@ -2,8 +2,8 @@
 session_start();
 require "controller/navigation.php";
 require "controller/user.php";
-//TODO Typo
-require "controller/colocation.php";
+require "controller/account.php";
+require "controller/location.php";
 
 if (isset($_GET['action'])) {
   $action = $_GET['action'];
@@ -29,11 +29,8 @@ if (isset($_GET['action'])) {
       case 'logout' :
           logout();
           break;
-      case 'displayModifyForm' ://TODO Should be simplified
-          displayModifyForm($_GET);
-          break;
       case 'adModifyForm' :
-          adModifyForm($_POST);
+          adModifyForm($_GET, $_POST);
           break;
       case 'adDesactive' ://TODO Mix frenchglish
           adDesactive($_GET);
