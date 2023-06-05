@@ -7,6 +7,7 @@
  */
 
 require_once "model/accountManager.php";
+require_once "model/dataVerification.php";
 function adAdd($dataAd)
 {
     if (count($dataAd) == 0) {

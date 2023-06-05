@@ -1,28 +1,25 @@
 <?php
-
-
-function home(){
+require_once "model/goodsManager.php";
+require_once "model/dataVerification.php";
+function home()
+{
     try {
-        require_once "model/goodsManager.php";
-        $biens = addFullLocation();//TODO frenglish
+        $goods = getColocations();//TODO frenglish
         $develop = addFullDevelop();//TODO meaning of develop ?
-    }
-    finally {
+    } finally {
         require "view/home.php";
     }
 }
 
 
-function displayLocation($valueFilter){
-    try{
-        require_once "model/goodsManager.php";
+function displayLocation($valueFilter)
+{
+    try {
         list($kindOfGood, $town) = filter($valueFilter);
-        if (goodsFilter($kindOfGood, $town)){
-
-        }
-        if ($filter == null){
+        $goods = goodsFilter($kindOfGood, $town);
+        if ($goods == null) {
             $errorMessage = "Nous n'avons pas trouvé de bien à vos critères ! Voici nos biens actuels :";
-            $filter = addFullLocation();
+            $goods = getColocations();
         }
     } finally {
         require "view/location.php";
@@ -30,8 +27,8 @@ function displayLocation($valueFilter){
 }
 
 
-function account(){
-    require_once 'model/accountManager.php';
+function account()
+{
     $goods = getColocations();
     require_once 'view/accountPage.php';
 }

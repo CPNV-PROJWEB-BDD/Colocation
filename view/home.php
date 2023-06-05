@@ -17,14 +17,14 @@ $title = "Colocation - Home";
             <form action="../index.php?action=displayLocation" method="post">
                 <div class=" form-row">
                     <div class="col-md-5">
-                        <select name="habitation" id="habitation-select" class="form-control">
+                        <select name="kindOfGood" id="habitation-select" class="form-control">
                             <option value="">Tout type d'habitation</option>
                             <option value="Maison">Maison</option>
                             <option value="Appartement">Appartement</option>
                         </select>
                     </div>
                     <div class="col-md-5">
-                        <select name="localisation" id="localisation-select"  class="form-control">
+                        <select name="town" id="localisation-select"  class="form-control">
                             <option value="">Tout localisation</option>
                             <option value="Yverdon">Yverdon</option>
                             <option value="Ste-Croix">Ste-Croix</option>
@@ -99,16 +99,16 @@ $title = "Colocation - Home";
                 <?php for($i=0;$i <3; $i++) :?>
                 <div class="box">
                     <div class="img-box">
-                        <a href="../index.php?action=displayDetail&Id=<?=$biens[$i]['Id']?>&Habitation=<?=$biens[$i]['Habitation']?>&Localisation=<?=$biens[$i]['Localisation']?>">
-                        <img src="<?=$biens[$i]['Image']?>" alt="">
+                        <a href="../index.php?action=displayDetail&Id=<?=$goods[$i]['id']?>&kindOfGood=<?=$goods[$i]['kindOfGood']?>&town=<?=$goods[$i]['town']?>">
+                        <img src="<?=$goods[$i]['picture']?>" alt="">
                         </a>
                     </div>
                     <div class="detail-box">
                         <h6>
-                            <?=$biens[$i]['Titre']?>
+                            <?=$goods[$i]['title']?>
                         </h6>
                         <p>
-                            <?=$biens[$i]['Localisation']?>
+                            <?=$goods[$i]['town']?>
                         </p>
                     </div>
                 </div>

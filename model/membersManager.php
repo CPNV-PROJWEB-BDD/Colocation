@@ -7,8 +7,8 @@
  * @file  15.05.2023
  */
 
-require "model/dbConnector.php";
-require "model/goodsManager.php";
+require_once "model/dbConnector.php";
+require_once "model/goodsManager.php";
 function CreateSession($email, $prenom, $nom)
 {
     if ($prenom == null || $nom == null){

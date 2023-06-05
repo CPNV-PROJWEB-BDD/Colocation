@@ -3,7 +3,7 @@ session_start();
 require "controller/navigation.php";
 require "controller/user.php";
 require "controller/account.php";
-require "controller/location.php";
+require "controller/goodDetail.php";
 
 if (isset($_GET['action'])) {
   $action = $_GET['action'];
@@ -30,7 +30,7 @@ if (isset($_GET['action'])) {
           logout();
           break;
       case 'adModifyForm' :
-          adModifyForm($_GET, $_POST);
+          adModifyForm($_GET);
           break;
       case 'adDesactive' ://TODO Mix frenchglish
           adDesactive($_GET);

@@ -14,14 +14,14 @@ $title = "Colocation - Location"
         <form action="../index.php?action=displayLocation" method="post">
             <div class=" form-row">
                 <div class="col-md-5">
-                    <select name="habitation" id="habitation-select" class="form-control">
+                    <select name="kindOfGood" id="habitation-select" class="form-control">
                         <option value="">Tout type d'habitation</option>
                         <option value="Maison">Maison</option>
                         <option value="Appartement">Appartement</option>
                     </select>
                 </div>
                 <div class="col-md-5">
-                    <select name="localisation" id="localisation-select" class="form-control">
+                    <select name="town" id="localisation-select" class="form-control">
                         <option value="">Tout localisation</option>
                         <option value="Yverdon">Yverdon</option>
                         <option value="Ste-Croix">Ste-Croix</option>
@@ -55,11 +55,11 @@ $title = "Colocation - Location"
             <?php endif;?>
         </div>
         <div class="sale_container">
-            <?php foreach($filter as $item) :?>
+            <?php foreach($goods as $item) :?>
             <div class="box">
                 <div class="img-box">
-                    <a href="../index.php?action=displayDetail&Id=<?=$item['id']?>&Habitation=<?=$item['kindOfGood']?>&Localisation=<?=$item['town']?>">
-                    <img src="<?=$item['Image']?>" alt="">
+                    <a href="../index.php?action=displayDetail&Id=<?=$item['id']?>&kindOfGood=<?=$item['kindOfGood']?>&town=<?=$item['town']?>">
+                    <img src="<?=$item['picture']?>" alt="">
                     </a>
                 </div>
                 <div class="detail-box">

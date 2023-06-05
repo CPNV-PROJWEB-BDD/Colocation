@@ -6,30 +6,48 @@
  * @version 23.02.2023
  */
 
-require "dbConnector.php";
-function filter($filter){
-    if (isset($filter['habitation']) && isset($filter['localisation']))
-    $habitation = $filter['habitation'];
-    $localisation = $filter['localisation'];
-
-    return array($habitation, $localisation);
-}
+require_once "dbConnector.php";
 
 function goodsFilter($kindOfGood, $town){
     if ($kindOfGood == "" && $town == "") {
-        $query = "SELECT title, picture, kindOfGood, town, numberOfPieces from goods";
+        $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces from goods";
         return executeQuerySelect($query);
     }else if ($kindOfGood == ""){
-        $query = "SELECT title, picture, kindOfGood, town, numberOfPieces from goods";
+        $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces from goods";
         $queryComplete = $query . " WHERE town ='".$town."';";
         return executeQuerySelect($queryComplete);
     }else if ($town == ""){
-        $query = "SELECT title, picture, kindOfGood, town, numberOfPieces from goods";
+        $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces from goods";
         $queryComplete = $query . " WHERE kindOfGood ='".$kindOfGood."';";
         return executeQuerySelect($queryComplete);
     }else {
-        $query = "SELECT title, picture, kindOfGood, town, numberOfPieces from goods";
+        $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces from goods";
         $queryComplete = $query . " WHERE kindOfGood ='".$kindOfGood."' AND town ='".$town."';";
         return executeQuerySelect($queryComplete);
     }
+}
+function getColocations(){
+    $query = 'Select id, title, picture, kindOfGood, town, address, description, numberOfPieces, active';
+    $queryComplete = $query." from goods";
+    return executeQuerySelect($queryComplete);//TODO remove inline variable
+}
+
+//TODO Review function's name
+function getColocationsId($id){
+    $query = 'Select id, title, picture, kindOfGood, town, address, description, numberOfPieces, active';
+    $query = $query." from goods";
+    $queryComplete = $query. " WHERE id ='".$id."';";
+    return executeQuerySelect($queryComplete);
+}
+
+function getGoodSimilar($kindOfGood, $town){
+    $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces from goods";
+    $queryComplete = $query . " WHERE kindOfGood ='".$kindOfGood."' OR town ='".$town."';";
+    return executeQuerySelect($queryComplete);
+}
+
+function addFullDevelop(){
+    $path = 'data/developpeurs.json';
+    $json = file_get_contents($path);
+    return json_decode($json, true);
 }

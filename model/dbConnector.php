@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file   dbConnector.php
  * @brief  File description

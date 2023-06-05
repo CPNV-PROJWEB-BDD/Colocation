@@ -100,7 +100,7 @@ ob_start();
                                         <?= $item['title'] ?>
                                     </td>
                                     <td>
-                                        <a href="../index.php?action=displayDetail&Id=<?= $item['id'] ?>&Habitation=<?= $item['kindOfGood'] ?>&Localisation=<?= $item['town'] ?>">
+                                        <a href="../index.php?action=displayDetail&Id=<?= $item['id'] ?>&kindOfGood=<?= $item['kindOfGood'] ?>&town=<?= $item['town'] ?>">
                                             <img src="<?= $item['picture'] ?>" alt=""
                                                  style="width: 400px; height: 250px">
                                         </a>
