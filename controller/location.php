@@ -23,6 +23,3 @@ function displayDetail($filter){
     require "view/adDetail.php";
 }
 
-function sendAFormRequest(){
-
-}

@@ -6,6 +6,7 @@
  * @version 16.03.2023
  */
 
+
 function getDetail($id)
 {
     //Cherche les données
@@ -17,6 +18,7 @@ function getDetail($id)
         $temp[$key] = $colocation[$key]['Id'];
         if ($temp[$key] == $id) {
             $colocationFilter[$key] = $colocation[$key];
+            break;
         }
     }
     return $colocationFilter;

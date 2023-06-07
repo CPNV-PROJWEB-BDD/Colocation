@@ -11,7 +11,7 @@ $title = "adCreationForm";
         <link rel="stylesheet" href="../view/bootstrap/css/signUpForm.css">
     </head>
     <body>
-    <form class="modal-content" method="post" name="adCreationForm" action="../index.php?action=insertAdJSON">
+    <form class="modal-content" method="post" name="adCreationForm" action="../index.php?action=adAdd">
 
         <div class="container">
             <h1>créer une annonce</h1>
@@ -47,12 +47,12 @@ $title = "adCreationForm";
                 <legend>Type d'habitation</legend>
 
                 <div>
-                    <input type="radio" id="Habitation" name="inputHabitation" value="maison">
+                    <input type="radio" id="Habitation" name="inputHabitation" value="Maison">
                     <label for="Habitation">Maison</label>
                 </div>
 
                 <div>
-                    <input type="radio" id="Habitation" name="inputHabitation" value="appartement">
+                    <input type="radio" id="Habitation" name="inputHabitation" value="Appartement">
                     <label for="Habitation">Appartement</label>
                 </div>
             </fieldset>

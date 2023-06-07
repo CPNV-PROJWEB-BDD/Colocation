@@ -21,6 +21,10 @@ $title = "signUp";
     <body>
     <form class="modal-content" method="post" name="signUpForm" action="../index.php?action=signUp">
 
+        <?php if (isset($ErrorMessage)) : ?>
+            <h5><span style="color:red"><?= $ErrorMessage; ?></span></h5>
+        <?php endif; ?>
+
         <div class="container">
             <h1>créer un compte</h1>
             <p>Pour créer un compte remplissez le formulaire ci-dessus</p>
@@ -44,7 +48,12 @@ $title = "signUp";
                    name="inputPasswordCheck" required>
 
         </div>
+        <div>
         <button type="submit" class="signupbtn">Envoyer</button>
+        <a href="../index.php?action=login">
+        <button type="button" class="changeButton" style="color: black">se connecter</button>
+        </a>
+        </div>
     </form>
     </body>
     </html>

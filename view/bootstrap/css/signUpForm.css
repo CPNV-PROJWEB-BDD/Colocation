@@ -47,6 +47,12 @@ button:hover {
     background-color: #0f2480;
 }
 
+.changeButton {
+    float: right;
+    width: 50%;
+    background-color: white;
+}
+
 /* Add padding to container elements */
 .container {
     padding: 16px;

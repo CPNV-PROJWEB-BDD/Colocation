@@ -134,6 +134,7 @@ $title = "Colocation - Home";
             </div>
             <div class="price_container">
 
+                <?php if(isset($_SESSION['username'])) :?>
                 <div class="box">
                     <div class="detail-box">
                         <div class="heading-box">
@@ -169,11 +170,48 @@ $title = "Colocation - Home";
                         </div>
                     </div>
                     <div class="btn-box">
-                        <a href="../index.php?action=displaySendFormRequest">
+                        <a href="../index.php?action=sendAFormRequest">
                             Remplire formulaire
                         </a>
                     </div>
                 </div>
+            <?php else:?>
+                    <div class="box">
+                        <div class="detail-box">
+                            <div class="heading-box">
+                                <h4>
+
+                                </h4>
+                            </div>
+                            <div class="text-box">
+
+                                <ul>
+                                    <li>
+                                        Si vous
+                                    </li>
+                                    <li>
+                                       voulez
+                                    </li>
+                                    <li>
+                                       faire une demande
+                                    </li>
+                                    <li>
+                                        de colocations
+                                    </li>
+                                    <li>
+                                      connectez-vous
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <a href="../index.php?action=login">
+                                connectez-vous
+                            </a>
+                        </div>
+                    </div>
+
+                <?php endif;?>
             </div>
         </div>
     </section>

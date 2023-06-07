@@ -1,14 +1,34 @@
-# Snows
+## Colocations
 
-Snows est un dépôt éducatif de gestion de location de snowboards.
+Colocations est un dépot de gestion de colocations
+
+## Description
+
+Ce projet est un site pour trouver des colocations.
+
+Use Case : https://github.com/CPNV-PROJWEB-BDD/Colocation/blob/develop/docs/cas%20d'utilisation.pdf
+
+## Prerequistes
+
+Avoir PHP Storm installer ()
+Avoir debugger installer et xdebug configurer (version 8.2)
+Avoir le Built-in web server configurer
+Installer MYSQL
+Installer la VM ProjWebBDD-JAL
 
 ## Installation
+PHP Storm : https://www.jetbrains.com/phpstorm/download/#section=windows
 
-```
-composer install
-```
+PHP 8.2 : https://www.php.net/downloads
 
-## Utilisation (Php Storm)
+VMware workstation : https://www.vmware.com/fr/products/workstation-pro/workstation-pro-evaluation.html
+
+VM (lien disponible que pendant 30 jour à partir du 25.05.23) : https://www.swisstransfer.com/d/d19a3aa5-0a4f-48df-a644-38c02535a2c1
+
+## Configurations php
+php : https://www.php.net/manual/fr/install.php
+
+## Configuration php storm
 
 * [Créer un "web built-in server"](https://www.jetbrains.com/help/phpstorm/php-built-in-web-server.html)
 
@@ -18,20 +38,53 @@ composer install
 
 ![image](https://user-images.githubusercontent.com/5616312/215544594-3512a981-37c6-44f2-93a6-47f9b741db21.png)
 
-* Lancer le serveur et ouvrer index.php dans votre navigateur
-
 ```
 C:\php\php.exe -S localhost:8081 -t C:\Users\nicolas.glassey\MyDevs\CPNV\CFC\151\Snows\151_Trainee
 [Mon Jan 30 18:06:46 2023] PHP 8.2.1 Development Server (http://localhost:8081) started
 ```
 
+* Configuration des accès à la db
+
+En reprenant le modèle data/userDB.json.temp, il faut mettre à jour userName et userPwd (plus les paramètres spécifiques à votre installation de MySql).
+
+```
+{
+  "sqlDriver": "mysql",
+  "hostname": "127.0.0.1",
+  "port": 3306,
+  "charset": "utf8",
+  "dbName": "colocations",
+  "userName": "",
+  "userPwd": ""
+}
+```
+
+
+## Deployement
+
+# On dev environnement
+
+* Lancer le serveur et ouvrer index.php dans votre navigateur
+
+![Demarer colocation.PNG](..%2F..%2FDesktop%2FDemarer%20colocation.PNG)
+
 * Résultat à obtenir
 
-![image](https://user-images.githubusercontent.com/5616312/215457793-5f2c5bec-8e2e-4407-8d04-82b9da793d7d.png)
+![PageAcceuilProjWeb.PNG](..%2F..%2FDesktop%2FPageAcceuilProjWeb.PNG)
 
-## Contribution
+# On intergration environnement
 
-Les pull requests sont les bienvenues. Pour des changements plus conséquents, ouvrez d'abord une issue afin que nous échangions à ce sujet.
+* Démarrer la VM ProjWebBDD-JAL
+* Sur votre navigateur aller sur http://colocation
+* 
+
+## Collaborate
+
+Ahmed Mujanovic : Ahmed.mujanovic@cpnv.ch
+
+Jonathan Penaranda-Gonzalez : Jonathan.peneranda-gonzalez@cpnv.ch
+
+Logan Nguyen : Logan.nguyen@cpnv.ch
 
 ## License
 

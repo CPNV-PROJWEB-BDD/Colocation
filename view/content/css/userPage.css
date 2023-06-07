@@ -28,7 +28,7 @@ body{
 }
 
 .gutters-sm {
-    margin-right: -8px;
+    margin-right: 8px;
     margin-left: -8px;
 }
 
@@ -92,7 +92,7 @@ table img{
 
 table td.total-price{
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
 }
 table a{
     text-decoration: none;
