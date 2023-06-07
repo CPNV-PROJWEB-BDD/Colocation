@@ -6,14 +6,18 @@ Colocations est un dépot de gestion de colocations
 
 Ce projet est un site pour trouver des colocations.
 
-Use Case : https://github.com/CPNV-PROJWEB-BDD/Colocation/blob/develop/docs/cas%20d'utilisation.pdf
+[Use Case](https://github.com/CPNV-PROJWEB-BDD/Colocation/blob/develop/docs/cas%20d'utilisation.pdf)
 
 ## Prerequistes
 
 Avoir PHP Storm installer ()
+
 Avoir debugger installer et xdebug configurer (version 8.2)
+
 Avoir le Built-in web server configurer
+
 Installer MYSQL
+
 Installer la VM ProjWebBDD-JAL
 
 ## Installation
@@ -76,7 +80,7 @@ En reprenant le modèle data/userDB.json.temp, il faut mettre à jour userName e
 
 * Démarrer la VM ProjWebBDD-JAL
 * Sur votre navigateur aller sur http://colocation
-* 
+* Aller dans le dossier projWebBDD ==> colocations 
 
 ## Collaborate
 

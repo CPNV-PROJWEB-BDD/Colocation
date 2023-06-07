@@ -15,7 +15,8 @@ ob_start();
                                      class="rounded-circle" width="150">
                                 <div class="mt-1">
                                     <h4>Bonjour <?= $_SESSION['prenom'] ?></h4>
-                                    <button style="background-color: green; color: white" onclick="window.location.href='../index.php?action=adAdd'">crée
+                                    <button style="background-color: green; color: white"
+                                            onclick="window.location.href='../index.php?action=adAdd'">crée
                                         annonce
                                     </button>
                                 </div>
@@ -82,25 +83,26 @@ ob_start();
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($biens
+                                <?php foreach ($goods
 
                                 as $item) : ?>
                                 <tr>
-                                    <?php if ($item['active'] == 1) :?>
-                                    <td>
-                                        <?= $item['id'] ?>
-                                    </td>
-                                    <?php else:?>
-                                    <td style="background-color: red">
-                                        <?= $item['id'] ?>
-                                    </td>
-                                    <?php endif;?>
+                                    <?php if ($item['active'] == 1) : ?>
+                                        <td>
+                                            <?= $item['id'] ?>
+                                        </td>
+                                    <?php else: ?>
+                                        <td style="background-color: red">
+                                            <?= $item['id'] ?>
+                                        </td>
+                                    <?php endif; ?>
                                     <td>
                                         <?= $item['title'] ?>
                                     </td>
                                     <td>
-                                        <a href="../index.php?action=displayDetail&Id=<?= $item['id'] ?>&Habitation=<?= $item['kindOfGood'] ?>&Localisation=<?= $item['town'] ?>">
-                                            <img src="<?= $item['picture'] ?>" alt="" style="width: 400px; height: 250px">
+                                        <a href="../index.php?action=displayDetail&id=<?= $item['id'] ?>&kindOfGood=<?= $item['kindOfGood'] ?>&town=<?= $item['town'] ?>">
+                                            <img src="<?= $item['picture'] ?>" alt=""
+                                                 style="width: 400px; height: 250px">
                                         </a>
                                     </td>
                                     <td>
@@ -115,19 +117,25 @@ ob_start();
                                     <td>
                                         <?= $item['numberOfPieces'] ?>
                                     </td>
-                                    <td><a href="../index.php?action=displayModifyForm&Id=<?=$item['id']?>">
-                                            <button style="background-color: green; color: white" id="modify-ad">modifier annonce</button>
+                                    <td><a href="../index.php?action=adModifyForm&id=<?= $item['id'] ?>">
+                                            <button style="background-color: green; color: white" id="modify-ad">
+                                                modifier annonce
+                                            </button>
                                         </a>
                                         <br><br>
-                                        <?php if ($item['active'] == 1) :?>
-                                        <a href="../index.php?action=adDesactive&id=<?=$item['id']?>">
-                                            <button style="background-color: green; color: white" id="delete-ad">supprimer annonce</button>
-                                        </a>
-                                        <?php else:?>
-                                        <a href="../index.php?action=adActive&id=<?=$item['id']?>">
-                                            <button style="background-color: Red; color: white" id="delete-ad">Activer annonce</button>
-                                        </a>
-                                        <?php endif;?>
+                                        <?php if ($item['active'] == 1) : ?>
+                                            <a href="../index.php?action=adActiveModify&id=<?= $item['id'] ?>">
+                                                <button style="background-color: green; color: white" id="delete-ad">
+                                                    Désactiver annonce
+                                                </button>
+                                            </a>
+                                        <?php else: ?>
+                                            <a href="../index.php?action=adActiveModify&id=<?= $item['id'] ?>">
+                                                <button style="background-color: Red; color: white" id="delete-ad">
+                                                    Activer annonce
+                                                </button>
+                                            </a>
+                                        <?php endif; ?>
                                     </td>
                                     <?php endforeach; ?>
                                 </tr>

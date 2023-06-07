@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file   dbConnector.php
  * @brief  File description
@@ -12,20 +11,20 @@ const PATH_TO_CONFIG_FILE = "data/userDB.json";
 function readJsonUsers(){
     $path = PATH_TO_CONFIG_FILE;
     $json = file_get_contents($path);
-    return json_decode($json, true);
+    return json_decode($json, true);//TODO add json ext to composer
 }
 
 function openDBConnection()
 {
-    $informations = readJsonUsers();
+    $information = readJsonUsers();
 
-        $sqlDriver = $informations['sqlDriver'];
-        $hostname = $informations['hostname'];
-        $port = $informations['port'];
-        $charset = $informations['charset'];
-        $dbName = $informations['dbName'];
-        $userName = $informations['userName'];
-        $userPwd = $informations['userPwd'];
+        $sqlDriver = $information['sqlDriver'];
+        $hostname = $information['hostname'];
+        $port = $information['port'];
+        $charset = $information['charset'];
+        $dbName = $information['dbName'];
+        $userName = $information['userName'];
+        $userPwd = $information['userPwd'];
 
         $dsn = $sqlDriver . ':host=' . $hostname . ';dbname=' . $dbName . ';port=' . $port . ';charset=' . $charset;
 

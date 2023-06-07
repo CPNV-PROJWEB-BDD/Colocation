@@ -22,7 +22,7 @@ $title = "adCreationForm";
             <input type="text" placeholder="Entrez le titre de votre annonce" id="adTitle" name="inputAdTitle" required>
 
             <label for="previewPhoto"><b>Image de colocation </b></label>
-            <input type="file" id="inputPhoto" name="inputPhoto" accept="image/jpeg, image/png, image/jpg" onchange="previewImage(event)">
+            <input type="file" id="inputPhoto" name="inputPicture" accept="image/jpeg, image/png, image/jpg" onchange="previewImage(event)">
             <img id="preview" src="#" alt="Preview Image" width="500px" height="500px" >
 
             <script>
@@ -37,33 +37,33 @@ $title = "adCreationForm";
             </script>
 
             <br><br>
-            <label for="localisation"><b>Location</b></label>
-            <input type="text" placeholder="Entrez le lieu de la colocation" id="Localisation" name="inputLocalisation" required>
+            <label for="town"><b>Lieu</b></label>
+            <input type="text" placeholder="Entrez la ville ou village de la colocation" id="town" name="inputTown" required>
             
-            <label for="adresse"><b>Adresse</b></label>
-            <input type="text" placeholder="chemin de Gransson" id="adresse" name="inputAdresse" required>
+            <label for="address"><b>Adresse</b></label>
+            <input type="text" placeholder="Ex : chemin de Grandson" id="address" name="inputAddress" required>
 
             <fieldset>
                 <legend>Type d'habitation</legend>
 
                 <div>
-                    <input type="radio" id="Habitation" name="inputHabitation" value="Maison">
+                    <input type="radio" id="kindOfGood" name="inputKindOfGood" value="Maison">
                     <label for="Habitation">Maison</label>
                 </div>
 
                 <div>
-                    <input type="radio" id="Habitation" name="inputHabitation" value="Appartement">
+                    <input type="radio" id="kindOfGood" name="inputKindOfGood" value="Appartement">
                     <label for="Habitation">Appartement</label>
                 </div>
             </fieldset>
             <br>
 
-            <label for="nbPieces"><b>Nombre de pièces</b></label>
-            <input type="number" placeholder="Nombres de pieces" id="nbPieces" name="inputNbPieces" required>
+            <label for="numberOfPieces"><b>Nombre de pièces</b></label>
+            <input type="number" placeholder="Nombres de pieces" id="numberOfPieces" name="inputNumberOfPieces" required>
             <br><br>
 
-            <label for="description"><b>Detail</b></label>
-            <input type="text" placeholder="Loyer, condition, etc..." id="detail" name="inputDescription" required>
+            <label for="description"><b>Description</b></label>
+            <input type="text" placeholder="Loyer, condition, etc..." id="description" name="inputDescription" required>
 
 
         </div>

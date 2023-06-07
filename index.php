@@ -2,7 +2,8 @@
 session_start();
 require "controller/navigation.php";
 require "controller/user.php";
-require "controller/colocation.php";
+require "controller/account.php";
+require "controller/goodDetail.php";
 
 if (isset($_GET['action'])) {
   $action = $_GET['action'];
@@ -17,8 +18,8 @@ if (isset($_GET['action'])) {
           signUp($_POST);
           break;
       case 'account':
-            account();
-            break;
+          account();//TODO indentation
+          break;
       case 'displayDetail' :
           displayDetail($_GET);
           break;
@@ -31,17 +32,11 @@ if (isset($_GET['action'])) {
       case 'sendAFormRequest' :
           sendAFormRequest($_POST);
             break;
-      case 'displayModifyForm' :
-          displayModifyForm($_GET);
-          break;
       case 'adModifyForm' :
-          adModifyForm($_POST);
+          adModifyForm($_GET);
           break;
-      case 'adDesactive' :
-          adDesactive($_GET);
-          break;
-      case 'adActive' :
-          adActive($_GET);
+      case 'adActiveModify' :
+          adActiveModify($_GET);
           break;
       case 'adAdd' :
           adAdd($_POST);
