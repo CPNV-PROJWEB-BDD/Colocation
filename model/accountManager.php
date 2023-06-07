@@ -13,7 +13,7 @@ function addAd($titre, $picture, $habitation, $localisation, $addresse, $descrip
     // Query to get the selected snow. Active must setted to avoid that user can view an non active snow by entering the code in the URL
     $query = "insert into goods (title, picture , kindOfGood, town, address, description, numberOfPieces, active)";
     $queryComplete = $query." Values ('".$titre."','".$picture."','".$habitation."','".$localisation."','".$addresse."','".$description."','".$pieces."','".$active."')";
-    return executeQueryAddItem($queryComplete);//TODO remove inline variable
+    return executeQueryAddItem($queryComplete);
 
 
 }

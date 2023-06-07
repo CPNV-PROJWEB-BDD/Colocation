@@ -15,14 +15,14 @@
     <title>Teaser</title>
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="../view/content/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="view/content/css/bootstrap.css" />
 
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="../view/content/css/style.css" rel="stylesheet" />
+    <link href="view/content/css/style.css" rel="stylesheet" />
     <!-- responsive style -->
-    <link href="../view/content/css/responsive.css" rel="stylesheet" />
+    <link href="view/content/css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -67,13 +67,13 @@
 
                     <div id="myNav" class="overlay">
                         <div class="overlay-content">
-                            <a href="../index.php?action=home">ACCUEIL</a>
+                            <a href="index.php?action=home">ACCUEIL</a>
                             <?php if(!isset($_SESSION['username'])) :?>
-                            <a href="../index.php?action=signUp">S'ENREGISTRER</a>
-                            <a href="../index.php?action=login">SE CONNECTER</a>
+                            <a href="index.php?action=signUp">S'ENREGISTRER</a>
+                            <a href="index.php?action=login">SE CONNECTER</a>
                             <?php else:?>
-                            <a href="../index.php?action=account">COMPTE</a>
-                            <a href="../index.php?action=logout">SE DECONNECTER</a>
+                            <a href="index.php?action=account">COMPTE</a>
+                            <a href="index.php?action=logout">SE DECONNECTER</a>
                             <?php endif;?>
                         </div>
                     </div>
@@ -125,9 +125,9 @@
     </section>
     <!-- end  footer section -->
 
-    <script type="text/javascript" src="../view/content/js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="../view/content/js/bootstrap.js"></script>
-    <script type="text/javascript" src="../view/content/js/custom.js"></script>
+    <script type="text/javascript" src="view/content/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="view/content/js/bootstrap.js"></script>
+    <script type="text/javascript" src="view/content/js/custom.js"></script>
 </div>
 
 </body>

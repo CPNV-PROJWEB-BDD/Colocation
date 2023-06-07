@@ -4,8 +4,8 @@ require_once "model/dataVerification.php";
 function home()
 {
     try {
-        $goods = getGoods();//TODO frenglish
-        $develop = addFullDevelop();//TODO meaning of develop ?
+        $goods = getGoods();
+        $develop = addFullDevelop();
     } finally {
         require "view/home.php";
     }

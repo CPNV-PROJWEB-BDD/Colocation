@@ -10,7 +10,7 @@ require_once "model/dataVerification.php";
 
 function displayDetail($filter)
 {
-    //TODO Uppercase, lowercase
+
     try {
         $id = verifyIdAd($filter);
         list($kindOfGood, $town) = filter($filter);

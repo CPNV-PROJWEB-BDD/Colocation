@@ -29,9 +29,8 @@ function goodsFilter($kindOfGood, $town){
 function getGoods(){
     $query = 'Select id, title, picture, kindOfGood, town, address, description, numberOfPieces, active';
     $queryComplete = $query." from goods";
-    return executeQuerySelect($queryComplete);//TODO remove inline variable
+    return executeQuerySelect($queryComplete);
 }
-//TODO Review function's name
 function getGood($id){
     $query = 'Select id, title, picture, kindOfGood, town, address, description, numberOfPieces, active';
     $query = $query." from goods";
