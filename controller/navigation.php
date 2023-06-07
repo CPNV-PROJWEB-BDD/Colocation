@@ -4,7 +4,7 @@ require_once "model/dataVerification.php";
 function home()
 {
     try {
-        $goods = getColocations();//TODO frenglish
+        $goods = getGoods();//TODO frenglish
         $develop = addFullDevelop();//TODO meaning of develop ?
     } finally {
         require "view/home.php";
@@ -19,17 +19,16 @@ function displayLocation($valueFilter)
         $goods = goodsFilter($kindOfGood, $town);
         if ($goods == null) {
             $errorMessage = "Nous n'avons pas trouvé de bien à vos critères ! Voici nos biens actuels :";
-            $goods = getColocations();
+            $goods = getGoods();
         }
     } finally {
         require "view/location.php";
     }
 }
 
-
 function account()
 {
-    $goods = getColocations();
+    $goods = getGoods();
     require_once 'view/accountPage.php';
 }
 

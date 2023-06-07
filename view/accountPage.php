@@ -100,7 +100,7 @@ ob_start();
                                         <?= $item['title'] ?>
                                     </td>
                                     <td>
-                                        <a href="../index.php?action=displayDetail&Id=<?= $item['id'] ?>&kindOfGood=<?= $item['kindOfGood'] ?>&town=<?= $item['town'] ?>">
+                                        <a href="../index.php?action=displayDetail&id=<?= $item['id'] ?>&kindOfGood=<?= $item['kindOfGood'] ?>&town=<?= $item['town'] ?>">
                                             <img src="<?= $item['picture'] ?>" alt=""
                                                  style="width: 400px; height: 250px">
                                         </a>
@@ -117,20 +117,20 @@ ob_start();
                                     <td>
                                         <?= $item['numberOfPieces'] ?>
                                     </td>
-                                    <td><a href="../index.php?action=adModifyForm&Id=<?= $item['id'] ?>">
+                                    <td><a href="../index.php?action=adModifyForm&id=<?= $item['id'] ?>">
                                             <button style="background-color: green; color: white" id="modify-ad">
                                                 modifier annonce
                                             </button>
                                         </a>
                                         <br><br>
                                         <?php if ($item['active'] == 1) : ?>
-                                            <a href="../index.php?action=adDesactive&id=<?= $item['id'] ?>">
+                                            <a href="../index.php?action=adActiveModify&id=<?= $item['id'] ?>">
                                                 <button style="background-color: green; color: white" id="delete-ad">
-                                                    supprimer annonce
+                                                    Désactiver annonce
                                                 </button>
                                             </a>
                                         <?php else: ?>
-                                            <a href="../index.php?action=adActive&id=<?= $item['id'] ?>">
+                                            <a href="../index.php?action=adActiveModify&id=<?= $item['id'] ?>">
                                                 <button style="background-color: Red; color: white" id="delete-ad">
                                                     Activer annonce
                                                 </button>

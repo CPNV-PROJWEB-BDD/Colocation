@@ -99,7 +99,7 @@ $title = "Colocation - Home";
                 <?php for($i=0;$i <3; $i++) :?>
                 <div class="box">
                     <div class="img-box">
-                        <a href="../index.php?action=displayDetail&Id=<?=$goods[$i]['id']?>&kindOfGood=<?=$goods[$i]['kindOfGood']?>&town=<?=$goods[$i]['town']?>">
+                        <a href="../index.php?action=displayDetail&id=<?=$goods[$i]['id']?>&kindOfGood=<?=$goods[$i]['kindOfGood']?>&town=<?=$goods[$i]['town']?>">
                         <img src="<?=$goods[$i]['picture']?>" alt="">
                         </a>
                     </div>

@@ -26,23 +26,21 @@ function goodsFilter($kindOfGood, $town){
         return executeQuerySelect($queryComplete);
     }
 }
-function getColocations(){
+function getGoods(){
     $query = 'Select id, title, picture, kindOfGood, town, address, description, numberOfPieces, active';
     $queryComplete = $query." from goods";
     return executeQuerySelect($queryComplete);//TODO remove inline variable
 }
-
 //TODO Review function's name
-function getColocationsId($id){
+function getGood($id){
     $query = 'Select id, title, picture, kindOfGood, town, address, description, numberOfPieces, active';
     $query = $query." from goods";
     $queryComplete = $query. " WHERE id ='".$id."';";
     return executeQuerySelect($queryComplete);
 }
-
-function getGoodSimilar($kindOfGood, $town){
+function getGoodSimilar($id, $kindOfGood, $town){
     $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces from goods";
-    $queryComplete = $query . " WHERE kindOfGood ='".$kindOfGood."' OR town ='".$town."';";
+    $queryComplete = $query . " WHERE (kindOfGood ='".$kindOfGood."' OR town ='".$town."') AND id NOT IN(".$id.");";
     return executeQuerySelect($queryComplete);
 }
 

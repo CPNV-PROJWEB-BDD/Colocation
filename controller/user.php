@@ -14,7 +14,7 @@ function logout()
 {
     $_SESSION = array();
     session_destroy();
-    $biens = addFullLocation();
+    $goods = getGoods();
     $develop = addFullDevelop();
     require 'view/home.php';
 }
@@ -39,7 +39,7 @@ function signUp($signUpDataUser)
                     if ($userPwd == $userPwdConfirm) {
                         if (registerUser($userFirstname, $userLastname, $userEmailAdress, $userPwd)) {
                             CreateSession($userEmailAdress, $userFirstname, $userLastname);
-                            $goods = getColocations();
+                            $goods = getGoods();
                             $develop = addFullDevelop();
                             require "view/home.php";
                         } else {
@@ -76,7 +76,7 @@ function login($loginDataUser)
 
                 if (IsLoginCorrect($userEmailAdress, $userPwd)) {
                     CreateSession($userEmailAdress, $prenom = null, $nom = null);
-                    $goods = getColocations();
+                    $goods = getGoods();
                     $develop = addFullDevelop();
                     require "view/home.php";
                 } else {

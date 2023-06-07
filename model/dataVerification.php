@@ -25,8 +25,8 @@ function verifyDataAd($dataAd)
 
 function verifyIdAd($idAd)
 {
-    if (isset($idAd['Id'])) {
-        return $idAd['Id'];
+    if (isset($idAd['id'])) {
+        return $idAd['id'];
     }
 }
 

@@ -14,8 +14,8 @@ function displayDetail($filter)
     try {
         $id = verifyIdAd($filter);
         list($kindOfGood, $town) = filter($filter);
-        $good = getColocationsId($id);
-        $goodSimilar = getGoodSimilar($kindOfGood, $town);
+        $good = getGood($id);
+        $goodSimilar = getGoodSimilar($id, $kindOfGood, $town);
     } finally {
         require "view/adDetail.php";
     }

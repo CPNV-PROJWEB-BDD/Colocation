@@ -32,11 +32,8 @@ if (isset($_GET['action'])) {
       case 'adModifyForm' :
           adModifyForm($_GET);
           break;
-      case 'adDesactive' ://TODO Mix frenchglish
-          adDesactive($_GET);
-          break;
-      case 'adActive' ://TODO purpose of this action ?
-          adActive($_GET);
+      case 'adActiveModify' :
+          adActiveModify($_GET);
           break;
       case 'adAdd' :
           adAdd($_POST);
