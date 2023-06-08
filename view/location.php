@@ -11,7 +11,7 @@ $title = "Colocation - Location"
 
 <section class="find_section ">
     <div class="container">
-        <form action="../index.php?action=displayLocation" method="post">
+        <form action="index.php?action=displayLocation" method="post">
             <div class=" form-row">
                 <div class="col-md-5">
                     <select name="kindOfGood" id="habitation-select" class="form-control">
@@ -58,7 +58,7 @@ $title = "Colocation - Location"
             <?php foreach($goods as $item) :?>
             <div class="box">
                 <div class="img-box">
-                    <a href="../index.php?action=displayDetail&id=<?=$item['id']?>&kindOfGood=<?=$item['kindOfGood']?>&town=<?=$item['town']?>">
+                    <a href="index.php?action=displayDetail&id=<?=$item['id']?>&kindOfGood=<?=$item['kindOfGood']?>&town=<?=$item['town']?>">
                     <img src="<?=$item['picture']?>" alt="">
                     </a>
                 </div>

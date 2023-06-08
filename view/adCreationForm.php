@@ -7,11 +7,11 @@ $title = "adCreationForm";
     <head>
         <meta charset="UTF-8">
         <title>Title of the document</title>
-        <link rel="stylesheet" href="../view/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="../view/bootstrap/css/signUpForm.css">
+        <link rel="stylesheet" href="view/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="view/bootstrap/css/signUpForm.css">
     </head>
     <body>
-    <form class="modal-content" method="post" name="adCreationForm" action="../index.php?action=adAdd">
+    <form class="modal-content" method="post" name="adCreationForm" action="index.php?action=adAdd">
 
         <div class="container">
             <h1>créer une annonce</h1>

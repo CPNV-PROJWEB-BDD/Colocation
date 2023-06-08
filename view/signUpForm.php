@@ -15,11 +15,11 @@ $title = "signUp";
     <head>
         <meta charset="UTF-8">
         <title>Title of the document</title>
-        <link rel="stylesheet" href="../view/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="../view/bootstrap/css/signUpForm.css">
+        <link rel="stylesheet" href="view/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="view/bootstrap/css/signUpForm.css">
     </head>
     <body>
-    <form class="modal-content" method="post" name="signUpForm" action="../index.php?action=signUp">
+    <form class="modal-content" method="post" name="signUpForm" action="index.php?action=signUp">
 
         <?php if (isset($ErrorMessage)) : ?>
             <h5><span style="color:red"><?= $ErrorMessage; ?></span></h5>

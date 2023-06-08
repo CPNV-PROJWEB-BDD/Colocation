@@ -10,7 +10,7 @@ function verifyDataAd($dataAd)
         if ($dataAd['inputPicture'] == "") {
             $picture = null;
         } else {
-            $picture = "../view/content/images/" . $dataAd['inputPicture'];
+            $picture = "view/content/images/" . $dataAd['inputPicture'];
         }
         $title = $dataAd['inputAdTitle'];
         $kindOfGood = $dataAd['inputKindOfGood'];
