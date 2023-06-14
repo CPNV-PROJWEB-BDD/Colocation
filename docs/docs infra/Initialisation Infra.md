@@ -25,7 +25,7 @@ Lien pour télécharger la [VM](https://www.swisstransfer.com/d/d19a3aa5-0a4f-48
 ## Droit admin utilisateur
 - `Apt install sudo (en root)`
 - `Usermod -aG sudo logan`
-## Installation apache2
+## Installation apache2
 - `sudo apt update`
 - `sudo apt install apache2`
 - `sudo ufw allow in "WWW Full"`
