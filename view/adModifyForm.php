@@ -12,11 +12,11 @@ ob_start();
     <head>
         <meta charset="UTF-8">
         <title>Title of the document</title>
-        <link rel="stylesheet" href="../view/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="../view/bootstrap/css/signUpForm.css">
+        <link rel="stylesheet" href="view/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="view/bootstrap/css/signUpForm.css">
     </head>
     <body>
-    <form class="modal-content" method="post" name="adModifyForm" action="../index.php?action=adModifyForm">
+    <form class="modal-content" method="post" name="adModifyForm" action="index.php?action=adModifyForm">
 <?php foreach ($good as $item) :?>
         <div class="container">
             <h1>Modifier une annonce</h1>

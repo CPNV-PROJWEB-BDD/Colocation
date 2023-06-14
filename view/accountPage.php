@@ -2,7 +2,7 @@
 ob_start();
 ?>
     <link rel="stylesheet" type="text/css" href="content/css/userPage.css">
-    <script src="../view/content/js/adButtonFunction.js"></script>
+    <script src="view/content/js/adButtonFunction.js"></script>
 
     <div class="container-box">
         <div class="main-body">
@@ -16,7 +16,7 @@ ob_start();
                                 <div class="mt-1">
                                     <h4>Bonjour <?= $_SESSION['prenom'] ?></h4>
                                     <button style="background-color: green; color: white"
-                                            onclick="window.location.href='../index.php?action=adAdd'">crée
+                                            onclick="window.location.href='index.php?action=adAdd'">crée
                                         annonce
                                     </button>
                                 </div>
@@ -100,7 +100,7 @@ ob_start();
                                         <?= $item['title'] ?>
                                     </td>
                                     <td>
-                                        <a href="../index.php?action=displayDetail&id=<?= $item['id'] ?>&kindOfGood=<?= $item['kindOfGood'] ?>&town=<?= $item['town'] ?>">
+                                        <a href="index.php?action=displayDetail&id=<?= $item['id'] ?>&kindOfGood=<?= $item['kindOfGood'] ?>&town=<?= $item['town'] ?>">
                                             <img src="<?= $item['picture'] ?>" alt=""
                                                  style="width: 400px; height: 250px">
                                         </a>
@@ -117,20 +117,20 @@ ob_start();
                                     <td>
                                         <?= $item['numberOfPieces'] ?>
                                     </td>
-                                    <td><a href="../index.php?action=adModifyForm&id=<?= $item['id'] ?>">
+                                    <td><a href="index.php?action=adModifyForm&id=<?= $item['id'] ?>">
                                             <button style="background-color: green; color: white" id="modify-ad">
                                                 modifier annonce
                                             </button>
                                         </a>
                                         <br><br>
                                         <?php if ($item['active'] == 1) : ?>
-                                            <a href="../index.php?action=adActiveModify&id=<?= $item['id'] ?>">
+                                            <a href="index.php?action=adActiveModify&id=<?= $item['id'] ?>">
                                                 <button style="background-color: green; color: white" id="delete-ad">
                                                     Désactiver annonce
                                                 </button>
                                             </a>
                                         <?php else: ?>
-                                            <a href="../index.php?action=adActiveModify&id=<?= $item['id'] ?>">
+                                            <a href="index.php?action=adActiveModify&id=<?= $item['id'] ?>">
                                                 <button style="background-color: Red; color: white" id="delete-ad">
                                                     Activer annonce
                                                 </button>

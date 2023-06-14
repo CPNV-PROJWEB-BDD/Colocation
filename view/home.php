@@ -14,7 +14,7 @@ $title = "Colocation - Home";
     <!-- find section -->
     <section class="find_section ">
         <div class="container">
-            <form action="../index.php?action=displayLocation" method="post">
+            <form action="index.php?action=displayLocation" method="post">
                 <div class=" form-row">
                     <div class="col-md-5">
                         <select name="kindOfGood" id="habitation-select" class="form-control">
@@ -50,13 +50,13 @@ $title = "Colocation - Home";
 
     <section class="about_section layout_padding-bottom">
         <div class="square-box">
-            <img src="../view/content/images/square.png" alt="">
+            <img src="view/content/images/square.png" alt="">
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="img-box">
-                        <img src="../view/content/images/about-img.jpg" alt="">
+                        <img src="view/content/images/about-img.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -99,7 +99,7 @@ $title = "Colocation - Home";
                 <?php for($i=0;$i <3; $i++) :?>
                 <div class="box">
                     <div class="img-box">
-                        <a href="../index.php?action=displayDetail&id=<?=$goods[$i]['id']?>&kindOfGood=<?=$goods[$i]['kindOfGood']?>&town=<?=$goods[$i]['town']?>">
+                        <a href="index.php?action=displayDetail&id=<?=$goods[$i]['id']?>&kindOfGood=<?=$goods[$i]['kindOfGood']?>&town=<?=$goods[$i]['town']?>">
                         <img src="<?=$goods[$i]['picture']?>" alt="">
                         </a>
                     </div>
@@ -169,7 +169,7 @@ $title = "Colocation - Home";
                         </div>
                     </div>
                     <div class="btn-box">
-                        <a href="../index.php?action=displaySendFormRequest">
+                        <a href="index.php?action=displaySendFormRequest">
                             Remplire formulaire
                         </a>
                     </div>
@@ -206,10 +206,10 @@ $title = "Colocation - Home";
                 <div class="col-md-6">
                     <div class="img-box">
                         <div class="box b1">
-                            <img src="../view/content/images/d-1.jpg" alt="">
+                            <img src="view/content/images/d-1.jpg" alt="">
                         </div>
                         <div class="box b1">
-                            <img src="../view/content/images/d-2.jpg" alt="">
+                            <img src="view/content/images/d-2.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -233,7 +233,7 @@ $title = "Colocation - Home";
                 <div class="col-md-3 col-sm-6">
                     <div class="box">
                         <div class="img-box">
-                            <img src="../view/content/images/u-1.png" alt="">
+                            <img src="view/content/images/u-1.png" alt="">
                         </div>
                         <div class="detail-box">
                             <h3 class="price">
@@ -248,7 +248,7 @@ $title = "Colocation - Home";
                 <div class="col-md-3 col-sm-6">
                     <div class="box">
                         <div class="img-box">
-                            <img src="../view/content/images/u-2.png" alt="">
+                            <img src="view/content/images/u-2.png" alt="">
                         </div>
                         <div class="detail-box">
                             <h3>
@@ -263,7 +263,7 @@ $title = "Colocation - Home";
                 <div class="col-md-3 col-sm-6">
                     <div class="box">
                         <div class="img-box">
-                            <img src="../view/content/images/u-3.png" alt="">
+                            <img src="view/content/images/u-3.png" alt="">
                         </div>
                         <div class="detail-box">
                             <h3>
@@ -278,7 +278,7 @@ $title = "Colocation - Home";
                 <div class="col-md-3 col-sm-6">
                     <div class="box">
                         <div class="img-box">
-                            <img src="../view/content/images/u-4.png" alt="">
+                            <img src="view/content/images/u-4.png" alt="">
                         </div>
                         <div class="detail-box">
                             <h3>
@@ -415,7 +415,7 @@ $title = "Colocation - Home";
                         </h5>
                         <div>
                             <div class="img-box">
-                                <img src="../view/content/images/location.png" width="18px" alt="">
+                                <img src="view/content/images/location.png" width="18px" alt="">
                             </div>
                             <p>
                                 Address
@@ -423,7 +423,7 @@ $title = "Colocation - Home";
                         </div>
                         <div>
                             <div class="img-box">
-                                <img src="../view/content/images/phone.png" width="12px" alt="">
+                                <img src="view/content/images/phone.png" width="12px" alt="">
                             </div>
                             <p>
                                 +01 1234567890
@@ -431,7 +431,7 @@ $title = "Colocation - Home";
                         </div>
                         <div>
                             <div class="img-box">
-                                <img src="../view/content/images/mail.png" width="18px" alt="">
+                                <img src="view/content/images/mail.png" width="18px" alt="">
                             </div>
                             <p>
                                 demo@gmail.com
@@ -502,16 +502,16 @@ $title = "Colocation - Home";
                         </form>
                         <div class="social_box">
                             <a href="">
-                                <img src="../view/content/images/fb.png" alt="">
+                                <img src="view/content/images/fb.png" alt="">
                             </a>
                             <a href="">
-                                <img src="../view/content/images/twitter.png" alt="">
+                                <img src="view/content/images/twitter.png" alt="">
                             </a>
                             <a href="">
-                                <img src="../view/content/images/linkedin.png" alt="">
+                                <img src="view/content/images/linkedin.png" alt="">
                             </a>
                             <a href="">
-                                <img src="../view/content/images/youtube.png" alt="">
+                                <img src="view/content/images/youtube.png" alt="">
                             </a>
                         </div>
                     </div>

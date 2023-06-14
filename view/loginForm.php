@@ -14,11 +14,11 @@ $title = "Colocation - login"
 <head>
     <meta charset="UTF-8">
     <title>Title of the document</title>
-    <link rel="stylesheet" href="../view/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../view/bootstrap/css/signUpForm.css">
+    <link rel="stylesheet" href="view/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="view/bootstrap/css/signUpForm.css">
 </head>
 <body>
-<form class="modal-content" method="post" name="loginForm" action="../index.php?action=login">
+<form class="modal-content" method="post" name="loginForm" action="index.php?action=login">
 
 
     <?php if (isset($ErrorMessage)) : ?>
