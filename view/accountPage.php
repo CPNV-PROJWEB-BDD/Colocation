@@ -117,25 +117,26 @@ ob_start();
                                     <td>
                                         <?= $item['numberOfPieces'] ?>
                                     </td>
-                                    <td><a href="index.php?action=adModifyForm&id=<?= $item['id'] ?>">
+                                    <td>
+                                        <a href="index.php?action=adModifyForm&id=<?= $item['id'] ?>">
                                             <button style="background-color: green; color: white" id="modify-ad">
                                                 modifier annonce
                                             </button>
                                         </a>
                                         <br><br>
-                                        <?php if ($item['active'] == 1) : ?>
-                                            <a href="index.php?action=adActiveModify&id=<?= $item['id'] ?>">
-                                                <button style="background-color: green; color: white" id="delete-ad">
-                                                    Désactiver annonce
-                                                </button>
-                                            </a>
-                                        <?php else: ?>
-                                            <a href="index.php?action=adActiveModify&id=<?= $item['id'] ?>">
-                                                <button style="background-color: Red; color: white" id="delete-ad">
-                                                    Activer annonce
-                                                </button>
-                                            </a>
-                                        <?php endif; ?>
+                                        <form method="post" action="index.php?action=adActiveModify">
+                                            <input type="hidden" value="<?=$item['id']?>">
+                                            <?php if ($item['active'] == 1) : ?>
+                                            <button style="background-color: green; color: white" id="active-ad"
+                                            type="submit">
+                                                Désactiver annonce
+                                            <?php else: ?>
+                                                <button style="background-color: red; color: white" id="active-ad"
+                                                type="submit">
+                                                Activer annonce
+                                            <?php endif; ?>
+                                            </button>
+                                        </form>
                                     </td>
                                     <?php endforeach; ?>
                                 </tr>

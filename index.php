@@ -33,7 +33,7 @@ if (isset($_GET['action'])) {
           adModifyForm($_GET);
           break;
       case 'adActiveModify' :
-          adActiveModify($_GET);
+          adActiveModify($_POST);
           break;
       case 'adAdd' :
           adAdd($_POST);

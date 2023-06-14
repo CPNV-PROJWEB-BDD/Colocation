@@ -73,6 +73,11 @@ En reprenant le modèle data/userDB.json.temp, il faut mettre à jour userName e
 
 
 ## Deployement
+Pour que le site prenne en compte la base de données, il faut exécuter les scripts suivants :
+
+* scriptbdd/scriptProjetWebBDD.sql
+* scriptbdd/insertionDeDonness.sql
+* scriptbdd/createUser.sql
 
 # On dev environnement
 
