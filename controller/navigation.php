@@ -3,12 +3,12 @@ require_once "model/goodsManager.php";
 require_once "model/dataVerification.php";
 function home()
 {
-    try {
+    //try {
         $goods = getGoods();
         $develop = addFullDevelop();
-    } finally {
+    //} finally {
         require "view/home.php";
-    }
+    //}
 }
 
 

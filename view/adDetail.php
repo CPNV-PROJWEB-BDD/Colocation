@@ -11,9 +11,7 @@ $title = "Colocation - Detail"
 <section class="about_section layout_padding-bottom">
     <div class="container">
         <div class="row">
-            <?php foreach ($good
-
-            as $item) : ?>
+            <?php foreach ($good as $item) : ?>
             <div class="col-md-6">
                 <div class="img-box">
                     <img src="<?= $item['picture'] ?>" alt="">

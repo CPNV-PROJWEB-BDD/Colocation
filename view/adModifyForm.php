@@ -25,7 +25,7 @@ ob_start();
             <?php endif;?>
             <p>Pour modifiez cette annonce, veuillez changer le contenu des champs ci-dessous</p>
             <hr>
-            <input type="hidden" name="Id" value="<?=$item['id']?>">
+            <input type="hidden" name="id" value="<?=$item['id']?>">
 
             <label for="adTitle"><b>titre annonce </b></label>
             <input type="text" placeholder="Entrez le titre de votre annonce" id="adTitle" name="inputAdTitle" required value="<?=$item['title']?>">

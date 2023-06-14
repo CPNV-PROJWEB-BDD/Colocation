@@ -7,7 +7,7 @@
 -- Insérer les donnés dans la tables members
 INSERT INTO members (firstname, lastname, email, passwordHash) VALUES ('Adem', 'Mujanovic', 'Adem.Mujanovic@cpnv.ch', 'Pa$$w0rd');
 INSERT INTO members (firstname, lastname, email, passwordHash) VALUES ('Ahmed', 'Mujanovic', 'Ahmed.Mujanovic@cpnv.ch', 'Pa$$w0rd');
-members
+
 
 -- Insérer les donnés dans la tables  goods
 INSERT INTO goods (title, picture, kindOfGood, town, address, DESCRIPTION, numberOfPieces, active) VALUES ('Appartement orginal', '../view/content/images/s-1.jpg', 'Appartement', 'Fribourg', 'Rue de morat', "c'est un très beau appartement avec une magnifique vue", 3.5, 1);
