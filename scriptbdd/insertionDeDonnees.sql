@@ -10,12 +10,12 @@ INSERT INTO members (firstname, lastname, email, passwordHash) VALUES ('Ahmed', 
 
 
 -- Insérer les donnés dans la tables  goods
-INSERT INTO goods (title, picture, kindOfGood, town, address, DESCRIPTION, numberOfPieces, active) VALUES ('Appartement orginal', '../view/content/images/s-1.jpg', 'Appartement', 'Fribourg', 'Rue de morat', "c'est un très beau appartement avec une magnifique vue", 3.5, 1);
-INSERT INTO goods (title, picture, kindOfGood, town, address, DESCRIPTION, numberOfPieces, active) VALUES ('Appartement moderne', '../view/content/images/s-2.jpg', 'Appartement', 'Ste-croix', 'Rue des Rasses', "c'est un très beau appartement avec une magnifique vue", 4, 1);
-INSERT INTO goods (title, picture, kindOfGood, town, address, DESCRIPTION, numberOfPieces, active) VALUES ('Maison ancienne', '../view/content/images/s-3.jpg', 'Maison', 'Yverdon', "Rue d'orbe", "c'est une très belle maison avec une magnifique vue", 3.5, 1);
-INSERT INTO goods (title, picture, kindOfGood, town, address, DESCRIPTION, numberOfPieces, active) VALUES ('Appartement luxe', '../view/content/images/s-4.jpg', 'Appartement', 'Grandson', 'Chemin de Bellevue', "c'est un très beau appartement avec une magnifique vue", 2, 1);
-INSERT INTO goods (title, picture, kindOfGood, town, address, DESCRIPTION, numberOfPieces, active) VALUES ('Maison tranquille', '../view/content/images/s-5.jpg', 'Maison', 'Yverdon', 'Avenue Général Guisans', "c'est une très belle maison avec une magnifique vue", 3, 1);
-INSERT INTO goods (title, picture, kindOfGood, town, address, DESCRIPTION, numberOfPieces, active) VALUES ('Appartmenent avec balcon', '../view/content/images/s-6.jpg', 'Appartement', 'Yverdon', 'Chemin des roses', "c'est un très beau appartement avec une magnifique vue", 2.5, 1);
+INSERT INTO goods (title, picture, kindOfGood, town, address, DESCRIPTION, numberOfPieces, active) VALUES ('Appartement orginal', 'view/content/images/s-1.jpg', 'Appartement', 'Fribourg', 'Rue de morat', "c'est un très beau appartement avec une magnifique vue", 3.5, 1);
+INSERT INTO goods (title, picture, kindOfGood, town, address, DESCRIPTION, numberOfPieces, active) VALUES ('Appartement moderne', 'view/content/images/s-2.jpg', 'Appartement', 'Ste-croix', 'Rue des Rasses', "c'est un très beau appartement avec une magnifique vue", 4, 1);
+INSERT INTO goods (title, picture, kindOfGood, town, address, DESCRIPTION, numberOfPieces, active) VALUES ('Maison ancienne', 'view/content/images/s-3.jpg', 'Maison', 'Yverdon', "Rue d'orbe", "c'est une très belle maison avec une magnifique vue", 3.5, 1);
+INSERT INTO goods (title, picture, kindOfGood, town, address, DESCRIPTION, numberOfPieces, active) VALUES ('Appartement luxe', 'view/content/images/s-4.jpg', 'Appartement', 'Grandson', 'Chemin de Bellevue', "c'est un très beau appartement avec une magnifique vue", 2, 1);
+INSERT INTO goods (title, picture, kindOfGood, town, address, DESCRIPTION, numberOfPieces, active) VALUES ('Maison tranquille', 'view/content/images/s-5.jpg', 'Maison', 'Yverdon', 'Avenue Général Guisans', "c'est une très belle maison avec une magnifique vue", 3, 1);
+INSERT INTO goods (title, picture, kindOfGood, town, address, DESCRIPTION, numberOfPieces, active) VALUES ('Appartmenent avec balcon', 'view/content/images/s-6.jpg', 'Appartement', 'Yverdon', 'Chemin des roses', "c'est un très beau appartement avec une magnifique vue", 2.5, 1);
 
 -- Insérer les donnés dans la table members_has_good
 INSERT INTO members_has_goods (member_id, good_id, startDate, endDate) VALUES (1, 2,'2018-04-13','2018-06-13');
