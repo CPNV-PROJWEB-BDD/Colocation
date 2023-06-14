@@ -10,7 +10,7 @@ Ce projet est un site pour trouver des colocations.
 
 ## Prerequistes
 
-Avoir PHP Storm installer ()
+Avoir PHP Storm installer
 
 Avoir debugger installer et xdebug configurer (version 8.2)
 
@@ -21,16 +21,24 @@ Installer MYSQL
 Installer la VM ProjWebBDD-JAL
 
 ## Installation
-PHP Storm : https://www.jetbrains.com/phpstorm/download/#section=windows
+[PHP Storm](https://www.jetbrains.com/phpstorm/download/#section=windows)
 
-PHP 8.2 : https://www.php.net/downloads
+[PHP 8.2](https://www.php.net/downloads)
 
-VMware workstation : https://www.vmware.com/fr/products/workstation-pro/workstation-pro-evaluation.html
+[Xdebug](https://xdebug.org/docs/install)
 
-VM (lien disponible que pendant 30 jour à partir du 25.05.23) : https://www.swisstransfer.com/d/d19a3aa5-0a4f-48df-a644-38c02535a2c1
+[Mysql](https://www.mysql.com/downloads/)
 
-## Configurations php
-php : https://www.php.net/manual/fr/install.php
+[VMware workstation](https://www.vmware.com/fr/products/workstation-pro/workstation-pro-evaluation.html)
+
+[VM](https://www.swisstransfer.com/d/d19a3aa5-0a4f-48df-a644-38c02535a2c1) (lien disponible que pendant 30 jour à partir du 25.05.23)
+
+## Configurations
+[php](https://www.php.net/manual/fr/install.php)
+
+[Xdebug configuration](https://www.jetbrains.com/help/phpstorm/configuring-xdebug.html)
+
+[Mysql configuration](https://dev.mysql.com/doc/mysql-getting-started/en/)
 
 ## Configuration php storm
 
@@ -68,13 +76,7 @@ En reprenant le modèle data/userDB.json.temp, il faut mettre à jour userName e
 
 # On dev environnement
 
-* Lancer le serveur et ouvrer index.php dans votre navigateur
-
-![Demarer colocation.PNG](..%2F..%2FDesktop%2FDemarer%20colocation.PNG)
-
-* Résultat à obtenir
-
-![PageAcceuilProjWeb.PNG](..%2F..%2FDesktop%2FPageAcceuilProjWeb.PNG)
+* [Lancer colocation depuis l'index](https://www.jetbrains.com/help/phpstorm/running-applications.html#customizable-way)
 
 # On intergration environnement
 
@@ -84,11 +86,11 @@ En reprenant le modèle data/userDB.json.temp, il faut mettre à jour userName e
 
 ## Collaborate
 
-Ahmed Mujanovic : Ahmed.mujanovic@cpnv.ch
+[Ahmed Mujanovic](Ahmed.mujanovic@cpnv.ch)
 
-Jonathan Penaranda-Gonzalez : Jonathan.peneranda-gonzalez@cpnv.ch
+[Jonathan Penaranda-Gonzalez](Jonathan.peneranda-gonzalez@cpnv.ch)
 
-Logan Nguyen : Logan.nguyen@cpnv.ch
+[Logan Nguyen](Logan.nguyen@cpnv.ch)
 
 ## License
 
