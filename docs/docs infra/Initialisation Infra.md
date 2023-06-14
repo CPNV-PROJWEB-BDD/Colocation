@@ -84,7 +84,7 @@ Lien pour télécharger la [VM](https://www.swisstransfer.com/d/d19a3aa5-0a4f-48
 ## Injection base de donnée
 - `Sudo mariadb`
 - `Source /var/www/colocation/projWebBDD/Colocation/scriptbdd/scriptProjetWebBDD.sql`
-- `Source /var/www/colocation/projWebBDD/Colocation/scriptbdd/insertionDonne.sql`
+- `Source /var/www/colocation/projWebBDD/Colocation/scriptbdd/insertionDeDonnees.sql`
 - `GRANT ALL ON colocations* TO 'logan'@'%';`
 - `FLUSH PRIVILEGES;`
 ## Test BDD colocation
