@@ -92,7 +92,7 @@ ob_start();
                                             <?= $item['id'] ?>
                                         </td>
                                     <?php else: ?>
-                                        <td style="background-color: red">
+                                        <td style="background-color: red;color: white">
                                             <?= $item['id'] ?>
                                         </td>
                                     <?php endif; ?>
@@ -125,7 +125,7 @@ ob_start();
                                         </a>
                                         <br><br>
                                         <form method="post" action="index.php?action=adActiveModify">
-                                            <input type="hidden" value="<?=$item['id']?>">
+                                            <input type="hidden" value="<?=$item['id']?>" name="id">
                                             <?php if ($item['active'] == 1) : ?>
                                             <button style="background-color: green; color: white" id="active-ad"
                                             type="submit">
