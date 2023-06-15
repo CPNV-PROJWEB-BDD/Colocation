@@ -25,21 +25,8 @@ $title = "sendAFormRequest";
             <p>Pour envoyer une demande de colocations remplissez le formulaire ci-dessus</p>
             <hr>
 
-            <label for="prenom"><b>Prénom </b></label>
-            <input type="text" placeholder="Entrez-votre prénom" id="prenom" name="inputFirstName" required>
-
-            <label for="nom"><b>Nom </b></label>
-            <input type="text" placeholder="Entrez-votre nom" id="nom" name="inputLastName" required>
-
             <label for="text"><b>petit text  </b></label>
             <input type="text" placeholder="Entrez un petit message" id="nom" name="inputText" required>
-
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Entrez-votre Email" id="email" name="inputEmailAddress" required>
-
-            <label for="inputPassword"><b>Password</b></label>
-            <input type="password" placeholder="Entrez-votre mot de passe" id="inputPassword" name="inputPassword"
-                   required>
 
             <label for="date"><b>date de début de la colocations</b></label>
             <input type="date" placeholder="Entrez la date de début ex:2018-04-13" id="dateDébut" name="inputDateDebut" required>

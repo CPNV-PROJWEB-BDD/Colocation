@@ -42,25 +42,19 @@ function sendAFormRequest($sendAFormData)
         require 'view/sendAFormRequest.php';
     } else {
         try {
-            if (isset($sendAFormData['inputFirstName']) && isset($sendAFormData['inputLastName'])
-                && isset($sendAFormData['inputText']) && isset($sendAFormData['inputEmailAddress'])
-                && isset($sendAFormData['inputPassword']) && isset($sendAFormData['inputDateDebut'])
+            if (isset($sendAFormData['inputText']) && isset($sendAFormData['inputDateDebut'])
                 && isset($sendAFormData['inputDateFin'])) {
 
-
-                $userEmailAdress = $sendAFormData['inputEmailAddress'];
-                $password = $sendAFormData['inputPassword'];
                 $text = $sendAFormData['inputText'];
                 $dateDebut = $sendAFormData['inputDateDebut'];
                 $dateFin = $sendAFormData['inputDateFin'];
 
-                if (IsLoginCorrect($userEmailAdress, $password)) {
-
+                if ($dateFin>$dateDebut) {
                     $goods = getGoods();
                     $develop = addFullDevelop();
                     require "view/home.php";
-                } else {
-                    $ErrorMessage = "l'email ou le mot de passe est faux";
+                }else{
+                    require 'view/loginForm.php';
                 }
             }
 
