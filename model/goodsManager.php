@@ -10,19 +10,20 @@ require_once "dbConnector.php";
 
 function goodsFilter($kindOfGood, $town){
     if ($kindOfGood == "" && $town == "") {
-        $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces from goods";
-        return executeQuerySelect($query);
+        $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces, active from goods";
+        $queryComplete = $query . " WHERE active='1'";
+        return executeQuerySelect($queryComplete);
     }else if ($kindOfGood == ""){
-        $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces from goods";
-        $queryComplete = $query . " WHERE town ='".$town."';";
+        $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces, active from goods";
+        $queryComplete = $query . " WHERE town ='".$town."' AND active='1';";
         return executeQuerySelect($queryComplete);
     }else if ($town == ""){
-        $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces from goods";
-        $queryComplete = $query . " WHERE kindOfGood ='".$kindOfGood."';";
+        $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces, active from goods";
+        $queryComplete = $query . " WHERE kindOfGood ='".$kindOfGood."' AND active='1';";
         return executeQuerySelect($queryComplete);
     }else {
-        $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces from goods";
-        $queryComplete = $query . " WHERE kindOfGood ='".$kindOfGood."' AND town ='".$town."';";
+        $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces, active from goods";
+        $queryComplete = $query . " WHERE kindOfGood ='".$kindOfGood."' AND town ='".$town."' AND active='1';";
         return executeQuerySelect($queryComplete);
     }
 }
@@ -38,8 +39,8 @@ function getGood($id){
     return executeQuerySelect($queryComplete);
 }
 function getGoodSimilar($id, $kindOfGood, $town){
-    $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces from goods";
-    $queryComplete = $query . " WHERE (kindOfGood ='".$kindOfGood."' OR town ='".$town."') AND id NOT IN(".$id.");";
+    $query = "SELECT id, title, picture, kindOfGood, town, numberOfPieces, active from goods";
+    $queryComplete = $query . " WHERE (kindOfGood ='".$kindOfGood."' OR town ='".$town."') AND active='1' AND id NOT IN(".$id.");";
     return executeQuerySelect($queryComplete);
 }
 

@@ -18,7 +18,7 @@ function displayLocation($valueFilter)
         list($kindOfGood, $town) = filter($valueFilter);
         $goods = goodsFilter($kindOfGood, $town);
         if ($goods == null) {
-            $errorMessage = "Nous n'avons pas trouvé de bien à vos critères ! Voici nos biens actuels :";
+            $errorMessage = "Nous n'avons pas trouvé de bien à vos critères ! Voici nos biens actuels disponible :";
             $goods = getGoods();
         }
     } finally {

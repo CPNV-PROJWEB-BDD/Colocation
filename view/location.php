@@ -56,6 +56,7 @@ $title = "Colocation - Location"
         </div>
         <div class="sale_container">
             <?php foreach($goods as $item) :?>
+            <?php if ($item['active'] == 1) :?>
             <div class="box">
                 <div class="img-box">
                     <a href="index.php?action=displayDetail&id=<?=$item['id']?>&kindOfGood=<?=$item['kindOfGood']?>&town=<?=$item['town']?>">
@@ -74,6 +75,7 @@ $title = "Colocation - Location"
                     </p>
                 </div>
             </div>
+            <?php endif;?>
             <?php endforeach;?>
         </div>
     </div>

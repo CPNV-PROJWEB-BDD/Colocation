@@ -96,7 +96,9 @@ $title = "Colocation - Home";
                 </p>
             </div>
             <div class="sale_container">
-                <?php for($i=0;$i <3; $i++) :?>
+                <?php $y = 3;?>
+                <?php for($i=0;$i < $y; $i++) :?>
+                <?php if ($goods[$i]['active'] != 0) :?>
                 <div class="box">
                     <div class="img-box">
                         <a href="index.php?action=displayDetail&id=<?=$goods[$i]['id']?>&kindOfGood=<?=$goods[$i]['kindOfGood']?>&town=<?=$goods[$i]['town']?>">
@@ -112,6 +114,9 @@ $title = "Colocation - Home";
                         </p>
                     </div>
                 </div>
+                <?php else:?>
+                        <?php $y++;?>
+                <?php endif;?>
                 <?php endfor;?>
             </div>
 

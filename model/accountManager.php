@@ -8,11 +8,11 @@
 
 require_once "dbConnector.php";
 
-function addAd($titre, $picture, $habitation, $localisation, $addresse, $description, $pieces){
+function addAd($titre, $picture, $habitation, $localisation, $address, $description, $pieces){
     $active=1;
     // Query to get the selected snow. Active must setted to avoid that user can view an non active snow by entering the code in the URL
     $query = "insert into goods (title, picture , kindOfGood, town, address, description, numberOfPieces, active)";
-    $queryComplete = $query." Values ('".$titre."','".$picture."','".$habitation."','".$localisation."','".$addresse."','".$description."','".$pieces."','".$active."')";
+    $queryComplete = $query." Values ('".$titre."','".$picture."','".$habitation."','".$localisation."','".$address."','".$description."','".$pieces."','".$active."')";
     return executeQueryAddItem($queryComplete);
 
 
