@@ -5,6 +5,7 @@ function home()
 {
     //try {
         $goods = getGoods();
+        $good_town = goodsTown();
         $develop = addFullDevelop();
     //} finally {
         require "view/home.php";
@@ -21,6 +22,7 @@ function displayLocation($valueFilter)
             $errorMessage = "Nous n'avons pas trouvé de bien à vos critères ! Voici nos biens actuels disponible :";
             $goods = getGoods();
         }
+        $good_town = goodsTown();
     } finally {
         require "view/location.php";
     }

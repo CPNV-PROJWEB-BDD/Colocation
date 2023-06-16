@@ -27,6 +27,12 @@ function goodsFilter($kindOfGood, $town){
         return executeQuerySelect($queryComplete);
     }
 }
+
+function goodsTown(){
+    $query = "SELECT town, COUNT(*) AS number_goods FROM goods WHERE active = 1";
+    $queryComplete = $query . " GROUP BY town";
+    return executeQuerySelect($queryComplete);
+}
 function getGoods(){
     $query = 'Select id, title, picture, kindOfGood, town, address, description, numberOfPieces, active';
     $queryComplete = $query." from goods";

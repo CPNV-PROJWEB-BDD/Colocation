@@ -23,11 +23,9 @@ $title = "Colocation - Location"
                 <div class="col-md-5">
                     <select name="town" id="localisation-select" class="form-control">
                         <option value="">Tout localisation</option>
-                        <option value="Yverdon">Yverdon</option>
-                        <option value="Ste-Croix">Ste-Croix</option>
-                        <option value="Grandson">Grandson</option>
-                        <option value="Fribourg">Fribourg</option>
-                        <option value="Renens">Renens</option>
+                        <?php foreach ($good_town as $item) :?>
+                            <option value="<?=$item['town']?>"><?=$item['town']?> (<?=$item['number_goods']?>)</option>
+                        <?php endforeach;?>
                     </select>
                 </div>
                 <div class="col-md-2">
