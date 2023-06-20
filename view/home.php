@@ -94,6 +94,7 @@ $title = "Colocation - Home";
                 </p>
             </div>
             <div class="sale_container">
+                <?php if (isset($goods)) :?>
                 <?php $y = 3;?>
                 <?php for($i=0;$i < $y; $i++) :?>
                 <?php if ($goods[$i]['active'] != 0) :?>
@@ -116,6 +117,7 @@ $title = "Colocation - Home";
                         <?php $y++;?>
                 <?php endif;?>
                 <?php endfor;?>
+                <?php endif;?>
             </div>
 
         </div>
@@ -125,61 +127,6 @@ $title = "Colocation - Home";
 
     <!-- price section -->
 
-    <section class="price_section layout_padding-bottom">
-        <div class="container">
-            <div class="heading_container">
-                <h2>
-                    Formulaire
-                </h2>
-                <p>
-                    Remplissez le formulaire ci-dessus
-                </p>
-            </div>
-            <div class="price_container">
-
-                <div class="box">
-                    <div class="detail-box">
-                        <div class="heading-box">
-                            <h4>
-
-                            </h4>
-                            <h6>
-                                Appartement ou maison
-                            </h6>
-                        </div>
-                        <div class="text-box">
-
-                            <ul>
-                                <li>
-                                    Remplissez le
-                                </li>
-                                <li>
-                                   formulaire
-                                </li>
-                                <li>
-                                    afin de
-                                </li>
-                                <li>
-                                   débloquer
-                                </li>
-                                <li>
-                                   une
-                                </li>
-                                <li>
-                                   colocations
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="btn-box">
-                        <a href="index.php?action=displaySendFormRequest">
-                            Remplire formulaire
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- end price section -->
 
     <!-- deal section -->
