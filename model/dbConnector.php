@@ -6,7 +6,7 @@
  * @file  15.05.2023
  */
 
-const PATH_TO_CONFIG_FILE = "data/userDB.json";
+const PATH_TO_CONFIG_FILE = "data/userDBInfra.json";
 
 function readJsonUsers(){
     $path = PATH_TO_CONFIG_FILE;
